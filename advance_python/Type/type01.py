@@ -6,15 +6,15 @@ Python使用type类来创建其他的class
 """
 
 
-# from lief import Object
-#
-#
-# class Student:
-#     def greeting(self):
-#         print("hello student")
-# print(type(Student))#<class 'type'>
-# print(isinstance(Student,type))#True
-# print(isinstance(Student,Object))#False
+from lief import Object
+
+
+class Student:
+    def greeting(self):
+        print("hello student")
+print(type(Student))#<class 'type'>
+print(isinstance(Student,type))#True
+print(isinstance(Student,object))#False
 
 print("*************************************************************")
 
