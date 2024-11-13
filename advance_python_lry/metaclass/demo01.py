@@ -7,10 +7,14 @@ class Human(type):
     @staticmethod
     def __new__(cls, *args,**kwargs):
         class_ = super().__new__(cls,*args)
+
         if kwargs:
             for name,value in kwargs.items():
                 setattr(class_,name,value)
         return class_
+
+
+
 
 
 class Student(object,metaclass=Human,country="China",freedom = True):
