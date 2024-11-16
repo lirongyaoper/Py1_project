@@ -24,7 +24,8 @@ print(my_third_foo_object.number)
 
 
 """
-在这里，您有一个Foo类，它定义一个属性number，它是一个描述符。
+在这里，您有一个Foo类，它定义一个属性number，它是一个描述符。    
+
 
 
 """
