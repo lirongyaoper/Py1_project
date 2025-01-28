@@ -2,7 +2,7 @@ import os  # 导入os模块
 from xml.dom.minidom import Document
 
 #source_path = "/media/lirongyaoper/350142ad-6ead-4db5-b07c-25bd698ad3c7/lungCT/yuanshi184_unzip"
-source_path = "/media/lirongyaoper/350142ad-6ead-4db5-b07c-25bd698ad3c7/lungCT/300yuanshi"
+source_path = "/media/lirongyaoper/350142ad-6ead-4db5-b07c-25bd698ad3c7/lungCT/300yuanshi/DI_QF47018942/"
 dest_dir = "/home/lirongyaoper/Documents/300yuanshi/"
 list = os.listdir(source_path)
 

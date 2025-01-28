@@ -13,15 +13,17 @@ def show_files(path):
             show_files(cur_path)
         else:
             name_all = cur_path.split('/')
-            if name_all[-1].startswith('merge.'):
-                # print(name_all[-4])
-
-                os.rename(cur_path,'/media/lirongyaoper/350142ad-6ead-4db5-b07c-25bd698ad3c7/lungCT/300labelnii/'+name_all[-4]+'.nii.gz')
+            # print(cur_path)
+            # print(name_all)
+            # if name_all[-1].startswith('merge.'):
+            #     # print(name_all[-4])
+            #
+            os.rename(cur_path,'/home/lirongyaoper/Documents/300yuanshinii/'+name_all[-2]+'.nii.gz')
 
 
 
 # 传入空的list接收文件名
-show_files("/media/lirongyaoper/350142ad-6ead-4db5-b07c-25bd698ad3c7/lungCT/300label")
+show_files("/home/lirongyaoper/Documents/300yuanshi")
 # 循环打印show_files函数返回的文件名列表
 # for content in contents:
 #     print(content)

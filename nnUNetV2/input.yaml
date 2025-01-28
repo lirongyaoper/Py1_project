@@ -1,0 +1,45 @@
+
+
+modality: CT
+dataroot: "/home/lirongyaoper/Softwares/"
+datalist: "./work_dir/nnUNet_raw_data_base/Dataset001_imageTr/dataset.json"
+dataset_name_or_id: 1
+nnunet_preprocessed: "./work_dir/nnUNet_preprocessed" 
+nnunet_raw: "./work_dir/nnUNet_raw_data_base" 
+nnunet_results: "./work_dir/nnUNet_trained_models"
+batch_size: 2
+max_epochs: 100
+learning_rate: 0.01
+
+
+#
+## ####################数据路径
+#data_dir: "/path/to/dataset"  # 数据集的根目录
+#output_dir: "/path/to/output"  # 训练结果和模型保存的目录
+#
+################## 模型配置
+#model_name: "nnUNetV2"  # 模型名称
+#num_classes: 3  # 分类类别数（例如，3 表示 3 分类任务）
+#
+## #################训练超参数
+#batch_size: 2  # 批量大小
+#max_epochs: 100  # 最大训练轮数
+#learning_rate: 0.01  # 初始学习率
+#optimizer: "Adam"  # 优化器（如 Adam、SGD）
+#loss_function: "DiceLoss"  # 损失函数（如 DiceLoss、CrossEntropyLoss）
+#
+## ######数据增强配置
+#use_augmentation: True  # 是否使用数据增强
+#augmentation_params:  # 数据增强参数
+#  rotation_range: 15  # 旋转范围
+#  scale_range: 0.1  # 缩放范围
+#
+## ###################硬件配置
+#device: "cuda:0"  # 使用的设备（如 "cuda:0" 或 "cpu"）
+#num_workers: 4  # 数据加载时的线程数
+#
+##################### 其他配置
+#validate_interval: 5  # 每隔多少轮进行一次验证
+#save_interval: 10  # 每隔多少轮保存一次模型
+
+#python -m monai.apps.nnunet nnUNetV2Runner train --input_config "./input.yaml"

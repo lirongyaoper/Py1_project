@@ -7,11 +7,10 @@ from monai.config import print_config
 from monai.apps import download_and_extract
 
 # https://github.com/Project-MONAI/tutorials/blob/main/auto3dseg/notebooks/msd_datalist_generator.ipynb
-root_dir = r'/home/lirongyaoper/Softwares/Monai/datasets/Lung'
+root_dir = r'/home/lirongyaoper/Softwares/work_dir/nnUNet_raw_data_base/Dataset001_imagesTr'
 test_dir = os.path.join(root_dir, "imagesTs/")
 train_dir = os.path.join(root_dir, "imagesTr/")
 label_dir = os.path.join(root_dir, "labelsTr/")
-
 datalist_json = {"testing": [], "training": []}
 
 datalist_json["testing"] = [
