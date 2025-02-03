@@ -1,0 +1,9 @@
+python -m monai.apps.nnunet nnUNetV2Runner plan_and_process --input_config "./input.yaml" \
+    ----verify_dataset_integrity
+
+
+python -m monai.apps.nnunet nnUNetV2Runner train_single_model --input_config "./input.yaml" \
+    --config "3d_fullres" \
+    --fold 0 \
+    --trainer_class_name "nnUNetTrainer_10epochs" \
+    --gpu_id 0

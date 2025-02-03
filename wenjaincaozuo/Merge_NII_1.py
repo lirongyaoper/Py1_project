@@ -14,7 +14,6 @@ def merge_labels(input_folder, output_file):
     :param output_file: 合并后保存的输出文件路径
     """
     nii_files = [f for f in os.listdir(input_folder) if f.lower().endswith('.nii') or f.lower().endswith('.nii.gz')]
-
     nii_path = os.path.join(input_folder, nii_files[0])
     image = sitk.ReadImage(nii_path)  # 读取nii文件
     imageArray = sitk.GetArrayFromImage(image) # 转成数组
@@ -24,7 +23,7 @@ def merge_labels(input_folder, output_file):
     i = 1
     for nii in nii_files:
         a = nii[:-4]
-        if a == "pulmonary_artery" or a == "pulmonary_veins" or a == "pulmonary_nodules" or a == "left_lung" or a == "right_lung" or a == "bronchus": # 合并指定器官
+        if a == "pulmonary artery" or  a == "bronchus" or a == "pulmonary veins": # 合并指定器官
             file_path = os.path.join(input_folder, nii)
             image1 = sitk.ReadImage(file_path)
             imageArray = sitk.GetArrayFromImage(image1)
@@ -58,20 +57,20 @@ def decompress_nifti_gz(input_file):
     return output_file
 
 
-folder_path = '/media/lirongyaoper/350142ad-6ead-4db5-b07c-25bd698ad3c7/lungCT/300label'   # nii 文件所在位置
+folder_path = '/media/lirongyaoper/350142ad-6ead-4db5-b07c-25bd698ad3c7/shuju500/300labels/'   # nii 文件所在位置
 subfolder_names = get_subfolder_names(folder_path)  # 所有文件夹名
 
 for folderPath in subfolder_names:
-    slices_folder = os.path.join(folder_path, folderPath, "nii/stlNii")
+    slices_folder = os.path.join(folder_path, folderPath)
     nii_gz_names = get_subfolder_names(slices_folder)
-
-    for nii in nii_gz_names:
-        # a = nii[:4]
-        if nii[-3:] == ".gz":
-            decompress_nifti_gz(os.path.join(slices_folder, nii))
-            os.remove(os.path.join(slices_folder, nii))
-        if nii[:5] == "merge":
-            os.remove(os.path.join(slices_folder, nii))
-    merge_nii = os.path.join(slices_folder, "merge.nii.gz")
-    merge_labels(slices_folder, merge_nii)
+    print(slices_folder)
+    # for nii in nii_gz_names:
+    #     # a = nii[:4]
+    #     if nii[-3:] == ".gz":
+    #         decompress_nifti_gz(os.path.join(slices_folder, nii))
+    #         os.remove(os.path.join(slices_folder, nii))
+    #     if nii[:5] == "merge":
+    #         os.remove(os.path.join(slices_folder, nii))
+    # merge_nii = os.path.join(slices_folder, "merge.nii.gz")
+    # merge_labels(slices_folder, merge_nii)
 

@@ -20,8 +20,8 @@ def rename_files_in_directory(root_dir, old_str, new_str):
 
 # 使用示例
 if __name__ == "__main__":
-    root_directory = '/media/lirongyaoper/350142ad-6ead-4db5-b07c-25bd698ad3c7/lungCT/300label'  # 替换为目标目录路径
-    string_to_replace = '结节.nii'  # 替换为要修改的字符串
-    replacement_string = 'pulmonary_nodules.nii'  # 替换为新的字符串
+    root_directory = '/media/lirongyaoper/350142ad-6ead-4db5-b07c-25bd698ad3c7/shuju500/300labels'  # 替换为目标目录路径
+    string_to_replace = '支气管.nii.gz'  # 替换为要修改的字符串
+    replacement_string = 'bronchus.nii.gz'  # 替换为新的字符串
 
     rename_files_in_directory(root_directory, string_to_replace, replacement_string)
