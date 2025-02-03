@@ -37,6 +37,7 @@ def add_numerical_suffix_to_filenames(folder_path, start_number=1, pad_length=3)
         os.rename(old_file_path, new_file_path)
         print(f"已将文件 '{filename}' 重命名为 '{new_filename}'")
 
-# 示例使用
-folder_path = r'/home/lirongyaoper/Documents/300labelnii/'  # 替换为实际的文件夹路径
-add_numerical_suffix_to_filenames(folder_path, start_number=202, pad_length=3)
+if __name__ == "__main__":
+    # 示例使用
+    folder_path = r'/home/lirongyaoper/Softwares/work_dir/nnUNet_raw_data_base/Dataset001_imagesTr/labelsTr/'  # 替换为实际的文件夹路径
+    add_numerical_suffix_to_filenames(folder_path, start_number=0, pad_length=3)

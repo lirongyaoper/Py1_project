@@ -34,8 +34,8 @@ def add_suffix_to_filenames(folder_path, suffix):
             # # 重命名文件
             os.rename(file_path, new_file_path)
             print(f"已将文件 '{filename}' 重命名为 '{new_filename}'")
-
-# 示例使用
-folder_path = r'/home/lirongyaoper/Documents/300labelnii/'  # 替换为实际的文件夹路径
-suffix = '_'                 # 要添加的后缀
-add_suffix_to_filenames(folder_path, suffix)
+if __name__ =="__main__":
+    # 示例使用
+    folder_path = r'/home/lirongyaoper/Softwares/work_dir/nnUNet_raw_data_base/Dataset001_imagesTr/imagesTr/'  # 替换为实际的文件夹路径
+    suffix = '_0000'                 # 要添加的后缀
+    add_suffix_to_filenames(folder_path, suffix)
