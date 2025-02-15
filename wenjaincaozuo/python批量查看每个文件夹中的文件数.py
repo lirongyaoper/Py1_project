@@ -32,7 +32,7 @@ def count_files_in_folders(root_dir):
 
 if __name__ == "__main__":
     # 使用示例
-    target_dir = r"/media/lirongyaoper/350142ad-6ead-4db5-b07c-25bd698ad3c7/lungCT/databasebak_center/500/images_yuanshi/300nii"
+    target_dir = r"/mnt/data/103/imagesnii"
 
     if os.path.exists(target_dir) and os.path.isdir(target_dir):
         count_files_in_folders(target_dir)

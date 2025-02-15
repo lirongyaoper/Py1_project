@@ -24,8 +24,8 @@ def merge_labels(input_folder, output_file):
     i = 1
     for nii in nii_files:
         a = nii[:-4]
-        # if a == "pulmonary artery" or  a == "bronchus" or a == "pulmonary veins": # 合并指定器官 官方
-        if a == "bronchus" or a == "file1" or a == "file2":  # 合并指定器官
+        if a == "pulmonary artery" or  a == "bronchus" or a == "pulmonary veins": # 合并指定器官 官方
+        # if a == "bronchus" or a == "file1" or a == "file2":  # 合并指定器官
             file_path = os.path.join(input_folder, nii)
             image1 = sitk.ReadImage(file_path)
             imageArray = sitk.GetArrayFromImage(image1)
@@ -59,7 +59,7 @@ def decompress_nifti_gz(input_file):
     return output_file
 
 
-folder_path = '/mnt/data/xin257/103/STL_NII/'   # nii 文件所在位置
+folder_path = '/mnt/data/103/label/'   # nii 文件所在位置
 subfolder_names = get_subfolder_names(folder_path)  # 所有文件夹名
 
 for folderPath in subfolder_names:

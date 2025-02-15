@@ -1,0 +1,4059 @@
+{
+    "name": "Lung",
+    "description": "Lung and cancer segmentation",
+    "tensorImageSize": "4D",
+    "reference": "The Cancer Imaging Archive",
+    "licence": "CC-BY-SA 4.0",
+    "release": "0.0",
+    "channel_names": {
+        "0": "CT"
+    },
+    "labels": {
+        "0": "background",
+        "1": "pulmonary vein",
+        "2": "bronchus",
+        "3": "pulmonary artery"
+    },
+    "numTraining": 752,
+    "file_ending": ".nii.gz",
+    "numTest": 0,
+    "testing": [],
+    "training": [
+        {
+            "image": "./imagesTr/CASEBV10011051_0334_0000.nii.gz",
+            "label": "./labelsTr/CASEBV10011051_0334_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIRV71231739_0079_0000.nii.gz",
+            "label": "./labelsTr/DIRV71231739_0079_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEAG20961555_0262_0000.nii.gz",
+            "label": "./labelsTr/CASEAG20961555_0262_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEID74744543_0663_0000.nii.gz",
+            "label": "./labelsTr/CASEID74744543_0663_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0064_0549_0000.nii.gz",
+            "label": "./labelsTr/CASE0064_0549_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIHR58569685_0615_0000.nii.gz",
+            "label": "./labelsTr/DIHR58569685_0615_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEZH09789933_0090_0000.nii.gz",
+            "label": "./labelsTr/CASEZH09789933_0090_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIVF66844784_0312_0000.nii.gz",
+            "label": "./labelsTr/DIVF66844784_0312_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DINP05223091_0948_0000.nii.gz",
+            "label": "./labelsTr/DINP05223091_0948_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0053post_0391_0000.nii.gz",
+            "label": "./labelsTr/CASE0053post_0391_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE002918poor_0899_0000.nii.gz",
+            "label": "./labelsTr/CASE002918poor_0899_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEJD49757299_0421_0000.nii.gz",
+            "label": "./labelsTr/CASEJD49757299_0421_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEJG86168133_0425_0000.nii.gz",
+            "label": "./labelsTr/CASEJG86168133_0425_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEKQ27459454_0598_0000.nii.gz",
+            "label": "./labelsTr/CASEKQ27459454_0598_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIDV61686512_0792_0000.nii.gz",
+            "label": "./labelsTr/DIDV61686512_0792_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIPA16906960_0310_0000.nii.gz",
+            "label": "./labelsTr/DIPA16906960_0310_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIUX44633166_0932_0000.nii.gz",
+            "label": "./labelsTr/DIUX44633166_0932_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE000718_0000_0000.nii.gz",
+            "label": "./labelsTr/CASE000718_0000_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASENT73377077_0193_0000.nii.gz",
+            "label": "./labelsTr/CASENT73377077_0193_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEOF22074699_0354_0000.nii.gz",
+            "label": "./labelsTr/CASEOF22074699_0354_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DINI94944737_0705_0000.nii.gz",
+            "label": "./labelsTr/DINI94944737_0705_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0035_0276_0000.nii.gz",
+            "label": "./labelsTr/CASE0035_0276_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl44_0500_0000.nii.gz",
+            "label": "./labelsTr/lryl44_0500_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEUK89892076_0820_0000.nii.gz",
+            "label": "./labelsTr/CASEUK89892076_0820_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIDH88123177_0383_0000.nii.gz",
+            "label": "./labelsTr/DIDH88123177_0383_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIUA83380132_0210_0000.nii.gz",
+            "label": "./labelsTr/DIUA83380132_0210_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIND14673423_0861_0000.nii.gz",
+            "label": "./labelsTr/DIND14673423_0861_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIWX16314673_0636_0000.nii.gz",
+            "label": "./labelsTr/DIWX16314673_0636_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryd10_0442_0000.nii.gz",
+            "label": "./labelsTr/lryd10_0442_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIJT16152621_0573_0000.nii.gz",
+            "label": "./labelsTr/DIJT16152621_0573_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASELC92296311_0935_0000.nii.gz",
+            "label": "./labelsTr/CASELC92296311_0935_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DINU09167472_0338_0000.nii.gz",
+            "label": "./labelsTr/DINU09167472_0338_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEYB68793422_0763_0000.nii.gz",
+            "label": "./labelsTr/CASEYB68793422_0763_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0089_0531_0000.nii.gz",
+            "label": "./labelsTr/CASE0089_0531_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl6_0600_0000.nii.gz",
+            "label": "./labelsTr/lryl6_0600_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIEL10499745_0969_0000.nii.gz",
+            "label": "./labelsTr/DIEL10499745_0969_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIXW05344440_0264_0000.nii.gz",
+            "label": "./labelsTr/DIXW05344440_0264_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIEQ09395257_0566_0000.nii.gz",
+            "label": "./labelsTr/DIEQ09395257_0566_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIGH08559639_0693_0000.nii.gz",
+            "label": "./labelsTr/DIGH08559639_0693_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DILJ55223702_0777_0000.nii.gz",
+            "label": "./labelsTr/DILJ55223702_0777_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0091_0269_0000.nii.gz",
+            "label": "./labelsTr/CASE0091_0269_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEOI87252317_0790_0000.nii.gz",
+            "label": "./labelsTr/CASEOI87252317_0790_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEIP49590224_0494_0000.nii.gz",
+            "label": "./labelsTr/CASEIP49590224_0494_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIYR99625510_0974_0000.nii.gz",
+            "label": "./labelsTr/DIYR99625510_0974_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEWI43969504_0260_0000.nii.gz",
+            "label": "./labelsTr/CASEWI43969504_0260_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIXO21541208_0953_0000.nii.gz",
+            "label": "./labelsTr/DIXO21541208_0953_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0081_0314_0000.nii.gz",
+            "label": "./labelsTr/CASE0081_0314_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEYH05081449_0287_0000.nii.gz",
+            "label": "./labelsTr/CASEYH05081449_0287_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl46_0406_0000.nii.gz",
+            "label": "./labelsTr/lryl46_0406_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIJT71972934_0206_0000.nii.gz",
+            "label": "./labelsTr/DIJT71972934_0206_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lrya1_0280_0000.nii.gz",
+            "label": "./labelsTr/lrya1_0280_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIZM40949621_0977_0000.nii.gz",
+            "label": "./labelsTr/DIZM40949621_0977_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEJL70518215_0722_0000.nii.gz",
+            "label": "./labelsTr/CASEJL70518215_0722_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEGK46712656_0292_0000.nii.gz",
+            "label": "./labelsTr/CASEGK46712656_0292_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DITN03435338_0119_0000.nii.gz",
+            "label": "./labelsTr/DITN03435338_0119_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryd5_0860_0000.nii.gz",
+            "label": "./labelsTr/lryd5_0860_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIHN21167672_0589_0000.nii.gz",
+            "label": "./labelsTr/DIHN21167672_0589_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEGV95133798_0195_0000.nii.gz",
+            "label": "./labelsTr/CASEGV95133798_0195_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryd7_0020_0000.nii.gz",
+            "label": "./labelsTr/lryd7_0020_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASETO66865523_0665_0000.nii.gz",
+            "label": "./labelsTr/CASETO66865523_0665_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIQG98286024_0529_0000.nii.gz",
+            "label": "./labelsTr/DIQG98286024_0529_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl41_0825_0000.nii.gz",
+            "label": "./labelsTr/lryl41_0825_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0118_0583_0000.nii.gz",
+            "label": "./labelsTr/CASE0118_0583_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DINJ95818289_0086_0000.nii.gz",
+            "label": "./labelsTr/DINJ95818289_0086_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0124_0729_0000.nii.gz",
+            "label": "./labelsTr/CASE0124_0729_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryy8_0250_0000.nii.gz",
+            "label": "./labelsTr/lryy8_0250_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0088_0135_0000.nii.gz",
+            "label": "./labelsTr/CASE0088_0135_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASETF74744246_0304_0000.nii.gz",
+            "label": "./labelsTr/CASETF74744246_0304_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0050_0904_0000.nii.gz",
+            "label": "./labelsTr/CASE0050_0904_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEQJ05426272_0515_0000.nii.gz",
+            "label": "./labelsTr/CASEQJ05426272_0515_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEEJ65472776_0482_0000.nii.gz",
+            "label": "./labelsTr/CASEEJ65472776_0482_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASERX55971721_0014_0000.nii.gz",
+            "label": "./labelsTr/CASERX55971721_0014_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DINS73029784_0956_0000.nii.gz",
+            "label": "./labelsTr/DINS73029784_0956_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIZA47676846_0889_0000.nii.gz",
+            "label": "./labelsTr/DIZA47676846_0889_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEKO11352648_0047_0000.nii.gz",
+            "label": "./labelsTr/CASEKO11352648_0047_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lrya10_0535_0000.nii.gz",
+            "label": "./labelsTr/lrya10_0535_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryd1_0444_0000.nii.gz",
+            "label": "./labelsTr/lryd1_0444_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASETJ65114520_0510_0000.nii.gz",
+            "label": "./labelsTr/CASETJ65114520_0510_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASETA10432095_0299_0000.nii.gz",
+            "label": "./labelsTr/CASETA10432095_0299_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DITB79594698_0419_0000.nii.gz",
+            "label": "./labelsTr/DITB79594698_0419_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl4_0235_0000.nii.gz",
+            "label": "./labelsTr/lryl4_0235_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEHK50244297_0074_0000.nii.gz",
+            "label": "./labelsTr/CASEHK50244297_0074_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIII98444015_0226_0000.nii.gz",
+            "label": "./labelsTr/DIII98444015_0226_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEKD84268104_0593_0000.nii.gz",
+            "label": "./labelsTr/CASEKD84268104_0593_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0146post_0307_0000.nii.gz",
+            "label": "./labelsTr/CASE0146post_0307_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEEI01838273_0351_0000.nii.gz",
+            "label": "./labelsTr/CASEEI01838273_0351_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASECI71220870_0422_0000.nii.gz",
+            "label": "./labelsTr/CASECI71220870_0422_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIBT66968525_0595_0000.nii.gz",
+            "label": "./labelsTr/DIBT66968525_0595_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0151post_0073_0000.nii.gz",
+            "label": "./labelsTr/CASE0151post_0073_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0080_0505_0000.nii.gz",
+            "label": "./labelsTr/CASE0080_0505_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE001518_0476_0000.nii.gz",
+            "label": "./labelsTr/CASE001518_0476_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIVP27560559_0644_0000.nii.gz",
+            "label": "./labelsTr/DIVP27560559_0644_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryb4_0004_0000.nii.gz",
+            "label": "./labelsTr/lryb4_0004_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0103_0499_0000.nii.gz",
+            "label": "./labelsTr/CASE0103_0499_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIEE98932746_0001_0000.nii.gz",
+            "label": "./labelsTr/DIEE98932746_0001_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEEP80589100_0841_0000.nii.gz",
+            "label": "./labelsTr/CASEEP80589100_0841_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEJU52171367_0827_0000.nii.gz",
+            "label": "./labelsTr/CASEJU52171367_0827_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DINF77931925_0443_0000.nii.gz",
+            "label": "./labelsTr/DINF77931925_0443_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASENO97002111_0163_0000.nii.gz",
+            "label": "./labelsTr/CASENO97002111_0163_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIVV27068617_0241_0000.nii.gz",
+            "label": "./labelsTr/DIVV27068617_0241_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DICY37510109_0375_0000.nii.gz",
+            "label": "./labelsTr/DICY37510109_0375_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEEX64152042_0218_0000.nii.gz",
+            "label": "./labelsTr/CASEEX64152042_0218_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASESF95747102_0177_0000.nii.gz",
+            "label": "./labelsTr/CASESF95747102_0177_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEEM50128481_0154_0000.nii.gz",
+            "label": "./labelsTr/CASEEM50128481_0154_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEHW64830817_0488_0000.nii.gz",
+            "label": "./labelsTr/CASEHW64830817_0488_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE001218_0267_0000.nii.gz",
+            "label": "./labelsTr/CASE001218_0267_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEKG61302445_0495_0000.nii.gz",
+            "label": "./labelsTr/CASEKG61302445_0495_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIFR61519668_0224_0000.nii.gz",
+            "label": "./labelsTr/DIFR61519668_0224_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE000418_0065_0000.nii.gz",
+            "label": "./labelsTr/CASE000418_0065_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASETT68765161_0042_0000.nii.gz",
+            "label": "./labelsTr/CASETT68765161_0042_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIGA33027619_0990_0000.nii.gz",
+            "label": "./labelsTr/DIGA33027619_0990_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIMD42844494_0458_0000.nii.gz",
+            "label": "./labelsTr/DIMD42844494_0458_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEIE01291692_0380_0000.nii.gz",
+            "label": "./labelsTr/CASEIE01291692_0380_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEMP90402308_0018_0000.nii.gz",
+            "label": "./labelsTr/CASEMP90402308_0018_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEJB39336413_0991_0000.nii.gz",
+            "label": "./labelsTr/CASEJB39336413_0991_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIUP80991021_0138_0000.nii.gz",
+            "label": "./labelsTr/DIUP80991021_0138_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIRF35771547_0648_0000.nii.gz",
+            "label": "./labelsTr/DIRF35771547_0648_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIYR34425250_0859_0000.nii.gz",
+            "label": "./labelsTr/DIYR34425250_0859_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl7_0408_0000.nii.gz",
+            "label": "./labelsTr/lryl7_0408_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIYA32324738_0498_0000.nii.gz",
+            "label": "./labelsTr/DIYA32324738_0498_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0084_0013_0000.nii.gz",
+            "label": "./labelsTr/CASE0084_0013_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEYC03543194_0731_0000.nii.gz",
+            "label": "./labelsTr/CASEYC03543194_0731_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DILU04555796_0524_0000.nii.gz",
+            "label": "./labelsTr/DILU04555796_0524_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIOK42035841_0021_0000.nii.gz",
+            "label": "./labelsTr/DIOK42035841_0021_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl43_0169_0000.nii.gz",
+            "label": "./labelsTr/lryl43_0169_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIBG35452942_0941_0000.nii.gz",
+            "label": "./labelsTr/DIBG35452942_0941_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEXT50360831_0373_0000.nii.gz",
+            "label": "./labelsTr/CASEXT50360831_0373_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASERY32310676_0331_0000.nii.gz",
+            "label": "./labelsTr/CASERY32310676_0331_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEBU47535651_0661_0000.nii.gz",
+            "label": "./labelsTr/CASEBU47535651_0661_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIDI48031739_0343_0000.nii.gz",
+            "label": "./labelsTr/DIDI48031739_0343_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIXD75491376_0202_0000.nii.gz",
+            "label": "./labelsTr/DIXD75491376_0202_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIMX72833718_0473_0000.nii.gz",
+            "label": "./labelsTr/DIMX72833718_0473_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryb6_0437_0000.nii.gz",
+            "label": "./labelsTr/lryb6_0437_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0139post_1003_0000.nii.gz",
+            "label": "./labelsTr/CASE0139post_1003_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEWD31640744_0761_0000.nii.gz",
+            "label": "./labelsTr/CASEWD31640744_0761_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DILK74056648_0088_0000.nii.gz",
+            "label": "./labelsTr/DILK74056648_0088_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl51_0909_0000.nii.gz",
+            "label": "./labelsTr/lryl51_0909_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEDQ20972860_0822_0000.nii.gz",
+            "label": "./labelsTr/CASEDQ20972860_0822_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DILL44138289_0078_0000.nii.gz",
+            "label": "./labelsTr/DILL44138289_0078_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE002118_0231_0000.nii.gz",
+            "label": "./labelsTr/CASE002118_0231_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DILQ43969375_0259_0000.nii.gz",
+            "label": "./labelsTr/DILQ43969375_0259_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIYD80969887_0348_0000.nii.gz",
+            "label": "./labelsTr/DIYD80969887_0348_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE000318_0424_0000.nii.gz",
+            "label": "./labelsTr/CASE000318_0424_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIEB25805760_0786_0000.nii.gz",
+            "label": "./labelsTr/DIEB25805760_0786_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIBD43525610_0798_0000.nii.gz",
+            "label": "./labelsTr/DIBD43525610_0798_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIWG68417382_0826_0000.nii.gz",
+            "label": "./labelsTr/DIWG68417382_0826_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASERW27432903_0819_0000.nii.gz",
+            "label": "./labelsTr/CASERW27432903_0819_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIAQ59356972_0783_0000.nii.gz",
+            "label": "./labelsTr/DIAQ59356972_0783_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lrya7_0645_0000.nii.gz",
+            "label": "./labelsTr/lrya7_0645_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DILI54039929_0865_0000.nii.gz",
+            "label": "./labelsTr/DILI54039929_0865_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DILH81482954_0918_0000.nii.gz",
+            "label": "./labelsTr/DILH81482954_0918_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIVE08661703_0396_0000.nii.gz",
+            "label": "./labelsTr/DIVE08661703_0396_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DILH61577456_0217_0000.nii.gz",
+            "label": "./labelsTr/DILH61577456_0217_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIGT75728792_0718_0000.nii.gz",
+            "label": "./labelsTr/DIGT75728792_0718_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIDT79332768_0687_0000.nii.gz",
+            "label": "./labelsTr/DIDT79332768_0687_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIXL60661301_0025_0000.nii.gz",
+            "label": "./labelsTr/DIXL60661301_0025_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEZV07628921_0192_0000.nii.gz",
+            "label": "./labelsTr/CASEZV07628921_0192_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lrya6_0291_0000.nii.gz",
+            "label": "./labelsTr/lrya6_0291_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIIK81682464_0474_0000.nii.gz",
+            "label": "./labelsTr/DIIK81682464_0474_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl1_0197_0000.nii.gz",
+            "label": "./labelsTr/lryl1_0197_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEEJ79900748_0678_0000.nii.gz",
+            "label": "./labelsTr/CASEEJ79900748_0678_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DITK14819559_0723_0000.nii.gz",
+            "label": "./labelsTr/DITK14819559_0723_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIDI32214235_0038_0000.nii.gz",
+            "label": "./labelsTr/DIDI32214235_0038_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEPX09415322_0508_0000.nii.gz",
+            "label": "./labelsTr/CASEPX09415322_0508_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEHR99085049_0892_0000.nii.gz",
+            "label": "./labelsTr/CASEHR99085049_0892_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEEH60287862_0642_0000.nii.gz",
+            "label": "./labelsTr/CASEEH60287862_0642_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIIY61129628_0311_0000.nii.gz",
+            "label": "./labelsTr/DIIY61129628_0311_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIVN06352425_0139_0000.nii.gz",
+            "label": "./labelsTr/DIVN06352425_0139_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIFU94141766_0007_0000.nii.gz",
+            "label": "./labelsTr/DIFU94141766_0007_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASESA88713670_0667_0000.nii.gz",
+            "label": "./labelsTr/CASESA88713670_0667_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEQQ62005399_0984_0000.nii.gz",
+            "label": "./labelsTr/CASEQQ62005399_0984_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl14_0854_0000.nii.gz",
+            "label": "./labelsTr/lryl14_0854_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIVY66494000_0793_0000.nii.gz",
+            "label": "./labelsTr/DIVY66494000_0793_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIKK85922449_0360_0000.nii.gz",
+            "label": "./labelsTr/DIKK85922449_0360_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIZG48668645_0483_0000.nii.gz",
+            "label": "./labelsTr/DIZG48668645_0483_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASELV16613586_0388_0000.nii.gz",
+            "label": "./labelsTr/CASELV16613586_0388_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0065_0951_0000.nii.gz",
+            "label": "./labelsTr/CASE0065_0951_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIGA22247162_0467_0000.nii.gz",
+            "label": "./labelsTr/DIGA22247162_0467_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEHS28918190_0370_0000.nii.gz",
+            "label": "./labelsTr/CASEHS28918190_0370_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIDG80869155_0746_0000.nii.gz",
+            "label": "./labelsTr/DIDG80869155_0746_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl48_0328_0000.nii.gz",
+            "label": "./labelsTr/lryl48_0328_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEUV32096029_0680_0000.nii.gz",
+            "label": "./labelsTr/CASEUV32096029_0680_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DINB03584477_0972_0000.nii.gz",
+            "label": "./labelsTr/DINB03584477_0972_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIWK56519998_0513_0000.nii.gz",
+            "label": "./labelsTr/DIWK56519998_0513_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIXT12086257_0609_0000.nii.gz",
+            "label": "./labelsTr/DIXT12086257_0609_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIDA20438429_0207_0000.nii.gz",
+            "label": "./labelsTr/DIDA20438429_0207_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl37_0758_0000.nii.gz",
+            "label": "./labelsTr/lryl37_0758_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIUU84412671_0082_0000.nii.gz",
+            "label": "./labelsTr/DIUU84412671_0082_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIHW44378104_0952_0000.nii.gz",
+            "label": "./labelsTr/DIHW44378104_0952_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0070_0395_0000.nii.gz",
+            "label": "./labelsTr/CASE0070_0395_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASELZ97755075_0152_0000.nii.gz",
+            "label": "./labelsTr/CASELZ97755075_0152_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIAB60152191_0456_0000.nii.gz",
+            "label": "./labelsTr/DIAB60152191_0456_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIJE63539161_0173_0000.nii.gz",
+            "label": "./labelsTr/DIJE63539161_0173_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIQH79114102_0069_0000.nii.gz",
+            "label": "./labelsTr/DIQH79114102_0069_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryb3_0213_0000.nii.gz",
+            "label": "./labelsTr/lryb3_0213_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEKA99994093_0125_0000.nii.gz",
+            "label": "./labelsTr/CASEKA99994093_0125_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0156post_0527_0000.nii.gz",
+            "label": "./labelsTr/CASE0156post_0527_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0072_0319_0000.nii.gz",
+            "label": "./labelsTr/CASE0072_0319_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIZJ36787696_0882_0000.nii.gz",
+            "label": "./labelsTr/DIZJ36787696_0882_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIWY88193214_0867_0000.nii.gz",
+            "label": "./labelsTr/DIWY88193214_0867_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0150post_0629_0000.nii.gz",
+            "label": "./labelsTr/CASE0150post_0629_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIXD00089548_0005_0000.nii.gz",
+            "label": "./labelsTr/DIXD00089548_0005_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl20_0802_0000.nii.gz",
+            "label": "./labelsTr/lryl20_0802_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIOH15638259_0933_0000.nii.gz",
+            "label": "./labelsTr/DIOH15638259_0933_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIPM52791468_0029_0000.nii.gz",
+            "label": "./labelsTr/DIPM52791468_0029_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIPN42659336_0697_0000.nii.gz",
+            "label": "./labelsTr/DIPN42659336_0697_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEEE03643184_0614_0000.nii.gz",
+            "label": "./labelsTr/CASEEE03643184_0614_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0079_0908_0000.nii.gz",
+            "label": "./labelsTr/CASE0079_0908_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl53_0944_0000.nii.gz",
+            "label": "./labelsTr/lryl53_0944_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEET83801035_0928_0000.nii.gz",
+            "label": "./labelsTr/CASEET83801035_0928_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0142post_0770_0000.nii.gz",
+            "label": "./labelsTr/CASE0142post_0770_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIVY30626021_0878_0000.nii.gz",
+            "label": "./labelsTr/DIVY30626021_0878_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIBA15337695_0749_0000.nii.gz",
+            "label": "./labelsTr/DIBA15337695_0749_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl28_0668_0000.nii.gz",
+            "label": "./labelsTr/lryl28_0668_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DILB51038856_0675_0000.nii.gz",
+            "label": "./labelsTr/DILB51038856_0675_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIZA43488728_0959_0000.nii.gz",
+            "label": "./labelsTr/DIZA43488728_0959_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIDS53374629_0857_0000.nii.gz",
+            "label": "./labelsTr/DIDS53374629_0857_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIYB93016037_0569_0000.nii.gz",
+            "label": "./labelsTr/DIYB93016037_0569_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIMD26726381_0205_0000.nii.gz",
+            "label": "./labelsTr/DIMD26726381_0205_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEVU52928470_0484_0000.nii.gz",
+            "label": "./labelsTr/CASEVU52928470_0484_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0155post_0244_0000.nii.gz",
+            "label": "./labelsTr/CASE0155post_0244_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIQA84336644_0726_0000.nii.gz",
+            "label": "./labelsTr/DIQA84336644_0726_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DILM69242362_1007_0000.nii.gz",
+            "label": "./labelsTr/DILM69242362_1007_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIAE38438494_0233_0000.nii.gz",
+            "label": "./labelsTr/DIAE38438494_0233_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEKU90025106_0555_0000.nii.gz",
+            "label": "./labelsTr/CASEKU90025106_0555_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIYW26630103_0340_0000.nii.gz",
+            "label": "./labelsTr/DIYW26630103_0340_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIDU14153173_0823_0000.nii.gz",
+            "label": "./labelsTr/DIDU14153173_0823_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEXV31163049_0183_0000.nii.gz",
+            "label": "./labelsTr/CASEXV31163049_0183_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE002218_0832_0000.nii.gz",
+            "label": "./labelsTr/CASE002218_0832_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIGE55624289_0409_0000.nii.gz",
+            "label": "./labelsTr/DIGE55624289_0409_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASESF93159477_0094_0000.nii.gz",
+            "label": "./labelsTr/CASESF93159477_0094_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0107_0949_0000.nii.gz",
+            "label": "./labelsTr/CASE0107_0949_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryd2_0937_0000.nii.gz",
+            "label": "./labelsTr/lryd2_0937_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DINB32757261_0101_0000.nii.gz",
+            "label": "./labelsTr/DINB32757261_0101_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEWT01497549_0584_0000.nii.gz",
+            "label": "./labelsTr/CASEWT01497549_0584_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIXE05704109_0791_0000.nii.gz",
+            "label": "./labelsTr/DIXE05704109_0791_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE001118_0347_0000.nii.gz",
+            "label": "./labelsTr/CASE001118_0347_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE002018_0061_0000.nii.gz",
+            "label": "./labelsTr/CASE002018_0061_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE000618_0995_0000.nii.gz",
+            "label": "./labelsTr/CASE000618_0995_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIUD50491548_1008_0000.nii.gz",
+            "label": "./labelsTr/DIUD50491548_1008_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0119_0707_0000.nii.gz",
+            "label": "./labelsTr/CASE0119_0707_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DICM02318583_0124_0000.nii.gz",
+            "label": "./labelsTr/DICM02318583_0124_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0074_0130_0000.nii.gz",
+            "label": "./labelsTr/CASE0074_0130_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEHX88372731_0719_0000.nii.gz",
+            "label": "./labelsTr/CASEHX88372731_0719_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEIY77843953_0323_0000.nii.gz",
+            "label": "./labelsTr/CASEIY77843953_0323_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIFM64208983_0186_0000.nii.gz",
+            "label": "./labelsTr/DIFM64208983_0186_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEQX09862478_0635_0000.nii.gz",
+            "label": "./labelsTr/CASEQX09862478_0635_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl27_0590_0000.nii.gz",
+            "label": "./labelsTr/lryl27_0590_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEKP06236302_0285_0000.nii.gz",
+            "label": "./labelsTr/CASEKP06236302_0285_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0060_0158_0000.nii.gz",
+            "label": "./labelsTr/CASE0060_0158_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0097_0940_0000.nii.gz",
+            "label": "./labelsTr/CASE0097_0940_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEVW75103930_0219_0000.nii.gz",
+            "label": "./labelsTr/CASEVW75103930_0219_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0067_0060_0000.nii.gz",
+            "label": "./labelsTr/CASE0067_0060_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0137post_0027_0000.nii.gz",
+            "label": "./labelsTr/CASE0137post_0027_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIOH81556513_0534_0000.nii.gz",
+            "label": "./labelsTr/DIOH81556513_0534_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIWG46037776_0145_0000.nii.gz",
+            "label": "./labelsTr/DIWG46037776_0145_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIUW70285870_0172_0000.nii.gz",
+            "label": "./labelsTr/DIUW70285870_0172_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEPS86655638_0556_0000.nii.gz",
+            "label": "./labelsTr/CASEPS86655638_0556_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0046_0703_0000.nii.gz",
+            "label": "./labelsTr/CASE0046_0703_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIZG19215830_0945_0000.nii.gz",
+            "label": "./labelsTr/DIZG19215830_0945_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIZT11821375_0641_0000.nii.gz",
+            "label": "./labelsTr/DIZT11821375_0641_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASETT65389462_0006_0000.nii.gz",
+            "label": "./labelsTr/CASETT65389462_0006_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0094_0817_0000.nii.gz",
+            "label": "./labelsTr/CASE0094_0817_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0134post_0728_0000.nii.gz",
+            "label": "./labelsTr/CASE0134post_0728_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0043_0399_0000.nii.gz",
+            "label": "./labelsTr/CASE0043_0399_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DINC37653215_0366_0000.nii.gz",
+            "label": "./labelsTr/DINC37653215_0366_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0068_0721_0000.nii.gz",
+            "label": "./labelsTr/CASE0068_0721_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIXB33036757_0097_0000.nii.gz",
+            "label": "./labelsTr/DIXB33036757_0097_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEAA82688277_0842_0000.nii.gz",
+            "label": "./labelsTr/CASEAA82688277_0842_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEZA00212262_0268_0000.nii.gz",
+            "label": "./labelsTr/CASEZA00212262_0268_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIXX38681763_0459_0000.nii.gz",
+            "label": "./labelsTr/DIXX38681763_0459_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIMM22849617_0201_0000.nii.gz",
+            "label": "./labelsTr/DIMM22849617_0201_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIVO25744091_0630_0000.nii.gz",
+            "label": "./labelsTr/DIVO25744091_0630_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEXT53447543_0058_0000.nii.gz",
+            "label": "./labelsTr/CASEXT53447543_0058_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEDH83786907_0638_0000.nii.gz",
+            "label": "./labelsTr/CASEDH83786907_0638_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEKB35169491_0110_0000.nii.gz",
+            "label": "./labelsTr/CASEKB35169491_0110_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIMR51133952_0410_0000.nii.gz",
+            "label": "./labelsTr/DIMR51133952_0410_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DITL64282134_0355_0000.nii.gz",
+            "label": "./labelsTr/DITL64282134_0355_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIIW76120659_0367_0000.nii.gz",
+            "label": "./labelsTr/DIIW76120659_0367_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIXU30929053_0140_0000.nii.gz",
+            "label": "./labelsTr/DIXU30929053_0140_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE001918_0516_0000.nii.gz",
+            "label": "./labelsTr/CASE001918_0516_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIPD41228274_0387_0000.nii.gz",
+            "label": "./labelsTr/DIPD41228274_0387_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIEN89431785_0089_0000.nii.gz",
+            "label": "./labelsTr/DIEN89431785_0089_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIQX73750241_0592_0000.nii.gz",
+            "label": "./labelsTr/DIQX73750241_0592_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE002518_0327_0000.nii.gz",
+            "label": "./labelsTr/CASE002518_0327_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEIT13773056_1000_0000.nii.gz",
+            "label": "./labelsTr/CASEIT13773056_1000_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DINW50148321_0203_0000.nii.gz",
+            "label": "./labelsTr/DINW50148321_0203_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIXO89299611_0157_0000.nii.gz",
+            "label": "./labelsTr/DIXO89299611_0157_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIYX62442807_0324_0000.nii.gz",
+            "label": "./labelsTr/DIYX62442807_0324_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIHV05371451_0967_0000.nii.gz",
+            "label": "./labelsTr/DIHV05371451_0967_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEYB60703156_0507_0000.nii.gz",
+            "label": "./labelsTr/CASEYB60703156_0507_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DISG43983359_0496_0000.nii.gz",
+            "label": "./labelsTr/DISG43983359_0496_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEXM20230161_0368_0000.nii.gz",
+            "label": "./labelsTr/CASEXM20230161_0368_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl36_0298_0000.nii.gz",
+            "label": "./labelsTr/lryl36_0298_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEPF81536047_0010_0000.nii.gz",
+            "label": "./labelsTr/CASEPF81536047_0010_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIBN95523016_0992_0000.nii.gz",
+            "label": "./labelsTr/DIBN95523016_0992_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIVW83280478_0679_0000.nii.gz",
+            "label": "./labelsTr/DIVW83280478_0679_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEKW40810039_0468_0000.nii.gz",
+            "label": "./labelsTr/CASEKW40810039_0468_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIIM10367950_0586_0000.nii.gz",
+            "label": "./labelsTr/DIIM10367950_0586_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIDJ96774237_0057_0000.nii.gz",
+            "label": "./labelsTr/DIDJ96774237_0057_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEZA23637202_0035_0000.nii.gz",
+            "label": "./labelsTr/CASEZA23637202_0035_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIAR79388654_0612_0000.nii.gz",
+            "label": "./labelsTr/DIAR79388654_0612_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIDI80065369_0043_0000.nii.gz",
+            "label": "./labelsTr/DIDI80065369_0043_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIWJ85777698_0436_0000.nii.gz",
+            "label": "./labelsTr/DIWJ85777698_0436_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE000518_0129_0000.nii.gz",
+            "label": "./labelsTr/CASE000518_0129_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIDD24426392_0397_0000.nii.gz",
+            "label": "./labelsTr/DIDD24426392_0397_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIJC18231239_0175_0000.nii.gz",
+            "label": "./labelsTr/DIJC18231239_0175_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIJW56429989_0664_0000.nii.gz",
+            "label": "./labelsTr/DIJW56429989_0664_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryj9_0964_0000.nii.gz",
+            "label": "./labelsTr/lryj9_0964_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEAB80274547_0116_0000.nii.gz",
+            "label": "./labelsTr/CASEAB80274547_0116_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIZH49777016_0894_0000.nii.gz",
+            "label": "./labelsTr/DIZH49777016_0894_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEFW52712134_0051_0000.nii.gz",
+            "label": "./labelsTr/CASEFW52712134_0051_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIPB79073687_0480_0000.nii.gz",
+            "label": "./labelsTr/DIPB79073687_0480_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIVR27845041_0744_0000.nii.gz",
+            "label": "./labelsTr/DIVR27845041_0744_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0133_0631_0000.nii.gz",
+            "label": "./labelsTr/CASE0133_0631_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIUA81868833_0209_0000.nii.gz",
+            "label": "./labelsTr/DIUA81868833_0209_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lrya3_0836_0000.nii.gz",
+            "label": "./labelsTr/lrya3_0836_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIMZ21181972_0489_0000.nii.gz",
+            "label": "./labelsTr/DIMZ21181972_0489_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DINP44008071_0966_0000.nii.gz",
+            "label": "./labelsTr/DINP44008071_0966_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0037_0604_0000.nii.gz",
+            "label": "./labelsTr/CASE0037_0604_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0100_0263_0000.nii.gz",
+            "label": "./labelsTr/CASE0100_0263_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEHD06760028_0486_0000.nii.gz",
+            "label": "./labelsTr/CASEHD06760028_0486_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DILS72734760_0824_0000.nii.gz",
+            "label": "./labelsTr/DILS72734760_0824_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEZW52012994_0179_0000.nii.gz",
+            "label": "./labelsTr/CASEZW52012994_0179_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASERY98176644_0562_0000.nii.gz",
+            "label": "./labelsTr/CASERY98176644_0562_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0129_0182_0000.nii.gz",
+            "label": "./labelsTr/CASE0129_0182_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIOX35089014_0148_0000.nii.gz",
+            "label": "./labelsTr/DIOX35089014_0148_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEZO85518774_0980_0000.nii.gz",
+            "label": "./labelsTr/CASEZO85518774_0980_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0116_0771_0000.nii.gz",
+            "label": "./labelsTr/CASE0116_0771_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIXC66755594_0363_0000.nii.gz",
+            "label": "./labelsTr/DIXC66755594_0363_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEQE73678023_0377_0000.nii.gz",
+            "label": "./labelsTr/CASEQE73678023_0377_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIES22609840_0797_0000.nii.gz",
+            "label": "./labelsTr/DIES22609840_0797_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIRK66711119_0228_0000.nii.gz",
+            "label": "./labelsTr/DIRK66711119_0228_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIJX17464054_0212_0000.nii.gz",
+            "label": "./labelsTr/DIJX17464054_0212_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIVD10422133_0028_0000.nii.gz",
+            "label": "./labelsTr/DIVD10422133_0028_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEPZ45111355_0385_0000.nii.gz",
+            "label": "./labelsTr/CASEPZ45111355_0385_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEKY34532009_0295_0000.nii.gz",
+            "label": "./labelsTr/CASEKY34532009_0295_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIAT07558349_1005_0000.nii.gz",
+            "label": "./labelsTr/DIAT07558349_1005_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEPI19622292_0106_0000.nii.gz",
+            "label": "./labelsTr/CASEPI19622292_0106_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DILQ02334512_0839_0000.nii.gz",
+            "label": "./labelsTr/DILQ02334512_0839_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASETK97864523_0813_0000.nii.gz",
+            "label": "./labelsTr/CASETK97864523_0813_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIRC28059746_0221_0000.nii.gz",
+            "label": "./labelsTr/DIRC28059746_0221_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEKK04487866_0851_0000.nii.gz",
+            "label": "./labelsTr/CASEKK04487866_0851_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIFS17843172_0181_0000.nii.gz",
+            "label": "./labelsTr/DIFS17843172_0181_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEXV37778422_0490_0000.nii.gz",
+            "label": "./labelsTr/CASEXV37778422_0490_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIZM81208233_0361_0000.nii.gz",
+            "label": "./labelsTr/DIZM81208233_0361_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIBJ80842511_0769_0000.nii.gz",
+            "label": "./labelsTr/DIBJ80842511_0769_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEPD31440585_0936_0000.nii.gz",
+            "label": "./labelsTr/CASEPD31440585_0936_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl17_0743_0000.nii.gz",
+            "label": "./labelsTr/lryl17_0743_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0090_0002_0000.nii.gz",
+            "label": "./labelsTr/CASE0090_0002_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIDC40355181_0401_0000.nii.gz",
+            "label": "./labelsTr/DIDC40355181_0401_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEVC56095902_0649_0000.nii.gz",
+            "label": "./labelsTr/CASEVC56095902_0649_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEJS88254773_0982_0000.nii.gz",
+            "label": "./labelsTr/CASEJS88254773_0982_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0076_0290_0000.nii.gz",
+            "label": "./labelsTr/CASE0076_0290_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DITW13943219_0622_0000.nii.gz",
+            "label": "./labelsTr/DITW13943219_0622_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0077_0520_0000.nii.gz",
+            "label": "./labelsTr/CASE0077_0520_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIBA00880234_0779_0000.nii.gz",
+            "label": "./labelsTr/DIBA00880234_0779_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIBH19964767_0248_0000.nii.gz",
+            "label": "./labelsTr/DIBH19964767_0248_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryj5_0080_0000.nii.gz",
+            "label": "./labelsTr/lryj5_0080_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DISB20808677_0003_0000.nii.gz",
+            "label": "./labelsTr/DISB20808677_0003_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEBW29370002_0536_0000.nii.gz",
+            "label": "./labelsTr/CASEBW29370002_0536_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0127_0674_0000.nii.gz",
+            "label": "./labelsTr/CASE0127_0674_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIIL86430236_0278_0000.nii.gz",
+            "label": "./labelsTr/DIIL86430236_0278_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEOC73140314_0426_0000.nii.gz",
+            "label": "./labelsTr/CASEOC73140314_0426_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIQM67232246_0623_0000.nii.gz",
+            "label": "./labelsTr/DIQM67232246_0623_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIQS78928350_0064_0000.nii.gz",
+            "label": "./labelsTr/DIQS78928350_0064_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEUU86205791_0284_0000.nii.gz",
+            "label": "./labelsTr/CASEUU86205791_0284_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIDM46914823_0624_0000.nii.gz",
+            "label": "./labelsTr/DIDM46914823_0624_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIEQ94434647_0134_0000.nii.gz",
+            "label": "./labelsTr/DIEQ94434647_0134_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIOL20247708_0256_0000.nii.gz",
+            "label": "./labelsTr/DIOL20247708_0256_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIHN77679166_0557_0000.nii.gz",
+            "label": "./labelsTr/DIHN77679166_0557_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIJO37302994_0539_0000.nii.gz",
+            "label": "./labelsTr/DIJO37302994_0539_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEYS29762469_0934_0000.nii.gz",
+            "label": "./labelsTr/CASEYS29762469_0934_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DICH51946155_0504_0000.nii.gz",
+            "label": "./labelsTr/DICH51946155_0504_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEKN77224945_0849_0000.nii.gz",
+            "label": "./labelsTr/CASEKN77224945_0849_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0117_0863_0000.nii.gz",
+            "label": "./labelsTr/CASE0117_0863_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIMB60983964_0970_0000.nii.gz",
+            "label": "./labelsTr/DIMB60983964_0970_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASESO64924035_0872_0000.nii.gz",
+            "label": "./labelsTr/CASESO64924035_0872_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASENI74399268_0237_0000.nii.gz",
+            "label": "./labelsTr/CASENI74399268_0237_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEQU44165095_0887_0000.nii.gz",
+            "label": "./labelsTr/CASEQU44165095_0887_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEHY08217050_0528_0000.nii.gz",
+            "label": "./labelsTr/CASEHY08217050_0528_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIFX96449919_0736_0000.nii.gz",
+            "label": "./labelsTr/DIFX96449919_0736_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0106_0810_0000.nii.gz",
+            "label": "./labelsTr/CASE0106_0810_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE000918_0300_0000.nii.gz",
+            "label": "./labelsTr/CASE000918_0300_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DICF72536923_0985_0000.nii.gz",
+            "label": "./labelsTr/DICF72536923_0985_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DILN01387415_0597_0000.nii.gz",
+            "label": "./labelsTr/DILN01387415_0597_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DITJ54668374_0019_0000.nii.gz",
+            "label": "./labelsTr/DITJ54668374_0019_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryb2_0760_0000.nii.gz",
+            "label": "./labelsTr/lryb2_0760_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DITK96907975_0717_0000.nii.gz",
+            "label": "./labelsTr/DITK96907975_0717_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0108_0788_0000.nii.gz",
+            "label": "./labelsTr/CASE0108_0788_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DICR33431678_0846_0000.nii.gz",
+            "label": "./labelsTr/DICR33431678_0846_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl42_0302_0000.nii.gz",
+            "label": "./labelsTr/lryl42_0302_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIAQ57312600_0955_0000.nii.gz",
+            "label": "./labelsTr/DIAQ57312600_0955_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEDW42777541_0834_0000.nii.gz",
+            "label": "./labelsTr/CASEDW42777541_0834_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIME57850973_0313_0000.nii.gz",
+            "label": "./labelsTr/DIME57850973_0313_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIRR35716410_0852_0000.nii.gz",
+            "label": "./labelsTr/DIRR35716410_0852_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIRR43280440_0274_0000.nii.gz",
+            "label": "./labelsTr/DIRR43280440_0274_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIYC52358396_0778_0000.nii.gz",
+            "label": "./labelsTr/DIYC52358396_0778_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl15_0853_0000.nii.gz",
+            "label": "./labelsTr/lryl15_0853_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE003118poor_0056_0000.nii.gz",
+            "label": "./labelsTr/CASE003118poor_0056_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEFD86284376_0544_0000.nii.gz",
+            "label": "./labelsTr/CASEFD86284376_0544_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEPK16765689_0234_0000.nii.gz",
+            "label": "./labelsTr/CASEPK16765689_0234_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE003018poor_0913_0000.nii.gz",
+            "label": "./labelsTr/CASE003018poor_0913_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEAL41066183_0346_0000.nii.gz",
+            "label": "./labelsTr/CASEAL41066183_0346_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0136post_0818_0000.nii.gz",
+            "label": "./labelsTr/CASE0136post_0818_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lrya9_0973_0000.nii.gz",
+            "label": "./labelsTr/lrya9_0973_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEXB45629763_0976_0000.nii.gz",
+            "label": "./labelsTr/CASEXB45629763_0976_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIJK09358090_0931_0000.nii.gz",
+            "label": "./labelsTr/DIJK09358090_0931_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEKL88386175_0518_0000.nii.gz",
+            "label": "./labelsTr/CASEKL88386175_0518_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEKA51652335_0465_0000.nii.gz",
+            "label": "./labelsTr/CASEKA51652335_0465_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEYG62037659_0141_0000.nii.gz",
+            "label": "./labelsTr/CASEYG62037659_0141_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0113_0149_0000.nii.gz",
+            "label": "./labelsTr/CASE0113_0149_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lrya8_0045_0000.nii.gz",
+            "label": "./labelsTr/lrya8_0045_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0066_0121_0000.nii.gz",
+            "label": "./labelsTr/CASE0066_0121_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIUU99941731_0168_0000.nii.gz",
+            "label": "./labelsTr/DIUU99941731_0168_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEMF06369589_0766_0000.nii.gz",
+            "label": "./labelsTr/CASEMF06369589_0766_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DISK08694947_0378_0000.nii.gz",
+            "label": "./labelsTr/DISK08694947_0378_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryj7_0843_0000.nii.gz",
+            "label": "./labelsTr/lryj7_0843_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIMX17167901_0700_0000.nii.gz",
+            "label": "./labelsTr/DIMX17167901_0700_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryy7_0251_0000.nii.gz",
+            "label": "./labelsTr/lryy7_0251_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEZZ61789526_0681_0000.nii.gz",
+            "label": "./labelsTr/CASEZZ61789526_0681_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIFH88952914_0506_0000.nii.gz",
+            "label": "./labelsTr/DIFH88952914_0506_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIVF87906443_0185_0000.nii.gz",
+            "label": "./labelsTr/DIVF87906443_0185_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryd8_0780_0000.nii.gz",
+            "label": "./labelsTr/lryd8_0780_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEIU53027889_0947_0000.nii.gz",
+            "label": "./labelsTr/CASEIU53027889_0947_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEUM30531217_0359_0000.nii.gz",
+            "label": "./labelsTr/CASEUM30531217_0359_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIAY22231415_0774_0000.nii.gz",
+            "label": "./labelsTr/DIAY22231415_0774_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0102_0730_0000.nii.gz",
+            "label": "./labelsTr/CASE0102_0730_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DITF08114122_0225_0000.nii.gz",
+            "label": "./labelsTr/DITF08114122_0225_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DING35796298_0008_0000.nii.gz",
+            "label": "./labelsTr/DING35796298_0008_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0086_0246_0000.nii.gz",
+            "label": "./labelsTr/CASE0086_0246_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIDK80569205_0920_0000.nii.gz",
+            "label": "./labelsTr/DIDK80569205_0920_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEVZ81243125_0067_0000.nii.gz",
+            "label": "./labelsTr/CASEVZ81243125_0067_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIZK78279834_0492_0000.nii.gz",
+            "label": "./labelsTr/DIZK78279834_0492_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEMY60901929_0317_0000.nii.gz",
+            "label": "./labelsTr/CASEMY60901929_0317_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryb5_0493_0000.nii.gz",
+            "label": "./labelsTr/lryb5_0493_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEIU64480282_0039_0000.nii.gz",
+            "label": "./labelsTr/CASEIU64480282_0039_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl22_0553_0000.nii.gz",
+            "label": "./labelsTr/lryl22_0553_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEHK01807536_0322_0000.nii.gz",
+            "label": "./labelsTr/CASEHK01807536_0322_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0099_0647_0000.nii.gz",
+            "label": "./labelsTr/CASE0099_0647_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEMQ58906860_0905_0000.nii.gz",
+            "label": "./labelsTr/CASEMQ58906860_0905_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIMD40894475_0856_0000.nii.gz",
+            "label": "./labelsTr/DIMD40894475_0856_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0111_0978_0000.nii.gz",
+            "label": "./labelsTr/CASE0111_0978_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE002618_0364_0000.nii.gz",
+            "label": "./labelsTr/CASE002618_0364_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIQN93421098_0146_0000.nii.gz",
+            "label": "./labelsTr/DIQN93421098_0146_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0044_0329_0000.nii.gz",
+            "label": "./labelsTr/CASE0044_0329_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryy10_0577_0000.nii.gz",
+            "label": "./labelsTr/lryy10_0577_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEDD12678459_0036_0000.nii.gz",
+            "label": "./labelsTr/CASEDD12678459_0036_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE001618_0927_0000.nii.gz",
+            "label": "./labelsTr/CASE001618_0927_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIAL86271674_0184_0000.nii.gz",
+            "label": "./labelsTr/DIAL86271674_0184_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIGY27151312_0608_0000.nii.gz",
+            "label": "./labelsTr/DIGY27151312_0608_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIWM07952924_0742_0000.nii.gz",
+            "label": "./labelsTr/DIWM07952924_0742_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEKD50101441_0880_0000.nii.gz",
+            "label": "./labelsTr/CASEKD50101441_0880_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEFA81875998_0795_0000.nii.gz",
+            "label": "./labelsTr/CASEFA81875998_0795_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DITE34683868_0809_0000.nii.gz",
+            "label": "./labelsTr/DITE34683868_0809_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIDF78215522_0271_0000.nii.gz",
+            "label": "./labelsTr/DIDF78215522_0271_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASENF35856713_0472_0000.nii.gz",
+            "label": "./labelsTr/CASENF35856713_0472_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEQD74108083_0411_0000.nii.gz",
+            "label": "./labelsTr/CASEQD74108083_0411_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIYW99138967_0417_0000.nii.gz",
+            "label": "./labelsTr/DIYW99138967_0417_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DICK83223965_0613_0000.nii.gz",
+            "label": "./labelsTr/DICK83223965_0613_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEUP78492144_0724_0000.nii.gz",
+            "label": "./labelsTr/CASEUP78492144_0724_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DITO11021054_0132_0000.nii.gz",
+            "label": "./labelsTr/DITO11021054_0132_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DISS82986189_0063_0000.nii.gz",
+            "label": "./labelsTr/DISS82986189_0063_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIZR49567368_0326_0000.nii.gz",
+            "label": "./labelsTr/DIZR49567368_0326_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEJI53449831_0921_0000.nii.gz",
+            "label": "./labelsTr/CASEJI53449831_0921_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIBY81825541_0543_0000.nii.gz",
+            "label": "./labelsTr/DIBY81825541_0543_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIQG82587824_0308_0000.nii.gz",
+            "label": "./labelsTr/DIQG82587824_0308_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIUQ57836318_0701_0000.nii.gz",
+            "label": "./labelsTr/DIUQ57836318_0701_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryj2_0485_0000.nii.gz",
+            "label": "./labelsTr/lryj2_0485_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DITX78615092_0587_0000.nii.gz",
+            "label": "./labelsTr/DITX78615092_0587_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIKG48367363_0570_0000.nii.gz",
+            "label": "./labelsTr/DIKG48367363_0570_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEAS44851410_0907_0000.nii.gz",
+            "label": "./labelsTr/CASEAS44851410_0907_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASESM25567208_0123_0000.nii.gz",
+            "label": "./labelsTr/CASESM25567208_0123_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIRL69221315_0996_0000.nii.gz",
+            "label": "./labelsTr/DIRL69221315_0996_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0033_0963_0000.nii.gz",
+            "label": "./labelsTr/CASE0033_0963_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIVK36226656_0962_0000.nii.gz",
+            "label": "./labelsTr/DIVK36226656_0962_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0014_0249_0000.nii.gz",
+            "label": "./labelsTr/CASE0014_0249_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0071_0016_0000.nii.gz",
+            "label": "./labelsTr/CASE0071_0016_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEJC38466045_0392_0000.nii.gz",
+            "label": "./labelsTr/CASEJC38466045_0392_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIRH74624460_0906_0000.nii.gz",
+            "label": "./labelsTr/DIRH74624460_0906_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0034_0386_0000.nii.gz",
+            "label": "./labelsTr/CASE0034_0386_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEGE74057163_0469_0000.nii.gz",
+            "label": "./labelsTr/CASEGE74057163_0469_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIMQ06393915_0890_0000.nii.gz",
+            "label": "./labelsTr/DIMQ06393915_0890_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIRP27695930_0333_0000.nii.gz",
+            "label": "./labelsTr/DIRP27695930_0333_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEIS33993627_0646_0000.nii.gz",
+            "label": "./labelsTr/CASEIS33993627_0646_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lrya4_0084_0000.nii.gz",
+            "label": "./labelsTr/lrya4_0084_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0157post_0117_0000.nii.gz",
+            "label": "./labelsTr/CASE0157post_0117_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEFP63840735_0650_0000.nii.gz",
+            "label": "./labelsTr/CASEFP63840735_0650_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEZT17760557_0170_0000.nii.gz",
+            "label": "./labelsTr/CASEZT17760557_0170_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DITG52420013_0204_0000.nii.gz",
+            "label": "./labelsTr/DITG52420013_0204_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIVY45814953_0100_0000.nii.gz",
+            "label": "./labelsTr/DIVY45814953_0100_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIJM45084711_0796_0000.nii.gz",
+            "label": "./labelsTr/DIJM45084711_0796_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEBP78133353_0294_0000.nii.gz",
+            "label": "./labelsTr/CASEBP78133353_0294_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEZF96354933_0637_0000.nii.gz",
+            "label": "./labelsTr/CASEZF96354933_0637_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEKJ90015123_0676_0000.nii.gz",
+            "label": "./labelsTr/CASEKJ90015123_0676_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEIW38939359_0634_0000.nii.gz",
+            "label": "./labelsTr/CASEIW38939359_0634_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0062_0365_0000.nii.gz",
+            "label": "./labelsTr/CASE0062_0365_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEYZ56019439_0211_0000.nii.gz",
+            "label": "./labelsTr/CASEYZ56019439_0211_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIEO09885352_0704_0000.nii.gz",
+            "label": "./labelsTr/DIEO09885352_0704_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIAA44646111_0673_0000.nii.gz",
+            "label": "./labelsTr/DIAA44646111_0673_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEEU02519868_0787_0000.nii.gz",
+            "label": "./labelsTr/CASEEU02519868_0787_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIGV18335236_0762_0000.nii.gz",
+            "label": "./labelsTr/DIGV18335236_0762_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEPV98960879_0526_0000.nii.gz",
+            "label": "./labelsTr/CASEPV98960879_0526_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DINI15154591_0550_0000.nii.gz",
+            "label": "./labelsTr/DINI15154591_0550_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEYF26604364_0715_0000.nii.gz",
+            "label": "./labelsTr/CASEYF26604364_0715_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEFN05338282_0024_0000.nii.gz",
+            "label": "./labelsTr/CASEFN05338282_0024_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIVY29359839_0296_0000.nii.gz",
+            "label": "./labelsTr/DIVY29359839_0296_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0140post_0530_0000.nii.gz",
+            "label": "./labelsTr/CASE0140post_0530_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIBH74254711_0816_0000.nii.gz",
+            "label": "./labelsTr/DIBH74254711_0816_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DITF24656224_0438_0000.nii.gz",
+            "label": "./labelsTr/DITF24656224_0438_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEIE47332767_0884_0000.nii.gz",
+            "label": "./labelsTr/CASEIE47332767_0884_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEBG60781195_0353_0000.nii.gz",
+            "label": "./labelsTr/CASEBG60781195_0353_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIZO61888511_0869_0000.nii.gz",
+            "label": "./labelsTr/DIZO61888511_0869_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIGB07915746_0594_0000.nii.gz",
+            "label": "./labelsTr/DIGB07915746_0594_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIDC90797146_0829_0000.nii.gz",
+            "label": "./labelsTr/DIDC90797146_0829_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0122_0451_0000.nii.gz",
+            "label": "./labelsTr/CASE0122_0451_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIYB53313154_0382_0000.nii.gz",
+            "label": "./labelsTr/DIYB53313154_0382_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEAL43784494_0727_0000.nii.gz",
+            "label": "./labelsTr/CASEAL43784494_0727_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIHV01558769_0607_0000.nii.gz",
+            "label": "./labelsTr/DIHV01558769_0607_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl3_0009_0000.nii.gz",
+            "label": "./labelsTr/lryl3_0009_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0131post_0694_0000.nii.gz",
+            "label": "./labelsTr/CASE0131post_0694_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEQH05948249_0339_0000.nii.gz",
+            "label": "./labelsTr/CASEQH05948249_0339_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEFG35407607_0428_0000.nii.gz",
+            "label": "./labelsTr/CASEFG35407607_0428_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIJP10123232_0874_0000.nii.gz",
+            "label": "./labelsTr/DIJP10123232_0874_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIGI55790894_0254_0000.nii.gz",
+            "label": "./labelsTr/DIGI55790894_0254_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIDL28306430_0418_0000.nii.gz",
+            "label": "./labelsTr/DIDL28306430_0418_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEOO73455161_0830_0000.nii.gz",
+            "label": "./labelsTr/CASEOO73455161_0830_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0114_0720_0000.nii.gz",
+            "label": "./labelsTr/CASE0114_0720_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE001318_0107_0000.nii.gz",
+            "label": "./labelsTr/CASE001318_0107_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIVD53958058_0799_0000.nii.gz",
+            "label": "./labelsTr/DIVD53958058_0799_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIVY96790157_0194_0000.nii.gz",
+            "label": "./labelsTr/DIVY96790157_0194_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIEJ56148859_0620_0000.nii.gz",
+            "label": "./labelsTr/DIEJ56148859_0620_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIRV87166299_0801_0000.nii.gz",
+            "label": "./labelsTr/DIRV87166299_0801_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASECD09256521_0815_0000.nii.gz",
+            "label": "./labelsTr/CASECD09256521_0815_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIDL56104660_0568_0000.nii.gz",
+            "label": "./labelsTr/DIDL56104660_0568_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl8_0432_0000.nii.gz",
+            "label": "./labelsTr/lryl8_0432_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASESK24738230_0481_0000.nii.gz",
+            "label": "./labelsTr/CASESK24738230_0481_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DILV10798752_0745_0000.nii.gz",
+            "label": "./labelsTr/DILV10798752_0745_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DILS79211154_0738_0000.nii.gz",
+            "label": "./labelsTr/DILS79211154_0738_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryy3_0658_0000.nii.gz",
+            "label": "./labelsTr/lryy3_0658_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIWL09950745_0257_0000.nii.gz",
+            "label": "./labelsTr/DIWL09950745_0257_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIOF68330144_0814_0000.nii.gz",
+            "label": "./labelsTr/DIOF68330144_0814_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIBM92011236_0165_0000.nii.gz",
+            "label": "./labelsTr/DIBM92011236_0165_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIPO87613116_0965_0000.nii.gz",
+            "label": "./labelsTr/DIPO87613116_0965_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIJB76800663_0236_0000.nii.gz",
+            "label": "./labelsTr/DIJB76800663_0236_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryj6_0128_0000.nii.gz",
+            "label": "./labelsTr/lryj6_0128_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DICP63601926_0511_0000.nii.gz",
+            "label": "./labelsTr/DICP63601926_0511_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEFN16791755_0092_0000.nii.gz",
+            "label": "./labelsTr/CASEFN16791755_0092_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEZK30504576_0914_0000.nii.gz",
+            "label": "./labelsTr/CASEZK30504576_0914_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIVF33896166_0321_0000.nii.gz",
+            "label": "./labelsTr/DIVF33896166_0321_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIRW12424542_0942_0000.nii.gz",
+            "label": "./labelsTr/DIRW12424542_0942_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIRT32485754_0588_0000.nii.gz",
+            "label": "./labelsTr/DIRT32485754_0588_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIEX89457459_0756_0000.nii.gz",
+            "label": "./labelsTr/DIEX89457459_0756_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIQF93875182_0753_0000.nii.gz",
+            "label": "./labelsTr/DIQF93875182_0753_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASELL41245466_0430_0000.nii.gz",
+            "label": "./labelsTr/CASELL41245466_0430_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl19_0838_0000.nii.gz",
+            "label": "./labelsTr/lryl19_0838_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIKI56465608_0986_0000.nii.gz",
+            "label": "./labelsTr/DIKI56465608_0986_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEJH80244330_0740_0000.nii.gz",
+            "label": "./labelsTr/CASEJH80244330_0740_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0101_0946_0000.nii.gz",
+            "label": "./labelsTr/CASE0101_0946_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIZO40589747_0522_0000.nii.gz",
+            "label": "./labelsTr/DIZO40589747_0522_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0115_0653_0000.nii.gz",
+            "label": "./labelsTr/CASE0115_0653_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl11_0275_0000.nii.gz",
+            "label": "./labelsTr/lryl11_0275_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0041_0621_0000.nii.gz",
+            "label": "./labelsTr/CASE0041_0621_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DINU93392451_0582_0000.nii.gz",
+            "label": "./labelsTr/DINU93392451_0582_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIKE79988460_0127_0000.nii.gz",
+            "label": "./labelsTr/DIKE79988460_0127_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIVC74060708_0475_0000.nii.gz",
+            "label": "./labelsTr/DIVC74060708_0475_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIDN70085384_0926_0000.nii.gz",
+            "label": "./labelsTr/DIDN70085384_0926_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0104_0497_0000.nii.gz",
+            "label": "./labelsTr/CASE0104_0497_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEUW68916456_0402_0000.nii.gz",
+            "label": "./labelsTr/CASEUW68916456_0402_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl47_0683_0000.nii.gz",
+            "label": "./labelsTr/lryl47_0683_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIIT20324333_0258_0000.nii.gz",
+            "label": "./labelsTr/DIIT20324333_0258_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0135post_0453_0000.nii.gz",
+            "label": "./labelsTr/CASE0135post_0453_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl24_1006_0000.nii.gz",
+            "label": "./labelsTr/lryl24_1006_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEEV14125458_0625_0000.nii.gz",
+            "label": "./labelsTr/CASEEV14125458_0625_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASERZ64057624_0394_0000.nii.gz",
+            "label": "./labelsTr/CASERZ64057624_0394_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIEZ71353878_0930_0000.nii.gz",
+            "label": "./labelsTr/DIEZ71353878_0930_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryy4_0864_0000.nii.gz",
+            "label": "./labelsTr/lryy4_0864_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEYX50245807_0737_0000.nii.gz",
+            "label": "./labelsTr/CASEYX50245807_0737_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIHK65476341_0709_0000.nii.gz",
+            "label": "./labelsTr/DIHK65476341_0709_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIRP28318871_0059_0000.nii.gz",
+            "label": "./labelsTr/DIRP28318871_0059_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEHR05064636_0113_0000.nii.gz",
+            "label": "./labelsTr/CASEHR05064636_0113_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0145post_0691_0000.nii.gz",
+            "label": "./labelsTr/CASE0145post_0691_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIVW38852933_0873_0000.nii.gz",
+            "label": "./labelsTr/DIVW38852933_0873_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASELA10568152_0283_0000.nii.gz",
+            "label": "./labelsTr/CASELA10568152_0283_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryy2_0877_0000.nii.gz",
+            "label": "./labelsTr/lryy2_0877_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASESG70448535_0188_0000.nii.gz",
+            "label": "./labelsTr/CASESG70448535_0188_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIPU72592471_0807_0000.nii.gz",
+            "label": "./labelsTr/DIPU72592471_0807_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASECW94104232_0848_0000.nii.gz",
+            "label": "./labelsTr/CASECW94104232_0848_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEIG91695460_0160_0000.nii.gz",
+            "label": "./labelsTr/CASEIG91695460_0160_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DICT91570286_0893_0000.nii.gz",
+            "label": "./labelsTr/DICT91570286_0893_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DISA45857744_0725_0000.nii.gz",
+            "label": "./labelsTr/DISA45857744_0725_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIBD74316016_0341_0000.nii.gz",
+            "label": "./labelsTr/DIBD74316016_0341_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASELX13639953_0958_0000.nii.gz",
+            "label": "./labelsTr/CASELX13639953_0958_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl49_0171_0000.nii.gz",
+            "label": "./labelsTr/lryl49_0171_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIQB54361987_0342_0000.nii.gz",
+            "label": "./labelsTr/DIQB54361987_0342_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIAD49555565_0547_0000.nii.gz",
+            "label": "./labelsTr/DIAD49555565_0547_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0057_0910_0000.nii.gz",
+            "label": "./labelsTr/CASE0057_0910_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEIW72068394_0988_0000.nii.gz",
+            "label": "./labelsTr/CASEIW72068394_0988_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEVJ39096620_0191_0000.nii.gz",
+            "label": "./labelsTr/CASEVJ39096620_0191_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIRV60317361_0895_0000.nii.gz",
+            "label": "./labelsTr/DIRV60317361_0895_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEMY43744135_0684_0000.nii.gz",
+            "label": "./labelsTr/CASEMY43744135_0684_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DITA48164455_0804_0000.nii.gz",
+            "label": "./labelsTr/DITA48164455_0804_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIKY46918733_0917_0000.nii.gz",
+            "label": "./labelsTr/DIKY46918733_0917_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEEP65114037_0660_0000.nii.gz",
+            "label": "./labelsTr/CASEEP65114037_0660_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEFI24856890_0765_0000.nii.gz",
+            "label": "./labelsTr/CASEFI24856890_0765_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryy5_0208_0000.nii.gz",
+            "label": "./labelsTr/lryy5_0208_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIZD38733308_0012_0000.nii.gz",
+            "label": "./labelsTr/DIZD38733308_0012_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0132_0412_0000.nii.gz",
+            "label": "./labelsTr/CASE0132_0412_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIYO61289666_0376_0000.nii.gz",
+            "label": "./labelsTr/DIYO61289666_0376_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEYL85775910_0407_0000.nii.gz",
+            "label": "./labelsTr/CASEYL85775910_0407_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIDX82032410_0924_0000.nii.gz",
+            "label": "./labelsTr/DIDX82032410_0924_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEPK34052009_0477_0000.nii.gz",
+            "label": "./labelsTr/CASEPK34052009_0477_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0055post_0716_0000.nii.gz",
+            "label": "./labelsTr/CASE0055post_0716_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEQT57439050_0567_0000.nii.gz",
+            "label": "./labelsTr/CASEQT57439050_0567_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEXN34394359_0350_0000.nii.gz",
+            "label": "./labelsTr/CASEXN34394359_0350_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEPA43496072_0812_0000.nii.gz",
+            "label": "./labelsTr/CASEPA43496072_0812_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIBJ72508865_0575_0000.nii.gz",
+            "label": "./labelsTr/DIBJ72508865_0575_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIYD78739701_0711_0000.nii.gz",
+            "label": "./labelsTr/DIYD78739701_0711_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEBQ04016967_0888_0000.nii.gz",
+            "label": "./labelsTr/CASEBQ04016967_0888_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIBV08599709_0390_0000.nii.gz",
+            "label": "./labelsTr/DIBV08599709_0390_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIUQ03473419_0971_0000.nii.gz",
+            "label": "./labelsTr/DIUQ03473419_0971_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIBD66672860_0155_0000.nii.gz",
+            "label": "./labelsTr/DIBD66672860_0155_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryj8_0282_0000.nii.gz",
+            "label": "./labelsTr/lryj8_0282_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEBP37102311_0032_0000.nii.gz",
+            "label": "./labelsTr/CASEBP37102311_0032_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIXW16299873_0655_0000.nii.gz",
+            "label": "./labelsTr/DIXW16299873_0655_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIWR49565075_0844_0000.nii.gz",
+            "label": "./labelsTr/DIWR49565075_0844_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIIT78056959_0433_0000.nii.gz",
+            "label": "./labelsTr/DIIT78056959_0433_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIGL97884511_0900_0000.nii.gz",
+            "label": "./labelsTr/DIGL97884511_0900_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEPH41969832_1004_0000.nii.gz",
+            "label": "./labelsTr/CASEPH41969832_1004_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIMP15466698_0144_0000.nii.gz",
+            "label": "./labelsTr/DIMP15466698_0144_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASERL74797920_0519_0000.nii.gz",
+            "label": "./labelsTr/CASERL74797920_0519_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIAX59043350_0046_0000.nii.gz",
+            "label": "./labelsTr/DIAX59043350_0046_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEJM97618702_0147_0000.nii.gz",
+            "label": "./labelsTr/CASEJM97618702_0147_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEOD20916888_0901_0000.nii.gz",
+            "label": "./labelsTr/CASEOD20916888_0901_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0154post_0279_0000.nii.gz",
+            "label": "./labelsTr/CASE0154post_0279_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIJV30552130_0957_0000.nii.gz",
+            "label": "./labelsTr/DIJV30552130_0957_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASELQ31677911_0915_0000.nii.gz",
+            "label": "./labelsTr/CASELQ31677911_0915_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIIU46568627_0247_0000.nii.gz",
+            "label": "./labelsTr/DIIU46568627_0247_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEHM19444305_0599_0000.nii.gz",
+            "label": "./labelsTr/CASEHM19444305_0599_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIGM86440676_0847_0000.nii.gz",
+            "label": "./labelsTr/DIGM86440676_0847_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIUG54568740_0803_0000.nii.gz",
+            "label": "./labelsTr/DIUG54568740_0803_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIPQ40555124_0240_0000.nii.gz",
+            "label": "./labelsTr/DIPQ40555124_0240_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIRK02814714_0546_0000.nii.gz",
+            "label": "./labelsTr/DIRK02814714_0546_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIBU22084238_0922_0000.nii.gz",
+            "label": "./labelsTr/DIBU22084238_0922_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIBE75796451_0581_0000.nii.gz",
+            "label": "./labelsTr/DIBE75796451_0581_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIJL72350595_0196_0000.nii.gz",
+            "label": "./labelsTr/DIJL72350595_0196_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIPS69037853_0031_0000.nii.gz",
+            "label": "./labelsTr/DIPS69037853_0031_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASESP13409652_0954_0000.nii.gz",
+            "label": "./labelsTr/CASESP13409652_0954_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEUY37143427_0460_0000.nii.gz",
+            "label": "./labelsTr/CASEUY37143427_0460_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEEN10099055_0690_0000.nii.gz",
+            "label": "./labelsTr/CASEEN10099055_0690_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEQC39382308_0885_0000.nii.gz",
+            "label": "./labelsTr/CASEQC39382308_0885_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl18_0143_0000.nii.gz",
+            "label": "./labelsTr/lryl18_0143_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIBB46014649_0714_0000.nii.gz",
+            "label": "./labelsTr/DIBB46014649_0714_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl23_0114_0000.nii.gz",
+            "label": "./labelsTr/lryl23_0114_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0095_0517_0000.nii.gz",
+            "label": "./labelsTr/CASE0095_0517_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEFD37360309_0463_0000.nii.gz",
+            "label": "./labelsTr/CASEFD37360309_0463_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEYS84304881_0369_0000.nii.gz",
+            "label": "./labelsTr/CASEYS84304881_0369_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DISJ32656918_0579_0000.nii.gz",
+            "label": "./labelsTr/DISJ32656918_0579_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIDN02145147_0552_0000.nii.gz",
+            "label": "./labelsTr/DIDN02145147_0552_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DITO37638590_0512_0000.nii.gz",
+            "label": "./labelsTr/DITO37638590_0512_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIUZ94602267_0975_0000.nii.gz",
+            "label": "./labelsTr/DIUZ94602267_0975_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DILZ96327228_0580_0000.nii.gz",
+            "label": "./labelsTr/DILZ96327228_0580_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0130_0591_0000.nii.gz",
+            "label": "./labelsTr/CASE0130_0591_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DILP92473843_0214_0000.nii.gz",
+            "label": "./labelsTr/DILP92473843_0214_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIWI05310984_0632_0000.nii.gz",
+            "label": "./labelsTr/DIWI05310984_0632_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIXX01724205_0491_0000.nii.gz",
+            "label": "./labelsTr/DIXX01724205_0491_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryd3_0362_0000.nii.gz",
+            "label": "./labelsTr/lryd3_0362_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIMX60456397_0198_0000.nii.gz",
+            "label": "./labelsTr/DIMX60456397_0198_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DION44947770_0306_0000.nii.gz",
+            "label": "./labelsTr/DION44947770_0306_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIGG66344457_0735_0000.nii.gz",
+            "label": "./labelsTr/DIGG66344457_0735_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0141post_0281_0000.nii.gz",
+            "label": "./labelsTr/CASE0141post_0281_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIIA06327514_0950_0000.nii.gz",
+            "label": "./labelsTr/DIIA06327514_0950_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIAO09148049_0167_0000.nii.gz",
+            "label": "./labelsTr/DIAO09148049_0167_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIZR36207450_0126_0000.nii.gz",
+            "label": "./labelsTr/DIZR36207450_0126_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEGX16677420_0062_0000.nii.gz",
+            "label": "./labelsTr/CASEGX16677420_0062_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIJH27989356_0466_0000.nii.gz",
+            "label": "./labelsTr/DIJH27989356_0466_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0144post_0216_0000.nii.gz",
+            "label": "./labelsTr/CASE0144post_0216_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIQU53394760_0654_0000.nii.gz",
+            "label": "./labelsTr/DIQU53394760_0654_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASETT54374048_0862_0000.nii.gz",
+            "label": "./labelsTr/CASETT54374048_0862_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASESI62379765_0998_0000.nii.gz",
+            "label": "./labelsTr/CASESI62379765_0998_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASELB42836547_0398_0000.nii.gz",
+            "label": "./labelsTr/CASELB42836547_0398_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIMS74379372_0220_0000.nii.gz",
+            "label": "./labelsTr/DIMS74379372_0220_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIBF33980637_0757_0000.nii.gz",
+            "label": "./labelsTr/DIBF33980637_0757_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEQP86934706_0337_0000.nii.gz",
+            "label": "./labelsTr/CASEQP86934706_0337_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0039_0104_0000.nii.gz",
+            "label": "./labelsTr/CASE0039_0104_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEUB63886165_0413_0000.nii.gz",
+            "label": "./labelsTr/CASEUB63886165_0413_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lrya5_0357_0000.nii.gz",
+            "label": "./labelsTr/lrya5_0357_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl35_0238_0000.nii.gz",
+            "label": "./labelsTr/lryl35_0238_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DILB85074896_0702_0000.nii.gz",
+            "label": "./labelsTr/DILB85074896_0702_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DINY57791701_0305_0000.nii.gz",
+            "label": "./labelsTr/DINY57791701_0305_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEVS86857871_0669_0000.nii.gz",
+            "label": "./labelsTr/CASEVS86857871_0669_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIGE06380330_0886_0000.nii.gz",
+            "label": "./labelsTr/DIGE06380330_0886_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl33_0446_0000.nii.gz",
+            "label": "./labelsTr/lryl33_0446_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEFO51374609_0659_0000.nii.gz",
+            "label": "./labelsTr/CASEFO51374609_0659_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEQM87244510_0578_0000.nii.gz",
+            "label": "./labelsTr/CASEQM87244510_0578_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DILL03889019_0751_0000.nii.gz",
+            "label": "./labelsTr/DILL03889019_0751_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEJS38214513_0754_0000.nii.gz",
+            "label": "./labelsTr/CASEJS38214513_0754_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE000218_0265_0000.nii.gz",
+            "label": "./labelsTr/CASE000218_0265_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl9_0223_0000.nii.gz",
+            "label": "./labelsTr/lryl9_0223_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIVB73908977_0242_0000.nii.gz",
+            "label": "./labelsTr/DIVB73908977_0242_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASETA64674306_0423_0000.nii.gz",
+            "label": "./labelsTr/CASETA64674306_0423_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIZM80089568_0011_0000.nii.gz",
+            "label": "./labelsTr/DIZM80089568_0011_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl39_0227_0000.nii.gz",
+            "label": "./labelsTr/lryl39_0227_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIVT73971268_0404_0000.nii.gz",
+            "label": "./labelsTr/DIVT73971268_0404_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryj1_0688_0000.nii.gz",
+            "label": "./labelsTr/lryj1_0688_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DITE50490689_0652_0000.nii.gz",
+            "label": "./labelsTr/DITE50490689_0652_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASERS62112187_0540_0000.nii.gz",
+            "label": "./labelsTr/CASERS62112187_0540_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE000118_0532_0000.nii.gz",
+            "label": "./labelsTr/CASE000118_0532_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIGP34733144_0686_0000.nii.gz",
+            "label": "./labelsTr/DIGP34733144_0686_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIXU78509967_0288_0000.nii.gz",
+            "label": "./labelsTr/DIXU78509967_0288_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIBU90238809_0066_0000.nii.gz",
+            "label": "./labelsTr/DIBU90238809_0066_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIVM08494440_0685_0000.nii.gz",
+            "label": "./labelsTr/DIVM08494440_0685_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEVG16417064_0415_0000.nii.gz",
+            "label": "./labelsTr/CASEVG16417064_0415_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0147post_0912_0000.nii.gz",
+            "label": "./labelsTr/CASE0147post_0912_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASERO02002405_0023_0000.nii.gz",
+            "label": "./labelsTr/CASERO02002405_0023_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEHD19443783_0525_0000.nii.gz",
+            "label": "./labelsTr/CASEHD19443783_0525_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEBK01773822_0572_0000.nii.gz",
+            "label": "./labelsTr/CASEBK01773822_0572_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0096_0374_0000.nii.gz",
+            "label": "./labelsTr/CASE0096_0374_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIGS04523502_0166_0000.nii.gz",
+            "label": "./labelsTr/DIGS04523502_0166_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIWB19085968_0875_0000.nii.gz",
+            "label": "./labelsTr/DIWB19085968_0875_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEGO68288342_0414_0000.nii.gz",
+            "label": "./labelsTr/CASEGO68288342_0414_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl34_0180_0000.nii.gz",
+            "label": "./labelsTr/lryl34_0180_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEGI09284233_0049_0000.nii.gz",
+            "label": "./labelsTr/CASEGI09284233_0049_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEOS01738150_0405_0000.nii.gz",
+            "label": "./labelsTr/CASEOS01738150_0405_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIBY47379114_0811_0000.nii.gz",
+            "label": "./labelsTr/DIBY47379114_0811_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEHY32897825_0806_0000.nii.gz",
+            "label": "./labelsTr/CASEHY32897825_0806_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIZH57404374_0441_0000.nii.gz",
+            "label": "./labelsTr/DIZH57404374_0441_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl26_0876_0000.nii.gz",
+            "label": "./labelsTr/lryl26_0876_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIJV87933648_0371_0000.nii.gz",
+            "label": "./labelsTr/DIJV87933648_0371_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIWS33681773_0272_0000.nii.gz",
+            "label": "./labelsTr/DIWS33681773_0272_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASECD86812800_0068_0000.nii.gz",
+            "label": "./labelsTr/CASECD86812800_0068_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEER66430817_0509_0000.nii.gz",
+            "label": "./labelsTr/CASEER66430817_0509_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DITZ92140206_0551_0000.nii.gz",
+            "label": "./labelsTr/DITZ92140206_0551_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIXI39082057_0190_0000.nii.gz",
+            "label": "./labelsTr/DIXI39082057_0190_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASETA85884701_0041_0000.nii.gz",
+            "label": "./labelsTr/CASETA85884701_0041_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIJG20430769_0559_0000.nii.gz",
+            "label": "./labelsTr/DIJG20430769_0559_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE001818_0301_0000.nii.gz",
+            "label": "./labelsTr/CASE001818_0301_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DITF21065930_0384_0000.nii.gz",
+            "label": "./labelsTr/DITF21065930_0384_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIIQ81652696_0601_0000.nii.gz",
+            "label": "./labelsTr/DIIQ81652696_0601_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIEL85604388_0616_0000.nii.gz",
+            "label": "./labelsTr/DIEL85604388_0616_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0038_0633_0000.nii.gz",
+            "label": "./labelsTr/CASE0038_0633_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DILM13096781_0131_0000.nii.gz",
+            "label": "./labelsTr/DILM13096781_0131_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIGJ57444762_0960_0000.nii.gz",
+            "label": "./labelsTr/DIGJ57444762_0960_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0052_0452_0000.nii.gz",
+            "label": "./labelsTr/CASE0052_0452_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIWX42566935_0755_0000.nii.gz",
+            "label": "./labelsTr/DIWX42566935_0755_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASELH72833586_0448_0000.nii.gz",
+            "label": "./labelsTr/CASELH72833586_0448_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryd9_0037_0000.nii.gz",
+            "label": "./labelsTr/lryd9_0037_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl32_0393_0000.nii.gz",
+            "label": "./labelsTr/lryl32_0393_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEGV55223830_0997_0000.nii.gz",
+            "label": "./labelsTr/CASEGV55223830_0997_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIJG65989170_0156_0000.nii.gz",
+            "label": "./labelsTr/DIJG65989170_0156_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl2_0435_0000.nii.gz",
+            "label": "./labelsTr/lryl2_0435_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEWH00148631_0781_0000.nii.gz",
+            "label": "./labelsTr/CASEWH00148631_0781_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIEB45566988_0083_0000.nii.gz",
+            "label": "./labelsTr/DIEB45566988_0083_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIPA41457567_0750_0000.nii.gz",
+            "label": "./labelsTr/DIPA41457567_0750_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIZY89535629_0266_0000.nii.gz",
+            "label": "./labelsTr/DIZY89535629_0266_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIPV28175543_0538_0000.nii.gz",
+            "label": "./labelsTr/DIPV28175543_0538_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0045_0470_0000.nii.gz",
+            "label": "./labelsTr/CASE0045_0470_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEOO10272624_0628_0000.nii.gz",
+            "label": "./labelsTr/CASEOO10272624_0628_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIJS98114449_0741_0000.nii.gz",
+            "label": "./labelsTr/DIJS98114449_0741_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DISK36740122_0162_0000.nii.gz",
+            "label": "./labelsTr/DISK36740122_0162_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryb8_0845_0000.nii.gz",
+            "label": "./labelsTr/lryb8_0845_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIHG92252979_0189_0000.nii.gz",
+            "label": "./labelsTr/DIHG92252979_0189_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0085_0943_0000.nii.gz",
+            "label": "./labelsTr/CASE0085_0943_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0047_0222_0000.nii.gz",
+            "label": "./labelsTr/CASE0047_0222_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIFV37385153_0471_0000.nii.gz",
+            "label": "./labelsTr/DIFV37385153_0471_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEQX55348491_0431_0000.nii.gz",
+            "label": "./labelsTr/CASEQX55348491_0431_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASENC18389369_0897_0000.nii.gz",
+            "label": "./labelsTr/CASENC18389369_0897_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEHY62561184_0602_0000.nii.gz",
+            "label": "./labelsTr/CASEHY62561184_0602_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIXG55863078_0344_0000.nii.gz",
+            "label": "./labelsTr/DIXG55863078_0344_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEEZ68617734_0548_0000.nii.gz",
+            "label": "./labelsTr/CASEEZ68617734_0548_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIJG49306384_0075_0000.nii.gz",
+            "label": "./labelsTr/DIJG49306384_0075_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0149post_0044_0000.nii.gz",
+            "label": "./labelsTr/CASE0149post_0044_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEAC38403181_0840_0000.nii.gz",
+            "label": "./labelsTr/CASEAC38403181_0840_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0082_0710_0000.nii.gz",
+            "label": "./labelsTr/CASE0082_0710_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIPS64736804_0708_0000.nii.gz",
+            "label": "./labelsTr/DIPS64736804_0708_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0069_0034_0000.nii.gz",
+            "label": "./labelsTr/CASE0069_0034_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0125post_0898_0000.nii.gz",
+            "label": "./labelsTr/CASE0125post_0898_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl38_0776_0000.nii.gz",
+            "label": "./labelsTr/lryl38_0776_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE001418_0983_0000.nii.gz",
+            "label": "./labelsTr/CASE001418_0983_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIJK24477509_0671_0000.nii.gz",
+            "label": "./labelsTr/DIJK24477509_0671_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEGV51796018_0606_0000.nii.gz",
+            "label": "./labelsTr/CASEGV51796018_0606_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIXJ45838031_0230_0000.nii.gz",
+            "label": "./labelsTr/DIXJ45838031_0230_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryy1_0828_0000.nii.gz",
+            "label": "./labelsTr/lryy1_0828_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIWI25251037_0102_0000.nii.gz",
+            "label": "./labelsTr/DIWI25251037_0102_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIGE86958249_0929_0000.nii.gz",
+            "label": "./labelsTr/DIGE86958249_0929_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIZP54867305_0462_0000.nii.gz",
+            "label": "./labelsTr/DIZP54867305_0462_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryy6_0447_0000.nii.gz",
+            "label": "./labelsTr/lryy6_0447_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0061_0627_0000.nii.gz",
+            "label": "./labelsTr/CASE0061_0627_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEOW23990402_0071_0000.nii.gz",
+            "label": "./labelsTr/CASEOW23990402_0071_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0110_0712_0000.nii.gz",
+            "label": "./labelsTr/CASE0110_0712_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0148post_0087_0000.nii.gz",
+            "label": "./labelsTr/CASE0148post_0087_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DILX77680869_0617_0000.nii.gz",
+            "label": "./labelsTr/DILX77680869_0617_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIHX08430708_0772_0000.nii.gz",
+            "label": "./labelsTr/DIHX08430708_0772_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIGM22050792_0053_0000.nii.gz",
+            "label": "./labelsTr/DIGM22050792_0053_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DILT33284430_0103_0000.nii.gz",
+            "label": "./labelsTr/DILT33284430_0103_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0109_0243_0000.nii.gz",
+            "label": "./labelsTr/CASE0109_0243_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryd4_0105_0000.nii.gz",
+            "label": "./labelsTr/lryd4_0105_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASESO53440012_0794_0000.nii.gz",
+            "label": "./labelsTr/CASESO53440012_0794_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIOL98394965_0775_0000.nii.gz",
+            "label": "./labelsTr/DIOL98394965_0775_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIOU26645443_0455_0000.nii.gz",
+            "label": "./labelsTr/DIOU26645443_0455_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASESR03350812_0297_0000.nii.gz",
+            "label": "./labelsTr/CASESR03350812_0297_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIRU90890831_0085_0000.nii.gz",
+            "label": "./labelsTr/DIRU90890831_0085_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0051_0911_0000.nii.gz",
+            "label": "./labelsTr/CASE0051_0911_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEOU11991867_0349_0000.nii.gz",
+            "label": "./labelsTr/CASEOU11991867_0349_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryb10_0850_0000.nii.gz",
+            "label": "./labelsTr/lryb10_0850_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEKY64338543_0318_0000.nii.gz",
+            "label": "./labelsTr/CASEKY64338543_0318_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEZR28311065_0450_0000.nii.gz",
+            "label": "./labelsTr/CASEZR28311065_0450_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE003218poor_0514_0000.nii.gz",
+            "label": "./labelsTr/CASE003218poor_0514_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIAA89042532_0098_0000.nii.gz",
+            "label": "./labelsTr/DIAA89042532_0098_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIMA42450350_0870_0000.nii.gz",
+            "label": "./labelsTr/DIMA42450350_0870_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE002418_0999_0000.nii.gz",
+            "label": "./labelsTr/CASE002418_0999_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIKF92158939_0178_0000.nii.gz",
+            "label": "./labelsTr/DIKF92158939_0178_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DILU39638281_0176_0000.nii.gz",
+            "label": "./labelsTr/DILU39638281_0176_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0123_0487_0000.nii.gz",
+            "label": "./labelsTr/CASE0123_0487_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIGC12265149_0994_0000.nii.gz",
+            "label": "./labelsTr/DIGC12265149_0994_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIUQ45191091_0689_0000.nii.gz",
+            "label": "./labelsTr/DIUQ45191091_0689_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASETM60313876_0576_0000.nii.gz",
+            "label": "./labelsTr/CASETM60313876_0576_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIKT44839204_0979_0000.nii.gz",
+            "label": "./labelsTr/DIKT44839204_0979_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEED98815280_0808_0000.nii.gz",
+            "label": "./labelsTr/CASEED98815280_0808_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIAV15788847_0759_0000.nii.gz",
+            "label": "./labelsTr/DIAV15788847_0759_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0049_0093_0000.nii.gz",
+            "label": "./labelsTr/CASE0049_0093_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIIS13183876_0564_0000.nii.gz",
+            "label": "./labelsTr/DIIS13183876_0564_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0126_0698_0000.nii.gz",
+            "label": "./labelsTr/CASE0126_0698_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE002818poor_0372_0000.nii.gz",
+            "label": "./labelsTr/CASE002818poor_0372_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIWL01954710_0773_0000.nii.gz",
+            "label": "./labelsTr/DIWL01954710_0773_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEBQ48403712_0332_0000.nii.gz",
+            "label": "./labelsTr/CASEBQ48403712_0332_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIJW15019708_0670_0000.nii.gz",
+            "label": "./labelsTr/DIJW15019708_0670_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0042_0040_0000.nii.gz",
+            "label": "./labelsTr/CASE0042_0040_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEAC95333070_0293_0000.nii.gz",
+            "label": "./labelsTr/CASEAC95333070_0293_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEHS92456525_0232_0000.nii.gz",
+            "label": "./labelsTr/CASEHS92456525_0232_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DISN53901243_0896_0000.nii.gz",
+            "label": "./labelsTr/DISN53901243_0896_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASETV92172143_0695_0000.nii.gz",
+            "label": "./labelsTr/CASETV92172143_0695_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl5_0925_0000.nii.gz",
+            "label": "./labelsTr/lryl5_0925_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIXK86417665_0151_0000.nii.gz",
+            "label": "./labelsTr/DIXK86417665_0151_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASESO65854289_0521_0000.nii.gz",
+            "label": "./labelsTr/CASESO65854289_0521_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIYY86637293_0782_0000.nii.gz",
+            "label": "./labelsTr/DIYY86637293_0782_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASELV41856493_0109_0000.nii.gz",
+            "label": "./labelsTr/CASELV41856493_0109_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl31_0558_0000.nii.gz",
+            "label": "./labelsTr/lryl31_0558_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DILK36166734_0571_0000.nii.gz",
+            "label": "./labelsTr/DILK36166734_0571_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE002318_0643_0000.nii.gz",
+            "label": "./labelsTr/CASE002318_0643_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEYL70085089_0923_0000.nii.gz",
+            "label": "./labelsTr/CASEYL70085089_0923_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIAY39645353_0420_0000.nii.gz",
+            "label": "./labelsTr/DIAY39645353_0420_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DISR53731773_0289_0000.nii.gz",
+            "label": "./labelsTr/DISR53731773_0289_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0048_0389_0000.nii.gz",
+            "label": "./labelsTr/CASE0048_0389_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEHS86554050_0118_0000.nii.gz",
+            "label": "./labelsTr/CASEHS86554050_0118_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DILN26427230_0626_0000.nii.gz",
+            "label": "./labelsTr/DILN26427230_0626_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEHF63972411_0987_0000.nii.gz",
+            "label": "./labelsTr/CASEHF63972411_0987_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIBS26986710_0336_0000.nii.gz",
+            "label": "./labelsTr/DIBS26986710_0336_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryb1_0449_0000.nii.gz",
+            "label": "./labelsTr/lryb1_0449_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIUS06706051_0108_0000.nii.gz",
+            "label": "./labelsTr/DIUS06706051_0108_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIYV40985519_0164_0000.nii.gz",
+            "label": "./labelsTr/DIYV40985519_0164_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0087_0989_0000.nii.gz",
+            "label": "./labelsTr/CASE0087_0989_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0056_0445_0000.nii.gz",
+            "label": "./labelsTr/CASE0056_0445_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASERZ49814941_0767_0000.nii.gz",
+            "label": "./labelsTr/CASERZ49814941_0767_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEEY11798916_0315_0000.nii.gz",
+            "label": "./labelsTr/CASEEY11798916_0315_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DICK31230871_0605_0000.nii.gz",
+            "label": "./labelsTr/DICK31230871_0605_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIPM55589063_0699_0000.nii.gz",
+            "label": "./labelsTr/DIPM55589063_0699_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIEU42719408_0831_0000.nii.gz",
+            "label": "./labelsTr/DIEU42719408_0831_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEQP75875690_0501_0000.nii.gz",
+            "label": "./labelsTr/CASEQP75875690_0501_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIYD91307898_0400_0000.nii.gz",
+            "label": "./labelsTr/DIYD91307898_0400_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEBO13469403_0076_0000.nii.gz",
+            "label": "./labelsTr/CASEBO13469403_0076_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIQO90708783_0561_0000.nii.gz",
+            "label": "./labelsTr/DIQO90708783_0561_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE005418post_0640_0000.nii.gz",
+            "label": "./labelsTr/CASE005418post_0640_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIZY71155044_0161_0000.nii.gz",
+            "label": "./labelsTr/DIZY71155044_0161_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIQR48663566_0610_0000.nii.gz",
+            "label": "./labelsTr/DIQR48663566_0610_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DICU91376209_0677_0000.nii.gz",
+            "label": "./labelsTr/DICU91376209_0677_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIRT27439974_0095_0000.nii.gz",
+            "label": "./labelsTr/DIRT27439974_0095_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEMI99523042_0662_0000.nii.gz",
+            "label": "./labelsTr/CASEMI99523042_0662_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl21_0403_0000.nii.gz",
+            "label": "./labelsTr/lryl21_0403_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0138post_0026_0000.nii.gz",
+            "label": "./labelsTr/CASE0138post_0026_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIBQ40966512_0752_0000.nii.gz",
+            "label": "./labelsTr/DIBQ40966512_0752_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIRN63255531_0464_0000.nii.gz",
+            "label": "./labelsTr/DIRN63255531_0464_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEJJ49901900_0440_0000.nii.gz",
+            "label": "./labelsTr/CASEJJ49901900_0440_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIPG69794219_0596_0000.nii.gz",
+            "label": "./labelsTr/DIPG69794219_0596_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIFV27973101_0150_0000.nii.gz",
+            "label": "./labelsTr/DIFV27973101_0150_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0036_0879_0000.nii.gz",
+            "label": "./labelsTr/CASE0036_0879_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE001018_0358_0000.nii.gz",
+            "label": "./labelsTr/CASE001018_0358_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIRW14991774_0270_0000.nii.gz",
+            "label": "./labelsTr/DIRW14991774_0270_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE001718_0381_0000.nii.gz",
+            "label": "./labelsTr/CASE001718_0381_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DILA91415153_0672_0000.nii.gz",
+            "label": "./labelsTr/DILA91415153_0672_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEDF60964262_0416_0000.nii.gz",
+            "label": "./labelsTr/CASEDF60964262_0416_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0121_0187_0000.nii.gz",
+            "label": "./labelsTr/CASE0121_0187_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl29_0142_0000.nii.gz",
+            "label": "./labelsTr/lryl29_0142_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE000818_0099_0000.nii.gz",
+            "label": "./labelsTr/CASE000818_0099_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIDQ72279415_0137_0000.nii.gz",
+            "label": "./labelsTr/DIDQ72279415_0137_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIZT62700403_0866_0000.nii.gz",
+            "label": "./labelsTr/DIZT62700403_0866_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASELI63268127_0545_0000.nii.gz",
+            "label": "./labelsTr/CASELI63268127_0545_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0040_0891_0000.nii.gz",
+            "label": "./labelsTr/CASE0040_0891_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DILO24946918_0439_0000.nii.gz",
+            "label": "./labelsTr/DILO24946918_0439_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIAX16640320_0938_0000.nii.gz",
+            "label": "./labelsTr/DIAX16640320_0938_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEOV46178583_0732_0000.nii.gz",
+            "label": "./labelsTr/CASEOV46178583_0732_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIRJ01437976_0855_0000.nii.gz",
+            "label": "./labelsTr/DIRJ01437976_0855_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIQQ86422163_0603_0000.nii.gz",
+            "label": "./labelsTr/DIQQ86422163_0603_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASELH92622164_0261_0000.nii.gz",
+            "label": "./labelsTr/CASELH92622164_0261_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryb9_0651_0000.nii.gz",
+            "label": "./labelsTr/lryb9_0651_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEFX94157854_0533_0000.nii.gz",
+            "label": "./labelsTr/CASEFX94157854_0533_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEPA56722807_0502_0000.nii.gz",
+            "label": "./labelsTr/CASEPA56722807_0502_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIOP84420947_0427_0000.nii.gz",
+            "label": "./labelsTr/DIOP84420947_0427_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEIH38233995_0255_0000.nii.gz",
+            "label": "./labelsTr/CASEIH38233995_0255_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIMH46712672_0883_0000.nii.gz",
+            "label": "./labelsTr/DIMH46712672_0883_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0073_0789_0000.nii.gz",
+            "label": "./labelsTr/CASE0073_0789_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DINX23353957_0054_0000.nii.gz",
+            "label": "./labelsTr/DINX23353957_0054_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASENN67900853_0303_0000.nii.gz",
+            "label": "./labelsTr/CASENN67900853_0303_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEQW09352073_0309_0000.nii.gz",
+            "label": "./labelsTr/CASEQW09352073_0309_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEAW72054184_1002_0000.nii.gz",
+            "label": "./labelsTr/CASEAW72054184_1002_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASECB08014070_0096_0000.nii.gz",
+            "label": "./labelsTr/CASECB08014070_0096_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASESJ46045108_0554_0000.nii.gz",
+            "label": "./labelsTr/CASESJ46045108_0554_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIPL94088939_0081_0000.nii.gz",
+            "label": "./labelsTr/DIPL94088939_0081_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEOT19062100_0136_0000.nii.gz",
+            "label": "./labelsTr/CASEOT19062100_0136_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEEM62805211_0055_0000.nii.gz",
+            "label": "./labelsTr/CASEEM62805211_0055_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIJU54582638_0919_0000.nii.gz",
+            "label": "./labelsTr/DIJU54582638_0919_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEZP61908927_0457_0000.nii.gz",
+            "label": "./labelsTr/CASEZP61908927_0457_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl45_0478_0000.nii.gz",
+            "label": "./labelsTr/lryl45_0478_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0112_0077_0000.nii.gz",
+            "label": "./labelsTr/CASE0112_0077_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIRU81847616_0316_0000.nii.gz",
+            "label": "./labelsTr/DIRU81847616_0316_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIVC02746019_0479_0000.nii.gz",
+            "label": "./labelsTr/DIVC02746019_0479_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0152_0868_0000.nii.gz",
+            "label": "./labelsTr/CASE0152_0868_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DINR97684596_0252_0000.nii.gz",
+            "label": "./labelsTr/DINR97684596_0252_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEFY54339431_0833_0000.nii.gz",
+            "label": "./labelsTr/CASEFY54339431_0833_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIJO47095938_0747_0000.nii.gz",
+            "label": "./labelsTr/DIJO47095938_0747_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DISJ53506809_0253_0000.nii.gz",
+            "label": "./labelsTr/DISJ53506809_0253_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEFF73229850_0666_0000.nii.gz",
+            "label": "./labelsTr/CASEFF73229850_0666_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASESU80212057_0639_0000.nii.gz",
+            "label": "./labelsTr/CASESU80212057_0639_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEED03595411_0022_0000.nii.gz",
+            "label": "./labelsTr/CASEED03595411_0022_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIOB05712630_0122_0000.nii.gz",
+            "label": "./labelsTr/DIOB05712630_0122_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0092_0871_0000.nii.gz",
+            "label": "./labelsTr/CASE0092_0871_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIDD85142978_0657_0000.nii.gz",
+            "label": "./labelsTr/DIDD85142978_0657_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIXS40103935_0619_0000.nii.gz",
+            "label": "./labelsTr/DIXS40103935_0619_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIVM58538454_0273_0000.nii.gz",
+            "label": "./labelsTr/DIVM58538454_0273_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASECG19037239_0542_0000.nii.gz",
+            "label": "./labelsTr/CASECG19037239_0542_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl30_0245_0000.nii.gz",
+            "label": "./labelsTr/lryl30_0245_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEIA69914195_0133_0000.nii.gz",
+            "label": "./labelsTr/CASEIA69914195_0133_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0063_0682_0000.nii.gz",
+            "label": "./labelsTr/CASE0063_0682_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DINL67416525_0277_0000.nii.gz",
+            "label": "./labelsTr/DINL67416525_0277_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIAF60778418_0454_0000.nii.gz",
+            "label": "./labelsTr/DIAF60778418_0454_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIRN93532558_0784_0000.nii.gz",
+            "label": "./labelsTr/DIRN93532558_0784_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASESQ60304715_0033_0000.nii.gz",
+            "label": "./labelsTr/CASESQ60304715_0033_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIAG82980822_0379_0000.nii.gz",
+            "label": "./labelsTr/DIAG82980822_0379_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DICE77957387_0286_0000.nii.gz",
+            "label": "./labelsTr/DICE77957387_0286_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEML38911550_0618_0000.nii.gz",
+            "label": "./labelsTr/CASEML38911550_0618_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIDH36913061_0503_0000.nii.gz",
+            "label": "./labelsTr/DIDH36913061_0503_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0093_0325_0000.nii.gz",
+            "label": "./labelsTr/CASE0093_0325_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIOB23985108_0733_0000.nii.gz",
+            "label": "./labelsTr/DIOB23985108_0733_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryd6_0560_0000.nii.gz",
+            "label": "./labelsTr/lryd6_0560_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEZW33980646_0656_0000.nii.gz",
+            "label": "./labelsTr/CASEZW33980646_0656_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIWH47283554_0939_0000.nii.gz",
+            "label": "./labelsTr/DIWH47283554_0939_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0083_0734_0000.nii.gz",
+            "label": "./labelsTr/CASE0083_0734_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIOC01357724_0174_0000.nii.gz",
+            "label": "./labelsTr/DIOC01357724_0174_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0098_0200_0000.nii.gz",
+            "label": "./labelsTr/CASE0098_0200_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl25_0585_0000.nii.gz",
+            "label": "./labelsTr/lryl25_0585_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryj4_0768_0000.nii.gz",
+            "label": "./labelsTr/lryj4_0768_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEBW40907995_0239_0000.nii.gz",
+            "label": "./labelsTr/CASEBW40907995_0239_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIWC05926566_0748_0000.nii.gz",
+            "label": "./labelsTr/DIWC05926566_0748_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIVQ05847756_0017_0000.nii.gz",
+            "label": "./labelsTr/DIVQ05847756_0017_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEQN53215944_0091_0000.nii.gz",
+            "label": "./labelsTr/CASEQN53215944_0091_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIPG46098489_0523_0000.nii.gz",
+            "label": "./labelsTr/DIPG46098489_0523_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEXS06614821_0159_0000.nii.gz",
+            "label": "./labelsTr/CASEXS06614821_0159_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lrya2_0229_0000.nii.gz",
+            "label": "./labelsTr/lrya2_0229_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEFO68288742_0565_0000.nii.gz",
+            "label": "./labelsTr/CASEFO68288742_0565_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEKC09212261_0052_0000.nii.gz",
+            "label": "./labelsTr/CASEKC09212261_0052_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIEQ31773566_0785_0000.nii.gz",
+            "label": "./labelsTr/DIEQ31773566_0785_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEKH85988699_0429_0000.nii.gz",
+            "label": "./labelsTr/CASEKH85988699_0429_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryj10_0320_0000.nii.gz",
+            "label": "./labelsTr/lryj10_0320_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIDS43303458_0764_0000.nii.gz",
+            "label": "./labelsTr/DIDS43303458_0764_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl10_0330_0000.nii.gz",
+            "label": "./labelsTr/lryl10_0330_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl12_0916_0000.nii.gz",
+            "label": "./labelsTr/lryl12_0916_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0058_0805_0000.nii.gz",
+            "label": "./labelsTr/CASE0058_0805_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIYM30913892_0692_0000.nii.gz",
+            "label": "./labelsTr/DIYM30913892_0692_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEYW42167798_0537_0000.nii.gz",
+            "label": "./labelsTr/CASEYW42167798_0537_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl40_0050_0000.nii.gz",
+            "label": "./labelsTr/lryl40_0050_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEGM34045246_0199_0000.nii.gz",
+            "label": "./labelsTr/CASEGM34045246_0199_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIPP20751292_0434_0000.nii.gz",
+            "label": "./labelsTr/DIPP20751292_0434_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIVH26533074_0696_0000.nii.gz",
+            "label": "./labelsTr/DIVH26533074_0696_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASECT44769481_0215_0000.nii.gz",
+            "label": "./labelsTr/CASECT44769481_0215_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEKG86839216_0903_0000.nii.gz",
+            "label": "./labelsTr/CASEKG86839216_0903_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIZH40967078_0111_0000.nii.gz",
+            "label": "./labelsTr/DIZH40967078_0111_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIEL84355540_0335_0000.nii.gz",
+            "label": "./labelsTr/DIEL84355540_0335_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIJE78254564_0574_0000.nii.gz",
+            "label": "./labelsTr/DIJE78254564_0574_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0075_0048_0000.nii.gz",
+            "label": "./labelsTr/CASE0075_0048_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEHV03318004_0345_0000.nii.gz",
+            "label": "./labelsTr/CASEHV03318004_0345_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0128_0739_0000.nii.gz",
+            "label": "./labelsTr/CASE0128_0739_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIHJ66460146_0835_0000.nii.gz",
+            "label": "./labelsTr/DIHJ66460146_0835_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIGX65754976_0541_0000.nii.gz",
+            "label": "./labelsTr/DIGX65754976_0541_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEXC99315588_0837_0000.nii.gz",
+            "label": "./labelsTr/CASEXC99315588_0837_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIIP68456176_0356_0000.nii.gz",
+            "label": "./labelsTr/DIIP68456176_0356_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0105_0981_0000.nii.gz",
+            "label": "./labelsTr/CASE0105_0981_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIGD80495640_0072_0000.nii.gz",
+            "label": "./labelsTr/DIGD80495640_0072_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEGR80805142_0611_0000.nii.gz",
+            "label": "./labelsTr/CASEGR80805142_0611_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIXJ07392549_0858_0000.nii.gz",
+            "label": "./labelsTr/DIXJ07392549_0858_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIBW29409249_0993_0000.nii.gz",
+            "label": "./labelsTr/DIBW29409249_0993_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIED68635859_0112_0000.nii.gz",
+            "label": "./labelsTr/DIED68635859_0112_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryj3_0713_0000.nii.gz",
+            "label": "./labelsTr/lryj3_0713_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryb7_0563_0000.nii.gz",
+            "label": "./labelsTr/lryb7_0563_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl50_0821_0000.nii.gz",
+            "label": "./labelsTr/lryl50_0821_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl52_0706_0000.nii.gz",
+            "label": "./labelsTr/lryl52_0706_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEYS60087373_0961_0000.nii.gz",
+            "label": "./labelsTr/CASEYS60087373_0961_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0078_0153_0000.nii.gz",
+            "label": "./labelsTr/CASE0078_0153_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl16_0968_0000.nii.gz",
+            "label": "./labelsTr/lryl16_0968_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASECG27611145_0800_0000.nii.gz",
+            "label": "./labelsTr/CASECG27611145_0800_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEUN18277427_0461_0000.nii.gz",
+            "label": "./labelsTr/CASEUN18277427_0461_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryy9_1001_0000.nii.gz",
+            "label": "./labelsTr/lryy9_1001_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASELM86316599_0030_0000.nii.gz",
+            "label": "./labelsTr/CASELM86316599_0030_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEPL11834211_0902_0000.nii.gz",
+            "label": "./labelsTr/CASEPL11834211_0902_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/lryl13_0881_0000.nii.gz",
+            "label": "./labelsTr/lryl13_0881_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASE0153post_0120_0000.nii.gz",
+            "label": "./labelsTr/CASE0153post_0120_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEYQ04974446_0070_0000.nii.gz",
+            "label": "./labelsTr/CASEYQ04974446_0070_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/CASEEY02960007_0015_0000.nii.gz",
+            "label": "./labelsTr/CASEEY02960007_0015_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DIXO38430015_0115_0000.nii.gz",
+            "label": "./labelsTr/DIXO38430015_0115_0000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/DINS06434636_0352_0000.nii.gz",
+            "label": "./labelsTr/DINS06434636_0352_0000.nii.gz"
+        }
+    ]
+}

@@ -15,12 +15,12 @@ def show_files(path):
             name_all = cur_path.split('/')
             # print(cur_path)
             print(name_all)
-            # if name_all[-1].startswith('merge.'):
-            #     # print(name_all[-4])
+            if name_all[-1].endswith('.gz'):
+            #     print(name_all[-1])
             #
-            os.rename(cur_path,'/media/lirongyaoper/350142ad-6ead-4db5-b07c-25bd698ad3c7/lungCT/databasebak_center/500/images_yuanshi/203nii/'+name_all[-2]+'.nii.gz')
+                os.rename(cur_path,'/mnt/data/103/imagesniia/'+name_all[-2]+'.nii.gz')
 
 
 if __name__ == "__main__":
     # 传入空的list接收文件名
-    show_files("/media/lirongyaoper/350142ad-6ead-4db5-b07c-25bd698ad3c7/lungCT/databasebak_center/500/images_yuanshi/203nii")
+    show_files("/mnt/data/103/label")

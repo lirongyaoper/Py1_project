@@ -39,5 +39,6 @@ def add_numerical_suffix_to_filenames(folder_path, start_number=1, pad_length=3)
 
 if __name__ == "__main__":
     # 示例使用
-    folder_path = r'/home/lirongyaoper/Softwares/work_dir/nnUNet_raw_data_base/Dataset001_imagesTr/labelsTr/'  # 替换为实际的文件夹路径
-    add_numerical_suffix_to_filenames(folder_path, start_number=0, pad_length=3)
+    # folder_path = r'/mnt/data/lungCT/databasebak_center/1009/imagesTr/'  # 替换为实际的文件夹路径
+    folder_path = r'/mnt/data/lungCT/databasebak_center/1009/labelsTr/'
+    add_numerical_suffix_to_filenames(folder_path, start_number=0, pad_length=4)

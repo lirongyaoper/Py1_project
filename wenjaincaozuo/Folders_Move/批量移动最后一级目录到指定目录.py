@@ -30,8 +30,8 @@ def move_last_level_dirs(src_directory, dest_directory):
 
 if __name__ == "__main__":
     # 设置源目录和目标目录
-    source_dir = "/media/lirongyaoper/350142ad-6ead-4db5-b07c-25bd698ad3c7/lungCT/257/labels/third_nii_1"  # 替换为实际的源目录路径
-    destination_dir = "/media/lirongyaoper/350142ad-6ead-4db5-b07c-25bd698ad3c7/lungCT/257/labels/thirdnii"  # 替换为实际的目标目录路径
+    source_dir = "/mnt/data/103/STL_NII"  # 替换为实际的源目录路径
+    destination_dir = "/mnt/data/103/label"  # 替换为实际的目标目录路径
 
     # 调用函数移动最后一级目录
     move_last_level_dirs(source_dir, destination_dir)

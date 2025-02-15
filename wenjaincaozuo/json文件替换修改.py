@@ -1,7 +1,7 @@
 import json
 
 # 读取 JSON 文件
-with open('/home/lirongyaoper/Documents/dataset.json', 'r') as file:
+with open('/home/lirongyaoper/Projects/PythonProjects/nnUNetV2/dataset.json', 'r') as file:
     data = json.load(file)
 
 # 遍历 training 列表中的每个字典

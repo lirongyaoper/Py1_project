@@ -11,7 +11,7 @@ def save_json(json_dict):
         json.dump(json_dict, f, ensure_ascii=False, indent=4)
     print(f"Datalist is saved to {datalist_file}")
 
-root_dir = r'/home/lirongyaoper/Softwares/work_dir/nnUNet_raw_data_base/Dataset001_imagesTr'
+root_dir = r'/mnt/data/lungCT/databasebak_center/1009/'
 test_dir = os.path.join(root_dir, "imagesTs/")
 train_dir = os.path.join(root_dir, "imagesTr/")
 label_dir = os.path.join(root_dir, "labelsTr/")

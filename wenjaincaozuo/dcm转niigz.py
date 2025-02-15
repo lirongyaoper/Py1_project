@@ -21,6 +21,6 @@ def dcm_niigz(source_path,dest_dir):
         print(f'目前正在转换目录为{list[i]}的dcm文件夹，这是转换的第{i+1}个，已完成工作的({i+1}/{len(list)})%')
 if __name__ =="__main__":
     # source_path = "/media/lirongyaoper/350142ad-6ead-4db5-b07c-25bd698ad3c7/lungCT/yuanshi184_unzip"
-    source_path = "/media/lirongyaoper/350142ad-6ead-4db5-b07c-25bd698ad3c7/lungCT/257/images/di160/"
-    dest_dir = "/media/lirongyaoper/350142ad-6ead-4db5-b07c-25bd698ad3c7/lungCT/257/images/di160nii/"
+    source_path = "/mnt/data/103/images"
+    dest_dir = "/mnt/data/103/imagesnii/"
     dcm_niigz(source_path,dest_dir)

@@ -23,21 +23,22 @@ def delete_part_of_filename(folder_path, start_index, end_index):
         file_path = os.path.join(folder_path, filename)
         if os.path.isfile(file_path):
             filename_split = get_double_extension(filename)
-            # print(filename_split[1])
+            # print(filename_split[0])
             # modified_name = filename_split[0][:start_index] + filename_split[0][end_index:]
 
             #保留指定字符
             modified_name = filename_split[0][start_index:end_index]
+            # modified_name = filename_split[0][start_index:]
             # print(modified_name)
             new_file_path = os.path.join(folder_path, f"{modified_name}{filename_split[1]}")
-            print(new_file_path)
+            # print(new_file_path)
             os.rename(file_path, new_file_path)
             print(f"已将文件 '{filename}' 重命名为 '{modified_name}{filename_split[1]}'")
 
 
 if __name__ == "__main__":
     # 示例使用
-    folder_path = r'/media/lirongyaoper/350142ad-6ead-4db5-b07c-25bd698ad3c7/lungCT/databasebak_center/500/label/label203'  # 替换为实际的文件夹路径
+    folder_path = r'/mnt/data/103/imagesniia'  # 替换为实际的文件夹路径
     start_index = 0 # 开始索引，包含在内
-    end_index = 15 # 结束索引，不包含在内
+    end_index = -4 # 结束索引，不包含在内
     delete_part_of_filename(folder_path, start_index, end_index)
