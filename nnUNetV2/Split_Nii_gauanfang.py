@@ -62,21 +62,21 @@ def decompress_nifti_gz(input_file):
     print(f"文件已解压为: {output_file}")
     return output_file
 
+if __name__=="__main__":
+    folder_path = r'/mnt/data/origin20/'   # nii_gz 文件夹位置
+    subfolder_names = get_subfolder_names(folder_path) # 获取所有nii_gz文件
 
-folder_path = r'/mnt/data/103/label/'   # nii_gz 文件夹位置
-subfolder_names = get_subfolder_names(folder_path) # 获取所有nii_gz文件
-
-for folderPath in subfolder_names:
-    slices_folder = os.path.join(folder_path, folderPath)
-    # print(slices_folder)
-    nii_gz_names = get_subfolder_names(slices_folder)
-    # print(nii_gz_names)
-    for nii_gz in nii_gz_names:
-        a = nii_gz[:-7]
-        if a == "lung_vessel":   # 只拆分这个nii.gz
-            nii_gz_path = os.path.join(slices_folder, nii_gz)
-            # print(nii_gz_path)
-            decompress_nifti_gz(nii_gz_path)  # 解压nii.gz为nii
-            os.remove(nii_gz_path)  # 删除nii.gz
-            split_labels(nii_gz_path, slices_folder)  # 拆分
+    for folderPath in subfolder_names:
+        slices_folder = os.path.join(folder_path, folderPath)
+        # print(slices_folder)
+        nii_gz_names = get_subfolder_names(slices_folder)
+        # print(nii_gz_names)
+        for nii_gz in nii_gz_names:
+            a = nii_gz[:-7]
+            if a == "lung_vessel":   # 只拆分这个nii.gz
+                nii_gz_path = os.path.join(slices_folder, nii_gz)
+                # print(nii_gz_path)
+                decompress_nifti_gz(nii_gz_path)  # 解压nii.gz为nii
+                os.remove(nii_gz_path)  # 删除nii.gz
+                split_labels(nii_gz_path, slices_folder)  # 拆分
 

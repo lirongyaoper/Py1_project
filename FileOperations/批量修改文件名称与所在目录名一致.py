@@ -14,13 +14,13 @@ def show_files(path):
         else:
             name_all = cur_path.split('/')
             # print(cur_path)
-            print(name_all)
+            # print(name_all)
             if name_all[-1].endswith('.gz'):
-            #     print(name_all[-1])
+                # print(name_all[-2])
             #
-                os.rename(cur_path,'/mnt/data/103/imagesniia/'+name_all[-2]+'.nii.gz')
+                os.rename(cur_path,'/mnt/data/new500/100/labelniigz/'+name_all[-2]+'.nii.gz')
 
 
 if __name__ == "__main__":
     # 传入空的list接收文件名
-    show_files("/mnt/data/103/label")
+    show_files("/mnt/data/new500/100/labelnii")

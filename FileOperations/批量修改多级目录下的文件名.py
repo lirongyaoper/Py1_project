@@ -20,7 +20,7 @@ def rename_files_in_directory(root_dir, old_str, new_str):
 
 # 使用示例
 if __name__ == "__main__":
-    root_directory = '/mnt/data/103/label/'  # 替换为目标目录路径
+    root_directory = '/mnt/data/origin20'  # 替换为目标目录路径
     string_to_replace = 'vein.nii.gz'  # 替换为要修改的字符串
     replacement_string = 'pulmonary veins.nii.gz'  # 替换为新的字符串
 

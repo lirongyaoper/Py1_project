@@ -135,9 +135,9 @@ def batch_process(image_dir, label_dir, output_dir):
 
 if __name__ == "__main__":
     # 配置路径
-    IMAGE_DIR = "/media/lirongyaoper/350142ad-6ead-4db5-b07c-25bd698ad3c7/lungCT/databasebak_center/500/images_yuanshi/499yuanshinii"
-    LABEL_DIR = "/media/lirongyaoper/350142ad-6ead-4db5-b07c-25bd698ad3c7/lungCT/databasebak_center/500/label/499labelniicheck"
-    OUTPUT_DIR = "/media/lirongyaoper/350142ad-6ead-4db5-b07c-25bd698ad3c7/lungCT/databasebak_center/500/label/fixed_labels1"
+    IMAGE_DIR = "/mnt/data/n500last/200/images/"
+    LABEL_DIR = "/mnt/data/n500last/200/labels"
+    OUTPUT_DIR = "/mnt/data/n500last/200/labels_check/"
 
     # 执行批量处理
     results = batch_process(IMAGE_DIR, LABEL_DIR, OUTPUT_DIR)

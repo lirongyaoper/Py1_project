@@ -12,6 +12,7 @@ def count_files_in_folders(root_dir):
     # 遍历根目录下的所有条目
     for entry in os.listdir(root_dir):
         folder_path = os.path.join(root_dir, entry)
+        print(folder_path)
 
         # 确保是文件夹且不是符号链接
         if os.path.isdir(folder_path) and not os.path.islink(folder_path):
@@ -21,8 +22,9 @@ def count_files_in_folders(root_dir):
                     f for f in os.listdir(folder_path)
                     if os.path.isfile(os.path.join(folder_path, f))
                 ]
-                if(len(files)!=2):
+                if(len(files)!=3):
                     print(f"{folder_path:<40} | {len(files):>10}")
+                # print(f"{folder_path:<40} | {len(files):>10}")
 
             except PermissionError:
                 print(f"{folder_path:<40} | {'权限不足':>10}")
@@ -32,7 +34,7 @@ def count_files_in_folders(root_dir):
 
 if __name__ == "__main__":
     # 使用示例
-    target_dir = r"/mnt/data/103/imagesnii"
+    target_dir = r"/mnt/data/n500last/297/nii/"
 
     if os.path.exists(target_dir) and os.path.isdir(target_dir):
         count_files_in_folders(target_dir)

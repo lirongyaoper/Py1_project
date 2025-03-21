@@ -18,3 +18,5 @@ python -m monai.apps.nnunet nnUNetV2Runner train_single_model --input_config "./
 
 
 
+
+

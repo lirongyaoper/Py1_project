@@ -17,7 +17,7 @@ def move_last_level_directories(root_dir, destination):
 
 # 示例使用
 if __name__ == "__main__":
-    root_directory = "/mnt/data/103/images"  # 替换为您要搜索的根目录路径
-    destination_directory = "/path/to/your/destination/directory"  # 替换为目标路径
+    root_directory = "/mnt/data/new500/labelnii"  # 替换为您要搜索的根目录路径
+    destination_directory = "/mnt/data/new500/labelniinew"  # 替换为目标路径
 
     move_last_level_directories(root_directory, destination_directory)

@@ -58,21 +58,21 @@ def decompress_nifti_gz(input_file):
     print(f"文件已解压为: {output_file}")
     return output_file
 
+if __name__ =="__main__":
+    folder_path = '/mnt/data/n500last/297/nii/'   # nii 文件所在位置
+    subfolder_names = get_subfolder_names(folder_path)  # 所有文件夹名
 
-folder_path = '/mnt/data/103/label/'   # nii 文件所在位置
-subfolder_names = get_subfolder_names(folder_path)  # 所有文件夹名
-
-for folderPath in subfolder_names:
-    slices_folder = os.path.join(folder_path, folderPath)
-    nii_gz_names = get_subfolder_names(slices_folder)
-    # print(slices_folder)
-    for nii in nii_gz_names:
-        # a = nii[:4]
-        if nii[-3:] == ".gz":
-            decompress_nifti_gz(os.path.join(slices_folder, nii))
-            os.remove(os.path.join(slices_folder, nii))
-        if nii[:5] == "merge":
-            os.remove(os.path.join(slices_folder, nii))
-    merge_nii = os.path.join(slices_folder, "merge.nii.gz")
-    merge_labels(slices_folder, merge_nii)
+    for folderPath in subfolder_names:
+        slices_folder = os.path.join(folder_path, folderPath)
+        nii_gz_names = get_subfolder_names(slices_folder)
+        # print(slices_folder)
+        for nii in nii_gz_names:
+            # a = nii[:4]
+            if nii[-3:] == ".gz":
+                decompress_nifti_gz(os.path.join(slices_folder, nii))
+                os.remove(os.path.join(slices_folder, nii))
+            if nii[:5] == "merge":
+                os.remove(os.path.join(slices_folder, nii))
+        merge_nii = os.path.join(slices_folder, folderPath+".nii.gz")
+        merge_labels(slices_folder, merge_nii)
 

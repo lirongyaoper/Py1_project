@@ -8,5 +8,5 @@ def delete_files(path):                                           #定义函数�
                  print("{} deleted.".format(filename))           ##输出提示
 
 if __name__ == '__main__':
-        path = r'/mnt/data/103/imagesnii'   #运行程序前，记得修改主文件夹路径！
+        path = r'/mnt/data/new500/100/imageniigz'   #运行程序前，记得修改主文件夹路径！
         delete_files(path)         #调用定义的函数，注意名称与定义的函数名一致

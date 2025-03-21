@@ -36,7 +36,7 @@ def add_suffix_to_filenames(folder_path, suffix):
             print(f"已将文件 '{filename}' 重命名为 '{new_filename}'")
 if __name__ =="__main__":
     # 示例使用
-    folder_path = r'/mnt/data/lungCT/databasebak_center/1009/imagesTr/'  # 替换为实际的文件夹路径
+    folder_path = r'/mnt/data/n500last/493/images'  # 替换为实际的文件夹路径
     # folder_path = r'/mnt/data/lungCT/databasebak_center/1009/labelsTr/'  # 替换为实际的文件夹路径
     suffix = '_0000'                 # 要添加的后缀
     add_suffix_to_filenames(folder_path, suffix)
