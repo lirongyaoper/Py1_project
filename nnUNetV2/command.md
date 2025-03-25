@@ -2,8 +2,7 @@
 nnUNetv2_plan_and_preprocess -d DATASET -pl nnUNetPlannerResEncXL
 ```commandline
 nnUNetv2_plan_and_preprocess -d 001 \
-  --planner nnUNetPlannerResEncXL \
-  --enable_cascade \
+  -pl nnUNetPlannerResEncXL \
   --verify_dataset_integrity
 ```
 
