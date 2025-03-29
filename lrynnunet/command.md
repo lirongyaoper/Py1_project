@@ -1,6 +1,6 @@
 # 1. 预训练
 nnUNetv2_plan_and_preprocess -d DATASET -pl nnUNetPlannerResEncXL
-```commandline
+```bash
 nnUNetv2_plan_and_preprocess -d 001 \
   -pl nnUNetPlannerResEncXL \
   --verify_dataset_integrity
