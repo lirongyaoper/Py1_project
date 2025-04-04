@@ -11,7 +11,7 @@ def batch_rename(images_dir, labels_dir, start_index):
 
     images_map = get_name_map(images_path)
     labels_map = get_name_map(labels_path)
-    print(images_map)
+    # print(images_map)
     # 获取同名文件列表
     common_names = set(images_map.keys()) & set(labels_map.keys())
 
@@ -21,17 +21,19 @@ def batch_rename(images_dir, labels_dir, start_index):
         img_file = images_map[name]
         new_img_name = f"{name}_{idx:04d}_0000{''.join(img_file.suffixes)}"
         new_img_path = images_path / new_img_name
-        # os.rename(img_file, new_img_path)
+        # print(new_img_name)
+        os.rename(img_file, new_img_path)
         # 处理labels文件
         lbl_file = labels_map[name]
         new_lbl_name = f"{name}_{idx:04d}{''.join(lbl_file.suffixes)}"
         new_lbl_path = labels_path / new_lbl_name
-        # os.rename(lbl_file, new_lbl_path)
+        # print(new_lbl_name)
+        os.rename(lbl_file, new_lbl_path)
         # print(f"重命名完成：\n{img_file.name} -> {new_img_name}\n{lbl_file.name} -> {new_lbl_name}\n")
 # 使用示例
 if __name__ == "__main__":
-    images_folder = "/mnt/data/new500/images"
-    labels_folder = "/mnt/data/new500/labels"
-    start_num = 1004  # 起始序号
+    images_folder = "/mnt/data/lungCT/databasebak_center/1522/imagesTr"
+    labels_folder = "/mnt/data/lungCT/databasebak_center/1522/labelsTr"
+    start_num = 1  # 起始序号
     batch_rename(images_folder, labels_folder, start_num)
 

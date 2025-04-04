@@ -18,7 +18,7 @@ def rename_matching_files(dir1, dir2):
 
     # 进行重命名
     for index, file_name in enumerate(common_files, start=1):
-        new_name = f'CS_CASE_{index:03d}y.nii.gz'  # 生成新的文件名
+        new_name = f'CASE{index:04d}y.nii.gz'  # 生成新的文件名
         new_path1 = os.path.join(dir1, new_name)
         new_path2 = os.path.join(dir2, new_name)
 
@@ -32,7 +32,7 @@ def rename_matching_files(dir1, dir2):
 
 if __name__ =="__main__":
     # 使用示例
-    directory1 = "/mnt/data/new500/100/imageniigz"  # 替换为第一个目录路径
-    directory2 = "/mnt/data/new500/100/fix_label"  # 替换为第二个目录路径
+    directory1 = "/mnt/data/lungCT/databasebak_center/1522/imagesTr"  # 替换为第一个目录路径
+    directory2 = "/mnt/data/lungCT/databasebak_center/1522/labelsTr"  # 替换为第二个目录路径
 
     rename_matching_files(directory1, directory2)
