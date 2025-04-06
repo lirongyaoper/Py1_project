@@ -48,3 +48,9 @@ nnUNetv2_train 001 3d_cascade_fullres 4 -p nnUNetResEncUNetXLPlans
 # 3.选择最好模型
 
 
+
+
+# 其他训练
+```bash
+ nnUNetv2_predict -i /home/lirongyaoper/Documents/train_self/ -o /home/lirongyaoper/Documents/label_self/ -d 1 -c 3d_fullres --save_probabilities
+```

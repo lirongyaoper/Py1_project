@@ -43,9 +43,9 @@ def create_dataset_json(base_dir):
         },
         "labels": {
             "background": 0,
-            "pulmonary vein": 1,
+            "pulmonary artery": 1,
             "bronchus": 2,
-            "pulmonary artery": 3
+            "pulmonary vein": 3
         },
         "numTraining": len(training_data),
         "file_ending": ".nii.gz",
