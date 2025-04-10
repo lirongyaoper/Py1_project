@@ -1,4 +1,4 @@
-```markdown
+
 # 标准训练流程
 
 ---
@@ -11,9 +11,9 @@
 # 生成ResEnc L专用的预处理计划（包含级联配置）
 nnUNetv2_plan_and_preprocess -d DATASET -pl nnUNetPlannerResEnc(M/L/XL)
 
-nnUNetv2_plan_and_preprocess -d OO1 -c 2d 3d_fullres 3d_lownes -np 24 12 24 -pl nnUNetPlannerResEncl --verify_dataset_integrity
+nnUNetv2_plan_and_preprocess -d OO1 -c 2d 3d_fullres 3d_lownes -np 20 8 20 -pl nnUNetPlannerResEncl --verify_dataset_integrity
 
-nnUNetv2_plan_and_preprocess -d OO1 -c 2d 3d_fullres 3d_lownes -np 24 12 24 -pl nnUNetPlannerResEnCXL --verify_dataset_integrity
+nnUNetv2_plan_and_preprocess -d OO1 -c 2d 3d_fullres 3d_lownes -np 16 8 16 -pl nnUNetPlannerResEnCXL --verify_dataset_integrity
 
 # 检查预处理结果（确认生成nnUNetPlansResEncl.json）
 ls nnUNet_preprocessed/DATASET_ID
@@ -107,7 +107,7 @@ CUDA_VISIBLE_DEVICES=0 nnUNetv2_train 001 3d_fullres 0 -p nnUNetResEncUNetLP1ans
 CUDA_VISIBLE_DEVICES=1 nnUNetv2_train 001 3d_fullres 1 -p nnUNetResEncUNetLP1ans --npz &
 CUDA_VISIBLE_DEVICES=2 nnUNetv2_train 001 3d_fullres 2 -p nnUNetResEncUNetLP1ans --npz &
 CUDA_VISIBLE_DEVICES=3 nnUNetv2_train 001 3d_fullres 3 -p nnUNetResEncUNetLP1ans --npz &
-CUDA_VISIBLE_DEVICES=4 nnUNetv2_train 001 3d_fullres 4 -p nnUNetResEncUNetLP1ans
+CUDA_VISIBLE_DEVICES=4 nnUNetv2_train 001 3d_fullres 4 -p nnUNetResEncUNetLP1ans --npz
 
 # 验证第一阶段性能
 nnUNetv2_evaluate DATASET_ID 3d_fullres 0 -p nnUNetResEncUNetLP1ans
@@ -281,4 +281,3 @@ ValueError：输入通道数不匹配（预期：4，实际：3）
 | ResEnc L 级联      | 0.82 (+5%) | 28GB     | 60小时     |
 
 **建议**：在训练初期（前 10 个 epoch）密切监控损失下降趋势，如果 Dice 未达到 0.6+，可能需要检查数据预处理或学习率设置。
-```
