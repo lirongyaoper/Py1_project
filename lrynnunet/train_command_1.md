@@ -11,7 +11,7 @@
 # 生成ResEnc L专用的预处理计划（包含级联配置）
 nnUNetv2_plan_and_preprocess -d DATASET -pl nnUNetPlannerResEnc(M/L/XL)
 
-nnUNetv2_plan_and_preprocess -d OO1 -c 2d 3d_fullres 3d_lownes -np 20 8 20 -pl nnUNetPlannerResEncl --verify_dataset_integrity
+nnUNetv2_plan_and_preprocess -d OO1 -c 2d 3d_fullres 3d_lownes -np 20 12 20 -pl nnUNetPlannerResEncl --verify_dataset_integrity
 
 nnUNetv2_plan_and_preprocess -d OO1 -c 2d 3d_fullres 3d_lownes -np 16 8 16 -pl nnUNetPlannerResEnCXL --verify_dataset_integrity
 
