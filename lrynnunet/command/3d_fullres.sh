@@ -23,3 +23,5 @@ START_TIME=$(date +%s)
 END_TIME=$(date +%s)
 TOTAL_SECONDS=$((END_TIME - START_TIME))
 echo "✅ 所有命令执行完成，总耗时: $(format_duration $TOTAL_SECONDS)"
+
+nnUNetv2_find_best_configuration 001 -c 3d_cascade_fullres  -p nnUNetResEncUNetLPlans
