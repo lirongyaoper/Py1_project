@@ -46,6 +46,10 @@ group_three(){
 
 group_four(){
   echo "3d_cascade_fullres训练"
+
+  # 生成--npz
+  CUDA_VISIBLE_DEVICES=0 nnUNetv2_train 001 3d_cascade_fullres 0 -p nnUNetResEncUNetLPlans --val --npz & CUDA_VISIBLE_DEVICES=1 nnUNetv2_train 001 3d_cascade_fullres 1 -p nnUNetResEncUNetLPlans  --val --npz & CUDA_VISIBLE_DEVICES=2 nnUNetv2_train 001 3d_cascade_fullres 2 -p nnUNetResEncUNetLPlans --val --npz & CUDA_VISIBLE_DEVICES=3 nnUNetv2_train 001 3d_cascade_fullres 3 -p nnUNetResEncUNetLPlans --val --npz & CUDA_VISIBLE_DEVICES=4 nnUNetv2_train 001 3d_cascade_fullres 4 -p nnUNetResEncUNetLPlans --val --npz
+
 #  CUDA_VISIBLE_DEVICES=0 nnUNetv2_train  001 3d_cascade_fullres 0 -p nnUNetResEncUNetLPlans --npz & CUDA_VISIBLE_DEVICES=1 nnUNetv2_train  001 3d_cascade_fullres 1 -p nnUNetResEncUNetLPlans --npz & CUDA_VISIBLE_DEVICES=2 nnUNetv2_train  001 3d_cascade_fullres 2 -p nnUNetResEncUNetLPlans --npz & CUDA_VISIBLE_DEVICES=3 nnUNetv2_train  001 3d_cascade_fullres 3 -p nnUNetResEncUNetLPlans --npz & CUDA_VISIBLE_DEVICES=4 nnUNetv2_train  001 3d_cascade_fullres 4 -p nnUNetResEncUNetLPlans --npz
 
   CUDA_VISIBLE_DEVICES=0 nnUNetv2_train -tr lryTrainer -d 001 3d_cascade_fullres 0 -p nnUNetResEncUNetLPlans --npz & CUDA_VISIBLE_DEVICES=1 nnUNetv2_train -tr lryTrainer -d 001 3d_cascade_fullres 1 -p nnUNetResEncUNetLPlans --npz & CUDA_VISIBLE_DEVICES=2 nnUNetv2_train -tr lryTrainer -d 001 3d_cascade_fullres 2 -p nnUNetResEncUNetLPlans --npz & CUDA_VISIBLE_DEVICES=3 nnUNetv2_train -tr lryTrainer -d 001 3d_cascade_fullres 3 -p nnUNetResEncUNetLPlans --npz & CUDA_VISIBLE_DEVICES=4 nnUNetv2_train -tr lryTrainer -d 001 3d_cascade_fullres 4 -p nnUNetResEncUNetLPlans --npz
