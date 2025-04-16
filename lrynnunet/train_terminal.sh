@@ -74,3 +74,5 @@ group_five || exit 1
 END_TIME=$(date +%s)
 TOTAL_SECONDS=$((END_TIME - START_TIME))
 echo "✅ 所有命令执行完成，总耗时: $(format_duration $TOTAL_SECONDS)"
+
+CUDA_VISIBLE_DEVICES=0 nnUNetv2_train 001 3d_lowres 0 -p nnUNetResEncUNetLPlans --val --npz & CUDA_VISIBLE_DEVICES=1 nnUNetv2_train 001 3d_lowres 1 -p nnUNetResEncUNetLPlans  --val --npz & CUDA_VISIBLE_DEVICES=2 nnUNetv2_train 001 3d_lowres 2 -p nnUNetResEncUNetLPlans --val --npz & CUDA_VISIBLE_DEVICES=3 nnUNetv2_train 001 3d_lowres 3 -p nnUNetResEncUNetLPlans --val --npz & CUDA_VISIBLE_DEVICES=4 nnUNetv2_train 001 3d_lowres 4 -p nnUNetResEncUNetLPlans --val --npz

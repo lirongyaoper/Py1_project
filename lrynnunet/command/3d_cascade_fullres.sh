@@ -34,7 +34,7 @@ echo "✅ 所有命令执行完成，总耗时: $(format_duration $TOTAL_SECONDS
 
 
 
- nnUNetv2_find_best_configuration 001 -c 3d_cascade_fullres  -p nnUNetResEncUNetLPlans
+ nnUNetv2_find_best_configuration 001 -c 2d 3d_lowres 3d_fullres 3d_cascade_fullres  -p nnUNetResEncUNetLPlans
 
  nnUNetv2_predict -d Dataset001_Lung -i INPUT_FOLDER -o OUTPUT_FOLDER -f  0 1 2 3 4 -tr nnUNetTrainer -c 3d_cascade_fullres -p nnUNetResEncUNetLPlans
  nnUNetv2_predict -d Dataset001_Lung -i /root/ry/ -o /root/outcome/ -f  0 1 2 3 4 -tr nnUNetTrainer -c 3d_cascade_fullres -p nnUNetResEncUNetLPlans
