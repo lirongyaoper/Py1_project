@@ -124,11 +124,11 @@ nnUNet_results/DatasetXXX_MYNAME/TRAINER_CLASS_NAME__PLANS_NAME__CONFIGURATION/F
 For Dataset002_Heart (from the MSD), for example, this looks like this:
 
     nnUNet_results/
-    ├── Dataset002_Heart
+    ├── Dataset002_Heart[dataset.json](../../../../Downloads/ry2.9gpu.com/202504172155/dataset.json)
         │── nnUNetTrainer__nnUNetPlans__2d
         │    ├── fold_0
         │    ├── fold_1
-        │    ├── fold_2
+        │    ├── fold_2[dataset.json](../../../../Downloads/ry2.9gpu.com/202504172155/dataset.json)
         │    ├── fold_3
         │    ├── fold_4
         │    ├── dataset.json

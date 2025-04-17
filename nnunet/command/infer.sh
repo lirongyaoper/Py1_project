@@ -1,9 +1,10 @@
 
-nnUNetv2_predict -d Dataset001_Lung -i INPUT_FOLDER -o OUTPUT_FOLDER -f  0 1 2 3 4 -tr nnUNetTrainer -c 3d_cascade_fullres -p nnUNetResEncUNetLPlans
 
-nnUNetv2_predict -d Dataset001_Lung -i /root/ry/ -o /root/outcome/ -f  0 1 2 3 4 -tr nnUNetTrainer -c 3d_lowres -p nnUNetResEncUNetLPlans
+#级联推理
+nnUNetv2_predict -d Dataset001_Lung -i /root/inputdir/ -o /root/outputdir/ -f  0 1 2 3 4 -tr nnUNetTrainer -c 3d_lowres -p nnUNetResEncUNetLPlans && nnUNetv2_predict -d Dataset001_Lung -i /root/inputdir/ -o /root/finaldir/ -c 3d_cascade_fullres -tr nnUNetTrainer -p nnUNetResEncUNetLPlans -prev_stage_predictions /root/outputdir/
 
-nnUNetv2_predict -d Dataset001_Lung -i /root/ry/ -o /root/outcome/ -f  0 1 2 3 4 -tr nnUNetTrainer -c 3d_cascade_fullres -p nnUNetResEncUNetLPlans
+
+
 
 
 ***Once inference is completed, run postprocessing like this:***
