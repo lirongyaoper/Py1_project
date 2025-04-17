@@ -102,6 +102,37 @@ def process_image_pair(image_path, label_path, output_dir):
         }
 
 
+# def batch_process(image_dir, label_dir, output_dir):
+#     """
+#     批量处理目录中的图像和标签
+#     """
+#     # 创建输出目录
+#     os.makedirs(output_dir, exist_ok=True)
+#
+#     # 获取图像文件列表
+#     image_files = [f for f in os.listdir(image_dir) if f.endswith(('.nii', '.nii.gz', '.mha', '.nrrd'))]
+#
+#     results = []
+#     for img_file in image_files:
+#         # 构建路径
+#         image_path = os.path.join(image_dir, img_file)
+#         label_path = os.path.join(label_dir, img_file)  # 假设同名
+#
+#         if not os.path.exists(label_path):
+#             results.append({
+#                 'status': 'error',
+#                 'file': img_file,
+#                 'message': '对应的标签文件不存在'
+#             })
+#             continue
+#
+#         # 处理单个文件对
+#         result = process_image_pair(image_path, label_path, output_dir)
+#         results.append(result)
+#
+#     return results
+
+
 def batch_process(image_dir, label_dir, output_dir):
     """
     批量处理目录中的图像和标签
@@ -114,15 +145,29 @@ def batch_process(image_dir, label_dir, output_dir):
 
     results = []
     for img_file in image_files:
+        # 构建标签文件名：移除图像文件名中的_0000后缀
+        if "_0000" in img_file:
+            # 分离文件名和扩展名
+            base_name, ext = os.path.splitext(img_file)
+            # 处理双扩展名（如.nii.gz）
+            if ext == ".gz" and base_name.endswith(".nii"):
+                base_name = os.path.splitext(base_name)[0]
+                ext = ".nii.gz"
+            # 去除最后的_0000部分
+            label_base = base_name.rsplit("_0000", 1)[0]
+            label_file = f"{label_base}{ext}"
+        else:
+            label_file = img_file  # 如果未找到_0000则保持原名
+
         # 构建路径
         image_path = os.path.join(image_dir, img_file)
-        label_path = os.path.join(label_dir, img_file)  # 假设同名
+        label_path = os.path.join(label_dir, label_file)  # 修正后的标签路径
 
         if not os.path.exists(label_path):
             results.append({
                 'status': 'error',
                 'file': img_file,
-                'message': '对应的标签文件不存在'
+                'message': f'对应的标签文件不存在: {label_file}'
             })
             continue
 
@@ -131,7 +176,6 @@ def batch_process(image_dir, label_dir, output_dir):
         results.append(result)
 
     return results
-
 
 if __name__ == "__main__":
     # 配置路径
