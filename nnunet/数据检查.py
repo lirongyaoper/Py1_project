@@ -1,7 +1,7 @@
 import os
 import SimpleITK as sitk
-image_dir = "/home/lirongyaoper/Documents/1122image/"
-label_dir = "/home/lirongyaoper/Documents/1122label/"
+image_dir = "/home/lirongyaoper/Documents/trainable/huyanchang/images/"
+label_dir = "/home/lirongyaoper/Documents/trainable/huyanchang/label/"
 def get_double_extension(filename):
     # 首先获取第一个后缀
     root, ext1 = os.path.splitext(filename)
