@@ -14,7 +14,7 @@ nnUNetv2_apply_postprocessing -i OUTPUT_FOLDER -o OUTPUT_FOLDER_PP -pp_pkl_file 
 nnUNetv2_find_best_configuration 001 -c 3d_fullres  -p nnUNetResEncUNetLPlans
 
 nnUNetv2_predict -d Dataset001_Lung -i INPUT_FOLDER -o OUTPUT_FOLDER -f  0 1 2 3 4 -tr nnUNetTrainer -c 3d_fullres -p nnUNetResEncUNetLPlans
-nnUNetv2_predict -d Dataset001_Lung -i /mnt/result/input/ -o /mnt/result/output/ -f  0 1 2 3 4 -tr nnUNetTrainer -c 3d_fullres -p nnUNetResEncUNetLPlans
+nnUNetv2_predict -d Dataset001_Lung -i /home/lirongyao0916/Documents/infer_nnunet/input/ -o /home/lirongyao0916/Documents/infer_nnunet/output/ -f  0 1 2 3 4 -tr nnUNetTrainer -c 3d_fullres -p nnUNetResEncUNetLPlans
 
 ***Once inference is completed, run postprocessing like this:***
 
