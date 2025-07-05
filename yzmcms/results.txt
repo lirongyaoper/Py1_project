@@ -1,0 +1,843 @@
+在 147 个文件中找到匹配项：
+
+文件: /var/www/lryper.com/rylcsjk2507042344.sql
+  行号: 76, 内容: (1270, 'lry_admin_center', 'system_manage', 'm=lry_admin_center&c=system_manage&a=save', 1, 'lirongyaoper', '115.51.9.80', 1603117519, ''),
+  行号: 77, 内容: (1269, 'lry_admin_center', 'content', 'm=lry_admin_center&c=content&a=add', 1, 'lirongyaoper', '115.51.9.80', 1603113917, ''),
+  行号: 78, 内容: (1268, 'lry_admin_center', 'tag', 'm=lry_admin_center&c=tag&a=public_select', 1, 'lirongyaoper', '115.51.9.80', 1603113764, ''),
+  行号: 79, 内容: (1267, 'lry_admin_center', 'content', 'm=lry_admin_center&c=content&a=add', 1, 'lirongyaoper', '115.51.9.80', 1603113748, '');
+  行号: 417, 内容: (6, 0, 'lry_admin_center', '', '190513034718364.jpg', '190513034718364.jpg', '/uploads/201905/13/', 520404, 'jpg', 1, 0, 1, 'lirongyaoper', 1557733638, '122.206.190.18'),
+  行号: 418, 内容: (7, 0, 'lry_admin_center', '', '190513034718364.jpg', '190513034752309.jpg', '/uploads/201905/13/', 226381, 'jpg', 1, 0, 1, 'lirongyaoper', 1557733672, '122.206.190.18'),
+  行号: 419, 内容: (8, 0, 'lry_admin_center', '', '190515095828281.jpg', '190515095828281.jpg', '/uploads/201905/15/', 200835, 'jpg', 1, 0, 1, 'lirongyaoper', 1557885508, '122.206.190.16'),
+  行号: 421, 内容: (10, 0, 'lry_admin_center', '', '09.jpg', '190521121809507.jpg', '/uploads/201905/21/', 20272, 'jpg', 1, 0, 1, 'lirongyaoper', 1558412289, '122.206.190.30'),
+  行号: 422, 内容: (11, 0, 'lry_admin_center', '', '微信图片_20190521123834.jpg', '190521123856840.jpg', '/uploads/201905/21/', 40583, 'jpg', 1, 0, 1, 'lirongyaoper', 1558413536, '122.206.190.30'),
+  行号: 423, 内容: (12, 0, 'lry_admin_center', '', 'nopic.jpg', '190601055350246.jpg', '/uploads/201906/01/', 20272, 'jpg', 1, 0, 1, 'lirongyaoper', 1559382830, '122.206.190.109'),
+  行号: 424, 内容: (13, 0, 'lry_admin_center', '', 'thumb.jpg', '190619055253858.jpg', '/uploads/201906/19/', 6288, 'jpg', 1, 0, 1, 'lirongyaoper', 1560937973, '122.206.190.82'),
+  行号: 425, 内容: (14, 0, 'lry_admin_center', '', 'chaofan .jpg', '190829082325470.jpg', '/uploads/201908/29/', 105494, 'jpg', 1, 0, 1, 'lirongyaoper', 1567081405, '115.51.9.204'),
+  行号: 426, 内容: (15, 0, 'lry_admin_center', '', 'chaofan.jpg', '190919094030818.jpg', '/uploads/201909/19/', 808657, 'jpg', 1, 0, 1, 'lirongyaoper', 1568900430, '115.51.8.172'),
+  行号: 427, 内容: (16, 0, 'lry_admin_center', '', '12.jpg', '190925043246126.jpg', '/uploads/201909/25/', 1664422, 'jpg', 1, 0, 1, 'lirongyaoper', 1569400366, '115.51.9.68'),
+  行号: 428, 内容: (17, 0, 'lry_admin_center', '', '09.jpg', '191014100649650.jpg', '/uploads/201910/14/', 32975, 'jpg', 1, 0, 1, 'lirongyaoper', 1571062009, '115.51.8.108'),
+  行号: 429, 内容: (18, 0, 'lry_admin_center', '', '01.jpg', '191014101216366.jpg', '/uploads/201910/14/', 74889, 'jpg', 1, 0, 1, 'lirongyaoper', 1571062336, '115.51.8.108'),
+  行号: 434, 内容: (23, 0, 'lry_admin_center', '', '0.jpeg', '191209023947151.jpeg', '/uploads/201912/09/', 174329, 'jpeg', 1, 0, 1, 'lirongyaoper', 1575873587, '115.51.8.195'),
+  行号: 438, 内容: (27, 0, 'lry_admin_center', '', '微信图片_20191215215150.jpg', '191215095302596.jpg', '/uploads/201912/15/', 141164, 'jpg', 1, 0, 1, 'lirongyaoper', 1576417982, '115.51.11.38'),
+  行号: 442, 内容: (31, 0, 'lry_admin_center', '', '微信截图_20191230222314.png', '191230103842313.png', '/uploads/201912/30/', 268757, 'png', 1, 0, 1, 'lirongyaoper', 1577716722, '115.51.8.175'),
+  行号: 444, 内容: (33, 0, 'lry_admin_center', '', '191230103842313.png', '200106101355518.png', '/uploads/202001/06/', 268757, 'png', 1, 0, 1, 'lirongyaoper', 1578320035, '115.51.10.59'),
+  行号: 445, 内容: (34, 0, 'lry_admin_center', '', '202001090001.png', '200109104825976.png', '/uploads/202001/09/', 662499, 'png', 1, 0, 1, 'lirongyaoper', 1578581305, '115.51.9.89'),
+  行号: 446, 内容: (35, 0, 'lry_admin_center', '', 'rongyao.png', '200914112524868.png', '/uploads/202009/14/', 827787, 'png', 1, 0, 1, 'lirongyaoper', 1600097124, '115.51.9.213'),
+  行号: 449, 内容: (38, 0, 'lry_admin_center', '', 'qiuijng3.jpg', '200917093033729.jpg', '/uploads/202009/17/', 156622, 'jpg', 1, 0, 1, 'lirongyaoper', 1600349433, '115.51.10.107'),
+  行号: 453, 内容: (42, 0, 'lry_admin_center', '', 'ziyou2.jpg', '200918031420924.jpg', '/uploads/202009/18/', 17725, 'jpg', 1, 0, 1, 'lirongyaoper', 1600413260, '115.51.11.59'),
+  行号: 456, 内容: (45, 0, 'lry_admin_center', '', 'timg.jpg', '200921090527407.jpg', '/uploads/202009/21/', 114984, 'jpg', 1, 0, 1, 'lirongyaoper', 1600693527, '115.51.11.0'),
+  行号: 460, 内容: (49, 0, 'lry_admin_center', '', 'chenboshisuoluetu.png', '201008103046837.png', '/uploads/202010/08/', 224659, 'png', 1, 0, 1, 'lirongyaoper', 1602167446, '115.51.8.251'),
+  行号: 462, 内容: (51, 0, 'lry_admin_center', '', 'jia.png', '201017113126677.png', '/uploads/202010/17/', 341307, 'png', 1, 0, 1, 'lirongyaoper', 1602948686, '115.51.8.173'),
+  行号: 479, 内容: (68, 0, 'lry_admin_center', '', '1111111.png', '201125115419821.png', '/uploads/202011/25/', 72192, 'png', 1, 0, 1, 'lirongyaoper', 1606319659, '115.51.10.179'),
+  行号: 484, 内容: (73, 0, 'lry_admin_center', '', '333、.png', '201212102830781.png', '/uploads/202012/12/', 158454, 'png', 1, 0, 1, 'lirongyaoper', 1607783310, '115.51.11.212'),
+  行号: 485, 内容: (74, 0, 'lry_admin_center', '', 'bulie00.png', '201220104717237.png', '/uploads/202012/20/', 56767, 'png', 1, 0, 1, 'lirongyaoper', 1608475637, '115.51.10.67'),
+  行号: 489, 内容: (78, 0, 'lry_admin_center', '', '11111111111111.gif', '210106114312566.gif', '/uploads/202101/06/', 718475, 'gif', 1, 0, 1, 'lirongyaoper', 1609947792, '115.51.9.210'),
+  行号: 492, 内容: (81, 0, 'lry_admin_center', '', 'fengmian.png', '210511114019511.png', '/uploads/202105/11/', 397781, 'png', 1, 0, 1, 'lirongyaoper', 1620747619, '115.51.11.12'),
+  行号: 494, 内容: (83, 0, 'lry_admin_center', '', 'yuanlaomenglao.png', '210523111307549.png', '/uploads/202105/23/', 149448, 'png', 1, 0, 1, 'lirongyaoper', 1621782787, '115.51.8.180'),
+  行号: 498, 内容: (87, 0, 'lry_admin_center', '', '建党100.jpg', '210702120935341.jpg', '/uploads/202107/02/', 113619, 'jpg', 1, 0, 1, 'lirongyaoper', 1625155775, '115.51.9.30'),
+  行号: 501, 内容: (90, 0, 'lry_admin_center', '', 'fm.png', '210806083014349.png', '/uploads/202108/06/', 297304, 'png', 1, 0, 1, 'lirongyaoper', 1628253014, '115.51.9.75'),
+  行号: 504, 内容: (93, 0, 'lry_admin_center', '', 'brother_fengmian.png', '210809120623560.png', '/uploads/202108/09/', 70996, 'png', 1, 0, 1, 'lirongyaoper', 1628438783, '115.51.11.107'),
+  行号: 506, 内容: (95, 0, 'lry_admin_center', '', '20210819002fengmain.png', '210819080934649.png', '/uploads/202108/19/', 44428, 'png', 1, 0, 1, 'lirongyaoper', 1629374974, '39.149.90.202'),
+  行号: 509, 内容: (98, 0, 'lry_admin_center', '', 'fengmian.png', '210828084929366.png', '/uploads/202108/28/', 49274, 'png', 1, 0, 1, 'lirongyaoper', 1630154969, '39.149.90.175'),
+  行号: 524, 内容: (113, 0, 'lry_admin_center', '', 'suoluetu.png', '220503115612227.png', '/uploads/202205/03/', 75952, 'png', 1, 0, 1, 'lirongyaoper', 1651593372, '223.91.37.139'),
+  行号: 528, 内容: (117, 0, 'lry_admin_center', '', 'slt.jpg', '220511110518259.jpg', '/uploads/202205/11/', 9824, 'jpg', 1, 0, 1, 'lirongyaoper', 1652281518, '39.149.90.135'),
+  行号: 1456, 内容: (1, '内容管理', 0, 'lry_admin_center', 'content', 'top', '&#xe616;', 1, 1),
+  行号: 1458, 内容: (3, '模块管理', 0, 'lry_admin_center', 'module', 'top', '&#xe6c0;', 3, 1),
+  行号: 1459, 内容: (4, '管理员管理', 0, 'lry_admin_center', 'admin_manage', 'top', '&#xe62d;', 4, 1),
+  行号: 1460, 内容: (5, '个人信息', 0, 'lry_admin_center', 'admin_manage', 'top', '&#xe602;', 5, 0),
+  行号: 1461, 内容: (6, '系统管理', 0, 'lry_admin_center', 'system_manage', 'top', '&#xe62e;', 6, 1),
+  行号: 1462, 内容: (7, '数据管理', 0, 'lry_admin_center', 'database', 'top', '&#xe6b5;', 7, 1),
+  行号: 1463, 内容: (8, '稿件管理', 1, 'lry_admin_center', 'admin_content', 'init', '', 13, 1),
+  行号: 1464, 内容: (9, '稿件浏览', 8, 'lry_admin_center', 'admin_content', 'public_preview', '', 0, 0),
+  行号: 1465, 内容: (10, '稿件删除', 8, 'lry_admin_center', 'admin_content', 'del', '', 0, 0),
+  行号: 1466, 内容: (11, '通过审核', 8, 'lry_admin_center', 'admin_content', 'adopt', '', 0, 0),
+  行号: 1467, 内容: (12, '退稿', 8, 'lry_admin_center', 'admin_content', 'rejection', '', 0, 0),
+  行号: 1468, 内容: (13, '后台操作日志', 6, 'lry_admin_center', 'admin_log', 'init', '', 66, 1),
+  行号: 1469, 内容: (14, '操作日志删除', 13, 'lry_admin_center', 'admin_log', 'del_log', '', 0, 0),
+  行号: 1470, 内容: (15, '操作日志搜索', 13, 'lry_admin_center', 'admin_log', 'search_log', '', 0, 0),
+  行号: 1471, 内容: (16, '后台登录日志', 6, 'lry_admin_center', 'admin_log', 'admin_login_log_list', '', 67, 1),
+  行号: 1472, 内容: (17, '登录日志删除', 16, 'lry_admin_center', 'admin_log', 'del_login_log', '', 0, 0),
+  行号: 1473, 内容: (18, '管理员管理', 4, 'lry_admin_center', 'admin_manage', 'init', '', 0, 1),
+  行号: 1474, 内容: (19, '删除管理员', 18, 'lry_admin_center', 'admin_manage', 'delete', '', 0, 0),
+  行号: 1475, 内容: (20, '添加管理员', 18, 'lry_admin_center', 'admin_manage', 'add', '', 0, 0),
+  行号: 1476, 内容: (21, '编辑管理员', 18, 'lry_admin_center', 'admin_manage', 'edit', '', 0, 0),
+  行号: 1477, 内容: (22, '修改个人信息', 18, 'lry_admin_center', 'admin_manage', 'public_edit_info', '', 0, 1),
+  行号: 1478, 内容: (23, '修改个人密码', 18, 'lry_admin_center', 'admin_manage', 'public_edit_pwd', '', 0, 1),
+  行号: 1479, 内容: (24, '栏目管理', 1, 'lry_admin_center', 'category', 'init', '', 11, 1),
+  行号: 1480, 内容: (25, '排序栏目', 24, 'lry_admin_center', 'category', 'order', '', 0, 0),
+  行号: 1481, 内容: (26, '删除栏目', 24, 'lry_admin_center', 'category', 'delete', '', 0, 0),
+  行号: 1482, 内容: (27, '添加栏目', 24, 'lry_admin_center', 'category', 'add', '', 0, 0),
+  行号: 1483, 内容: (28, '编辑栏目', 24, 'lry_admin_center', 'category', 'edit', '', 0, 0),
+  行号: 1484, 内容: (29, '编辑单页内容', 24, 'lry_admin_center', 'category', 'page_content', '', 0, 0),
+  行号: 1485, 内容: (30, '内容管理', 1, 'lry_admin_center', 'content', 'init', '', 10, 1),
+  行号: 1486, 内容: (31, '内容搜索', 30, 'lry_admin_center', 'content', 'search', '', 0, 0),
+  行号: 1487, 内容: (32, '添加内容', 30, 'lry_admin_center', 'content', 'add', '', 0, 0),
+  行号: 1488, 内容: (33, '修改内容', 30, 'lry_admin_center', 'content', 'edit', '', 0, 0),
+  行号: 1489, 内容: (34, '删除内容', 30, 'lry_admin_center', 'content', 'del', '', 0, 0),
+  行号: 1490, 内容: (35, '数据备份', 7, 'lry_admin_center', 'database', 'init', '', 70, 1),
+  行号: 1491, 内容: (36, '数据还原', 7, 'lry_admin_center', 'database', 'databack_list', '', 71, 1),
+  行号: 1492, 内容: (37, '优化表', 35, 'lry_admin_center', 'database', 'public_optimize', '', 0, 0),
+  行号: 1493, 内容: (38, '修复表', 35, 'lry_admin_center', 'database', 'public_repair', '', 0, 0),
+  行号: 1494, 内容: (39, '备份文件删除', 36, 'lry_admin_center', 'database', 'databack_del', '', 0, 0),
+  行号: 1495, 内容: (40, '备份文件下载', 36, 'lry_admin_center', 'database', 'databack_down', '', 0, 0),
+  行号: 1496, 内容: (41, '数据导入', 36, 'lry_admin_center', 'database', 'import', '', 0, 0),
+  行号: 1497, 内容: (42, '字段管理', 54, 'lry_admin_center', 'model_field', 'init', '', 0, 1),
+  行号: 1498, 内容: (43, '添加字段', 42, 'lry_admin_center', 'model_field', 'add', '', 0, 0),
+  行号: 1499, 内容: (44, '修改字段', 42, 'lry_admin_center', 'model_field', 'edit', '', 0, 0),
+  行号: 1500, 内容: (45, '删除字段', 42, 'lry_admin_center', 'model_field', 'delete', '', 0, 0),
+  行号: 1501, 内容: (46, '排序字段', 42, 'lry_admin_center', 'model_field', 'order', '', 0, 0),
+  行号: 1502, 内容: (47, '模块管理', 3, 'lry_admin_center', 'module', 'init', '', 0, 1),
+  行号: 1503, 内容: (48, '模块安装', 47, 'lry_admin_center', 'module', 'install', '', 0, 0),
+  行号: 1504, 内容: (49, '模块卸载', 47, 'lry_admin_center', 'module', 'uninstall', '', 0, 0),
+  行号: 1505, 内容: (50, '角色管理', 4, 'lry_admin_center', 'role', 'init', '', 0, 1),
+  行号: 1506, 内容: (51, '删除角色', 50, 'lry_admin_center', 'role', 'delete', '', 0, 0),
+  行号: 1507, 内容: (52, '添加角色', 50, 'lry_admin_center', 'role', 'add', '', 0, 0),
+  行号: 1508, 内容: (53, '编辑角色', 50, 'lry_admin_center', 'role', 'edit', '', 0, 0),
+  行号: 1509, 内容: (54, '模型管理', 1, 'lry_admin_center', 'sitemodel', 'init', '', 15, 1),
+  行号: 1510, 内容: (55, '删除模型', 54, 'lry_admin_center', 'sitemodel', 'delete', '', 0, 0),
+  行号: 1511, 内容: (56, '添加模型', 54, 'lry_admin_center', 'sitemodel', 'add', '', 0, 0),
+  行号: 1512, 内容: (57, '编辑模型', 54, 'lry_admin_center', 'sitemodel', 'edit', '', 0, 0),
+  行号: 1513, 内容: (58, '系统设置', 6, 'lry_admin_center', 'system_manage', 'init', '', 60, 1),
+  行号: 1514, 内容: (59, '会员中心设置', 2, 'lry_admin_center', 'system_manage', 'member_set', '', 26, 1),
+  行号: 1515, 内容: (60, '屏蔽词管理', 6, 'lry_admin_center', 'system_manage', 'prohibit_words', '', 63, 1),
+  行号: 1516, 内容: (61, '自定义配置', 6, 'lry_admin_center', 'system_manage', 'user_config_list', '', 62, 1),
+  行号: 1517, 内容: (62, '添加配置', 61, 'lry_admin_center', 'system_manage', 'user_config_add', '', 0, 0),
+  行号: 1518, 内容: (63, '配置编辑', 61, 'lry_admin_center', 'system_manage', 'user_config_edit', '', 0, 0),
+  行号: 1519, 内容: (64, '配置删除', 61, 'lry_admin_center', 'system_manage', 'user_config_del', '', 0, 0),
+  行号: 1520, 内容: (65, 'TAG管理', 1, 'lry_admin_center', 'tag', 'init', '', 16, 1),
+  行号: 1521, 内容: (66, '添加TAG', 65, 'lry_admin_center', 'tag', 'add', '', 0, 0),
+  行号: 1522, 内容: (67, '编辑TAG', 65, 'lry_admin_center', 'tag', 'edit', '', 0, 0),
+  行号: 1523, 内容: (68, '删除TAG', 65, 'lry_admin_center', 'tag', 'del', '', 0, 0),
+  行号: 1524, 内容: (69, '批量更新URL', 1, 'lry_admin_center', 'update_urls', 'init', '', 17, 1),
+  行号: 1565, 内容: (115, '权限管理', 50, 'lry_admin_center', 'role', 'role_priv', '', 0, 0),
+  行号: 1566, 内容: (116, '后台菜单管理', 6, 'lry_admin_center', 'menu', 'init', '', 64, 1),
+  行号: 1567, 内容: (117, '删除菜单', 116, 'lry_admin_center', 'menu', 'delete', '', 0, 0),
+  行号: 1568, 内容: (118, '添加菜单', 116, 'lry_admin_center', 'menu', 'add', '', 0, 0),
+  行号: 1569, 内容: (119, '编辑菜单', 116, 'lry_admin_center', 'menu', 'edit', '', 0, 0),
+  行号: 1570, 内容: (120, '菜单排序', 116, 'lry_admin_center', 'menu', 'order', '', 0, 0),
+  行号: 1571, 内容: (121, '邮箱配置', 6, 'lry_admin_center', 'system_manage', 'init', 'tab=3', 61, 1),
+  行号: 1572, 内容: (122, '修改个人信息', 5, 'lry_admin_center', 'admin_manage', 'public_edit_info', '', 51, 1),
+  行号: 1573, 内容: (123, '修改密码', 5, 'lry_admin_center', 'admin_manage', 'public_edit_pwd', '', 52, 1),
+  行号: 1579, 内容: (139, 'URL规则管理', 6, 'lry_admin_center', 'urlrule', 'init', '', 65, 1),
+  行号: 1580, 内容: (140, '添加URL规则', 139, 'lry_admin_center', 'urlrule', 'add', '', 0, 0),
+  行号: 1581, 内容: (141, '删除URL规则', 139, 'lry_admin_center', 'urlrule', 'del', '', 0, 0),
+  行号: 1582, 内容: (142, '编辑URL规则', 139, 'lry_admin_center', 'urlrule', 'edit', '', 0, 0),
+  行号: 1583, 内容: (143, '批量移动', 30, 'lry_admin_center', 'content', 'remove', '', 0, 0),
+  行号: 1584, 内容: (144, 'SQL命令行', 6, 'lry_admin_center', 'sql', 'init', '', 63, 1),
+  行号: 1585, 内容: (145, '提交SQL命令', 144, 'lry_admin_center', 'sql', 'do_sql', '', 0, 0),
+  行号: 1670, 内容: (266, '网站地图', 1, 'lry_admin_center', 'sitemap', 'init', '', 16, 1),
+  行号: 1671, 内容: (267, '生成地图', 266, 'lry_admin_center', 'sitemap', 'make_sitemap', '', 0, 0),
+  行号: 1672, 内容: (268, '导出模型', 54, 'lry_admin_center', 'sitemodel', 'import', '', 0, 0),
+  行号: 1673, 内容: (269, '导入模型', 54, 'lry_admin_center', 'sitemodel', 'export', '', 0, 0),
+  行号: 1674, 内容: (270, '导出配置', 61, 'lry_admin_center', 'system_manage', 'user_config_export', '', 0, 0),
+  行号: 1675, 内容: (271, '导入配置', 61, 'lry_admin_center', 'system_manage', 'user_config_import', '', 0, 0),
+  行号: 1683, 内容: (290, '推送至百度', 30, 'lry_admin_center', 'content', 'baidu_push', '', 0, 0),
+  行号: 1703, 内容: (310, '增加/删除内容属性', 30, 'lry_admin_center', 'content', 'attribute_operation', '', 0, 0),
+  行号: 1704, 内容: (311, '更改model', 69, 'lry_admin_center', 'update_urls', 'change_model', '', 0, 0),
+  行号: 1705, 内容: (312, '更新栏目URL', 69, 'lry_admin_center', 'update_urls', 'update_category_url', '', 0, 0),
+  行号: 1706, 内容: (313, '更新内容页URL', 69, 'lry_admin_center', 'update_urls', 'update_content_url', '', 0, 0),
+  行号: 1707, 内容: (314, '应用商店', 3, 'lry_admin_center', 'store', 'init', '', 0, 1),
+  行号: 1708, 内容: (315, '内容关键字', 3, 'lry_admin_center', 'keyword_link', 'init', '', 1, 1),
+  行号: 1712, 内容: (319, '内容管理', 65, 'lry_admin_center', 'tag', 'content', '', 0, 0),
+  行号: 1713, 内容: (320, '加入/移除Tag', 65, 'lry_admin_center', 'tag', 'content_oper', '', 0, 0),
+  行号: 1714, 内容: (321, '删除地图', 266, 'lry_admin_center', 'sitemap', 'delete', '', 0, 0),
+  行号: 1715, 内容: (322, '保存配置', 58, 'lry_admin_center', 'system_manage', 'save', '', 0, 0),
+  行号: 1716, 内容: (323, '立即备份', 35, 'lry_admin_center', 'database', 'export_list', '', 0, 0),
+  行号: 1717, 内容: (324, '管理非自己发布的内容', 30, 'lry_admin_center', 'content', 'all_content', '', 0, 0),
+  行号: 1909, 内容: ('lry_admin_center', '后台模块', 1, '1.0', '后台模块', '', 0, 0, '2016-08-27', '2016-08-27'),
+
+文件: /var/www/lryper.com/rylcsjk.sql
+  行号: 75, 内容: (1270, 'lry_admin_center', 'system_manage', 'm=lry_admin_center&c=system_manage&a=save', 1, 'lirongyaoper', '115.51.9.80', 1603117519),
+  行号: 76, 内容: (1269, 'lry_admin_center', 'content', 'm=lry_admin_center&c=content&a=add', 1, 'lirongyaoper', '115.51.9.80', 1603113917),
+  行号: 77, 内容: (1268, 'lry_admin_center', 'tag', 'm=lry_admin_center&c=tag&a=public_select', 1, 'lirongyaoper', '115.51.9.80', 1603113764),
+  行号: 78, 内容: (1267, 'lry_admin_center', 'content', 'm=lry_admin_center&c=content&a=add', 1, 'lirongyaoper', '115.51.9.80', 1603113748);
+  行号: 415, 内容: (6, 0, 'lry_admin_center', '', '190513034718364.jpg', '190513034718364.jpg', '/uploads/201905/13/', 520404, 'jpg', 1, 0, 1, 'lirongyaoper', 1557733638, '122.206.190.18'),
+  行号: 416, 内容: (7, 0, 'lry_admin_center', '', '190513034718364.jpg', '190513034752309.jpg', '/uploads/201905/13/', 226381, 'jpg', 1, 0, 1, 'lirongyaoper', 1557733672, '122.206.190.18'),
+  行号: 417, 内容: (8, 0, 'lry_admin_center', '', '190515095828281.jpg', '190515095828281.jpg', '/uploads/201905/15/', 200835, 'jpg', 1, 0, 1, 'lirongyaoper', 1557885508, '122.206.190.16'),
+  行号: 419, 内容: (10, 0, 'lry_admin_center', '', '09.jpg', '190521121809507.jpg', '/uploads/201905/21/', 20272, 'jpg', 1, 0, 1, 'lirongyaoper', 1558412289, '122.206.190.30'),
+  行号: 420, 内容: (11, 0, 'lry_admin_center', '', '微信图片_20190521123834.jpg', '190521123856840.jpg', '/uploads/201905/21/', 40583, 'jpg', 1, 0, 1, 'lirongyaoper', 1558413536, '122.206.190.30'),
+  行号: 421, 内容: (12, 0, 'lry_admin_center', '', 'nopic.jpg', '190601055350246.jpg', '/uploads/201906/01/', 20272, 'jpg', 1, 0, 1, 'lirongyaoper', 1559382830, '122.206.190.109'),
+  行号: 422, 内容: (13, 0, 'lry_admin_center', '', 'thumb.jpg', '190619055253858.jpg', '/uploads/201906/19/', 6288, 'jpg', 1, 0, 1, 'lirongyaoper', 1560937973, '122.206.190.82'),
+  行号: 423, 内容: (14, 0, 'lry_admin_center', '', 'chaofan .jpg', '190829082325470.jpg', '/uploads/201908/29/', 105494, 'jpg', 1, 0, 1, 'lirongyaoper', 1567081405, '115.51.9.204'),
+  行号: 424, 内容: (15, 0, 'lry_admin_center', '', 'chaofan.jpg', '190919094030818.jpg', '/uploads/201909/19/', 808657, 'jpg', 1, 0, 1, 'lirongyaoper', 1568900430, '115.51.8.172'),
+  行号: 425, 内容: (16, 0, 'lry_admin_center', '', '12.jpg', '190925043246126.jpg', '/uploads/201909/25/', 1664422, 'jpg', 1, 0, 1, 'lirongyaoper', 1569400366, '115.51.9.68'),
+  行号: 426, 内容: (17, 0, 'lry_admin_center', '', '09.jpg', '191014100649650.jpg', '/uploads/201910/14/', 32975, 'jpg', 1, 0, 1, 'lirongyaoper', 1571062009, '115.51.8.108'),
+  行号: 427, 内容: (18, 0, 'lry_admin_center', '', '01.jpg', '191014101216366.jpg', '/uploads/201910/14/', 74889, 'jpg', 1, 0, 1, 'lirongyaoper', 1571062336, '115.51.8.108'),
+  行号: 432, 内容: (23, 0, 'lry_admin_center', '', '0.jpeg', '191209023947151.jpeg', '/uploads/201912/09/', 174329, 'jpeg', 1, 0, 1, 'lirongyaoper', 1575873587, '115.51.8.195'),
+  行号: 436, 内容: (27, 0, 'lry_admin_center', '', '微信图片_20191215215150.jpg', '191215095302596.jpg', '/uploads/201912/15/', 141164, 'jpg', 1, 0, 1, 'lirongyaoper', 1576417982, '115.51.11.38'),
+  行号: 440, 内容: (31, 0, 'lry_admin_center', '', '微信截图_20191230222314.png', '191230103842313.png', '/uploads/201912/30/', 268757, 'png', 1, 0, 1, 'lirongyaoper', 1577716722, '115.51.8.175'),
+  行号: 442, 内容: (33, 0, 'lry_admin_center', '', '191230103842313.png', '200106101355518.png', '/uploads/202001/06/', 268757, 'png', 1, 0, 1, 'lirongyaoper', 1578320035, '115.51.10.59'),
+  行号: 443, 内容: (34, 0, 'lry_admin_center', '', '202001090001.png', '200109104825976.png', '/uploads/202001/09/', 662499, 'png', 1, 0, 1, 'lirongyaoper', 1578581305, '115.51.9.89'),
+  行号: 444, 内容: (35, 0, 'lry_admin_center', '', 'rongyao.png', '200914112524868.png', '/uploads/202009/14/', 827787, 'png', 1, 0, 1, 'lirongyaoper', 1600097124, '115.51.9.213'),
+  行号: 447, 内容: (38, 0, 'lry_admin_center', '', 'qiuijng3.jpg', '200917093033729.jpg', '/uploads/202009/17/', 156622, 'jpg', 1, 0, 1, 'lirongyaoper', 1600349433, '115.51.10.107'),
+  行号: 451, 内容: (42, 0, 'lry_admin_center', '', 'ziyou2.jpg', '200918031420924.jpg', '/uploads/202009/18/', 17725, 'jpg', 1, 0, 1, 'lirongyaoper', 1600413260, '115.51.11.59'),
+  行号: 454, 内容: (45, 0, 'lry_admin_center', '', 'timg.jpg', '200921090527407.jpg', '/uploads/202009/21/', 114984, 'jpg', 1, 0, 1, 'lirongyaoper', 1600693527, '115.51.11.0'),
+  行号: 458, 内容: (49, 0, 'lry_admin_center', '', 'chenboshisuoluetu.png', '201008103046837.png', '/uploads/202010/08/', 224659, 'png', 1, 0, 1, 'lirongyaoper', 1602167446, '115.51.8.251'),
+  行号: 460, 内容: (51, 0, 'lry_admin_center', '', 'jia.png', '201017113126677.png', '/uploads/202010/17/', 341307, 'png', 1, 0, 1, 'lirongyaoper', 1602948686, '115.51.8.173'),
+  行号: 477, 内容: (68, 0, 'lry_admin_center', '', '1111111.png', '201125115419821.png', '/uploads/202011/25/', 72192, 'png', 1, 0, 1, 'lirongyaoper', 1606319659, '115.51.10.179'),
+  行号: 482, 内容: (73, 0, 'lry_admin_center', '', '333、.png', '201212102830781.png', '/uploads/202012/12/', 158454, 'png', 1, 0, 1, 'lirongyaoper', 1607783310, '115.51.11.212'),
+  行号: 483, 内容: (74, 0, 'lry_admin_center', '', 'bulie00.png', '201220104717237.png', '/uploads/202012/20/', 56767, 'png', 1, 0, 1, 'lirongyaoper', 1608475637, '115.51.10.67'),
+  行号: 487, 内容: (78, 0, 'lry_admin_center', '', '11111111111111.gif', '210106114312566.gif', '/uploads/202101/06/', 718475, 'gif', 1, 0, 1, 'lirongyaoper', 1609947792, '115.51.9.210'),
+  行号: 490, 内容: (81, 0, 'lry_admin_center', '', 'fengmian.png', '210511114019511.png', '/uploads/202105/11/', 397781, 'png', 1, 0, 1, 'lirongyaoper', 1620747619, '115.51.11.12'),
+  行号: 492, 内容: (83, 0, 'lry_admin_center', '', 'yuanlaomenglao.png', '210523111307549.png', '/uploads/202105/23/', 149448, 'png', 1, 0, 1, 'lirongyaoper', 1621782787, '115.51.8.180'),
+  行号: 496, 内容: (87, 0, 'lry_admin_center', '', '建党100.jpg', '210702120935341.jpg', '/uploads/202107/02/', 113619, 'jpg', 1, 0, 1, 'lirongyaoper', 1625155775, '115.51.9.30'),
+  行号: 499, 内容: (90, 0, 'lry_admin_center', '', 'fm.png', '210806083014349.png', '/uploads/202108/06/', 297304, 'png', 1, 0, 1, 'lirongyaoper', 1628253014, '115.51.9.75'),
+  行号: 502, 内容: (93, 0, 'lry_admin_center', '', 'brother_fengmian.png', '210809120623560.png', '/uploads/202108/09/', 70996, 'png', 1, 0, 1, 'lirongyaoper', 1628438783, '115.51.11.107'),
+  行号: 504, 内容: (95, 0, 'lry_admin_center', '', '20210819002fengmain.png', '210819080934649.png', '/uploads/202108/19/', 44428, 'png', 1, 0, 1, 'lirongyaoper', 1629374974, '39.149.90.202'),
+  行号: 507, 内容: (98, 0, 'lry_admin_center', '', 'fengmian.png', '210828084929366.png', '/uploads/202108/28/', 49274, 'png', 1, 0, 1, 'lirongyaoper', 1630154969, '39.149.90.175'),
+  行号: 522, 内容: (113, 0, 'lry_admin_center', '', 'suoluetu.png', '220503115612227.png', '/uploads/202205/03/', 75952, 'png', 1, 0, 1, 'lirongyaoper', 1651593372, '223.91.37.139'),
+  行号: 526, 内容: (117, 0, 'lry_admin_center', '', 'slt.jpg', '220511110518259.jpg', '/uploads/202205/11/', 9824, 'jpg', 1, 0, 1, 'lirongyaoper', 1652281518, '39.149.90.135'),
+  行号: 1453, 内容: (1, '内容管理', 0, 'lry_admin_center', 'content', 'top', '&#xe616;', 1, 1),
+  行号: 1455, 内容: (3, '模块管理', 0, 'lry_admin_center', 'module', 'top', '&#xe6c0;', 3, 1),
+  行号: 1456, 内容: (4, '管理员管理', 0, 'lry_admin_center', 'admin_manage', 'top', '&#xe62d;', 4, 1),
+  行号: 1457, 内容: (5, '个人信息', 0, 'lry_admin_center', 'admin_manage', 'top', '&#xe602;', 5, 0),
+  行号: 1458, 内容: (6, '系统管理', 0, 'lry_admin_center', 'system_manage', 'top', '&#xe62e;', 6, 1),
+  行号: 1459, 内容: (7, '数据管理', 0, 'lry_admin_center', 'database', 'top', '&#xe6b5;', 7, 1),
+  行号: 1460, 内容: (8, '稿件管理', 1, 'lry_admin_center', 'admin_content', 'init', '', 13, 1),
+  行号: 1461, 内容: (9, '稿件浏览', 8, 'lry_admin_center', 'admin_content', 'public_preview', '', 0, 0),
+  行号: 1462, 内容: (10, '稿件删除', 8, 'lry_admin_center', 'admin_content', 'del', '', 0, 0),
+  行号: 1463, 内容: (11, '通过审核', 8, 'lry_admin_center', 'admin_content', 'adopt', '', 0, 0),
+  行号: 1464, 内容: (12, '退稿', 8, 'lry_admin_center', 'admin_content', 'rejection', '', 0, 0),
+  行号: 1465, 内容: (13, '后台操作日志', 6, 'lry_admin_center', 'admin_log', 'init', '', 66, 1),
+  行号: 1466, 内容: (14, '操作日志删除', 13, 'lry_admin_center', 'admin_log', 'del_log', '', 0, 0),
+  行号: 1467, 内容: (15, '操作日志搜索', 13, 'lry_admin_center', 'admin_log', 'search_log', '', 0, 0),
+  行号: 1468, 内容: (16, '后台登录日志', 6, 'lry_admin_center', 'admin_log', 'admin_login_log_list', '', 67, 1),
+  行号: 1469, 内容: (17, '登录日志删除', 16, 'lry_admin_center', 'admin_log', 'del_login_log', '', 0, 0),
+  行号: 1470, 内容: (18, '管理员管理', 4, 'lry_admin_center', 'admin_manage', 'init', '', 0, 1),
+  行号: 1471, 内容: (19, '删除管理员', 18, 'lry_admin_center', 'admin_manage', 'delete', '', 0, 0),
+  行号: 1472, 内容: (20, '添加管理员', 18, 'lry_admin_center', 'admin_manage', 'add', '', 0, 0),
+  行号: 1473, 内容: (21, '编辑管理员', 18, 'lry_admin_center', 'admin_manage', 'edit', '', 0, 0),
+  行号: 1474, 内容: (22, '修改个人信息', 18, 'lry_admin_center', 'admin_manage', 'public_edit_info', '', 0, 1),
+  行号: 1475, 内容: (23, '修改个人密码', 18, 'lry_admin_center', 'admin_manage', 'public_edit_pwd', '', 0, 1),
+  行号: 1476, 内容: (24, '栏目管理', 1, 'lry_admin_center', 'category', 'init', '', 11, 1),
+  行号: 1477, 内容: (25, '排序栏目', 24, 'lry_admin_center', 'category', 'order', '', 0, 0),
+  行号: 1478, 内容: (26, '删除栏目', 24, 'lry_admin_center', 'category', 'delete', '', 0, 0),
+  行号: 1479, 内容: (27, '添加栏目', 24, 'lry_admin_center', 'category', 'add', '', 0, 0),
+  行号: 1480, 内容: (28, '编辑栏目', 24, 'lry_admin_center', 'category', 'edit', '', 0, 0),
+  行号: 1481, 内容: (29, '编辑单页内容', 24, 'lry_admin_center', 'category', 'page_content', '', 0, 0),
+  行号: 1482, 内容: (30, '内容管理', 1, 'lry_admin_center', 'content', 'init', '', 10, 1),
+  行号: 1483, 内容: (31, '内容搜索', 30, 'lry_admin_center', 'content', 'search', '', 0, 0),
+  行号: 1484, 内容: (32, '添加内容', 30, 'lry_admin_center', 'content', 'add', '', 0, 0),
+  行号: 1485, 内容: (33, '修改内容', 30, 'lry_admin_center', 'content', 'edit', '', 0, 0),
+  行号: 1486, 内容: (34, '删除内容', 30, 'lry_admin_center', 'content', 'del', '', 0, 0),
+  行号: 1487, 内容: (35, '数据备份', 7, 'lry_admin_center', 'database', 'init', '', 70, 1),
+  行号: 1488, 内容: (36, '数据还原', 7, 'lry_admin_center', 'database', 'databack_list', '', 71, 1),
+  行号: 1489, 内容: (37, '优化表', 35, 'lry_admin_center', 'database', 'public_optimize', '', 0, 0),
+  行号: 1490, 内容: (38, '修复表', 35, 'lry_admin_center', 'database', 'public_repair', '', 0, 0),
+  行号: 1491, 内容: (39, '备份文件删除', 36, 'lry_admin_center', 'database', 'databack_del', '', 0, 0),
+  行号: 1492, 内容: (40, '备份文件下载', 36, 'lry_admin_center', 'database', 'databack_down', '', 0, 0),
+  行号: 1493, 内容: (41, '数据导入', 36, 'lry_admin_center', 'database', 'import', '', 0, 0),
+  行号: 1494, 内容: (42, '字段管理', 54, 'lry_admin_center', 'model_field', 'init', '', 0, 1),
+  行号: 1495, 内容: (43, '添加字段', 42, 'lry_admin_center', 'model_field', 'add', '', 0, 0),
+  行号: 1496, 内容: (44, '修改字段', 42, 'lry_admin_center', 'model_field', 'edit', '', 0, 0),
+  行号: 1497, 内容: (45, '删除字段', 42, 'lry_admin_center', 'model_field', 'delete', '', 0, 0),
+  行号: 1498, 内容: (46, '排序字段', 42, 'lry_admin_center', 'model_field', 'order', '', 0, 0),
+  行号: 1499, 内容: (47, '模块管理', 3, 'lry_admin_center', 'module', 'init', '', 0, 1),
+  行号: 1500, 内容: (48, '模块安装', 47, 'lry_admin_center', 'module', 'install', '', 0, 0),
+  行号: 1501, 内容: (49, '模块卸载', 47, 'lry_admin_center', 'module', 'uninstall', '', 0, 0),
+  行号: 1502, 内容: (50, '角色管理', 4, 'lry_admin_center', 'role', 'init', '', 0, 1),
+  行号: 1503, 内容: (51, '删除角色', 50, 'lry_admin_center', 'role', 'delete', '', 0, 0),
+  行号: 1504, 内容: (52, '添加角色', 50, 'lry_admin_center', 'role', 'add', '', 0, 0),
+  行号: 1505, 内容: (53, '编辑角色', 50, 'lry_admin_center', 'role', 'edit', '', 0, 0),
+  行号: 1506, 内容: (54, '模型管理', 1, 'lry_admin_center', 'sitemodel', 'init', '', 15, 1),
+  行号: 1507, 内容: (55, '删除模型', 54, 'lry_admin_center', 'sitemodel', 'delete', '', 0, 0),
+  行号: 1508, 内容: (56, '添加模型', 54, 'lry_admin_center', 'sitemodel', 'add', '', 0, 0),
+  行号: 1509, 内容: (57, '编辑模型', 54, 'lry_admin_center', 'sitemodel', 'edit', '', 0, 0),
+  行号: 1510, 内容: (58, '系统设置', 6, 'lry_admin_center', 'system_manage', 'init', '', 60, 1),
+  行号: 1511, 内容: (59, '会员中心设置', 2, 'lry_admin_center', 'system_manage', 'member_set', '', 26, 1),
+  行号: 1512, 内容: (60, '屏蔽词管理', 6, 'lry_admin_center', 'system_manage', 'prohibit_words', '', 63, 1),
+  行号: 1513, 内容: (61, '自定义配置', 6, 'lry_admin_center', 'system_manage', 'user_config_list', '', 62, 1),
+  行号: 1514, 内容: (62, '添加配置', 61, 'lry_admin_center', 'system_manage', 'user_config_add', '', 0, 0),
+  行号: 1515, 内容: (63, '配置编辑', 61, 'lry_admin_center', 'system_manage', 'user_config_edit', '', 0, 0),
+  行号: 1516, 内容: (64, '配置删除', 61, 'lry_admin_center', 'system_manage', 'user_config_del', '', 0, 0),
+  行号: 1517, 内容: (65, 'TAG管理', 1, 'lry_admin_center', 'tag', 'init', '', 16, 1),
+  行号: 1518, 内容: (66, '添加TAG', 65, 'lry_admin_center', 'tag', 'add', '', 0, 0),
+  行号: 1519, 内容: (67, '编辑TAG', 65, 'lry_admin_center', 'tag', 'edit', '', 0, 0),
+  行号: 1520, 内容: (68, '删除TAG', 65, 'lry_admin_center', 'tag', 'del', '', 0, 0),
+  行号: 1521, 内容: (69, '批量更新URL', 1, 'lry_admin_center', 'update_urls', 'init', '', 17, 1),
+  行号: 1562, 内容: (115, '权限管理', 50, 'lry_admin_center', 'role', 'role_priv', '', 0, 0),
+  行号: 1563, 内容: (116, '后台菜单管理', 6, 'lry_admin_center', 'menu', 'init', '', 64, 1),
+  行号: 1564, 内容: (117, '删除菜单', 116, 'lry_admin_center', 'menu', 'delete', '', 0, 0),
+  行号: 1565, 内容: (118, '添加菜单', 116, 'lry_admin_center', 'menu', 'add', '', 0, 0),
+  行号: 1566, 内容: (119, '编辑菜单', 116, 'lry_admin_center', 'menu', 'edit', '', 0, 0),
+  行号: 1567, 内容: (120, '菜单排序', 116, 'lry_admin_center', 'menu', 'order', '', 0, 0),
+  行号: 1568, 内容: (121, '邮箱配置', 6, 'lry_admin_center', 'system_manage', 'init', 'tab=3', 61, 1),
+  行号: 1569, 内容: (122, '修改个人信息', 5, 'lry_admin_center', 'admin_manage', 'public_edit_info', '', 51, 1),
+  行号: 1570, 内容: (123, '修改密码', 5, 'lry_admin_center', 'admin_manage', 'public_edit_pwd', '', 52, 1),
+  行号: 1576, 内容: (139, 'URL规则管理', 6, 'lry_admin_center', 'urlrule', 'init', '', 65, 1),
+  行号: 1577, 内容: (140, '添加URL规则', 139, 'lry_admin_center', 'urlrule', 'add', '', 0, 0),
+  行号: 1578, 内容: (141, '删除URL规则', 139, 'lry_admin_center', 'urlrule', 'del', '', 0, 0),
+  行号: 1579, 内容: (142, '编辑URL规则', 139, 'lry_admin_center', 'urlrule', 'edit', '', 0, 0),
+  行号: 1580, 内容: (143, '批量移动', 30, 'lry_admin_center', 'content', 'remove', '', 0, 0),
+  行号: 1581, 内容: (144, 'SQL命令行', 6, 'lry_admin_center', 'sql', 'init', '', 63, 1),
+  行号: 1582, 内容: (145, '提交SQL命令', 144, 'lry_admin_center', 'sql', 'do_sql', '', 0, 0),
+  行号: 1667, 内容: (266, '网站地图', 1, 'lry_admin_center', 'sitemap', 'init', '', 16, 1),
+  行号: 1668, 内容: (267, '生成地图', 266, 'lry_admin_center', 'sitemap', 'make_sitemap', '', 0, 0),
+  行号: 1669, 内容: (268, '导出模型', 54, 'lry_admin_center', 'sitemodel', 'import', '', 0, 0),
+  行号: 1670, 内容: (269, '导入模型', 54, 'lry_admin_center', 'sitemodel', 'export', '', 0, 0),
+  行号: 1671, 内容: (270, '导出配置', 61, 'lry_admin_center', 'system_manage', 'user_config_export', '', 0, 0),
+  行号: 1672, 内容: (271, '导入配置', 61, 'lry_admin_center', 'system_manage', 'user_config_import', '', 0, 0),
+  行号: 1680, 内容: (290, '推送至百度', 30, 'lry_admin_center', 'content', 'baidu_push', '', 0, 0),
+  行号: 1700, 内容: (310, '增加/删除内容属性', 30, 'lry_admin_center', 'content', 'attribute_operation', '', 0, 0),
+  行号: 1701, 内容: (311, '更改model', 69, 'lry_admin_center', 'update_urls', 'change_model', '', 0, 0),
+  行号: 1702, 内容: (312, '更新栏目URL', 69, 'lry_admin_center', 'update_urls', 'update_category_url', '', 0, 0),
+  行号: 1703, 内容: (313, '更新内容页URL', 69, 'lry_admin_center', 'update_urls', 'update_content_url', '', 0, 0),
+  行号: 1704, 内容: (314, '应用商店', 3, 'lry_admin_center', 'store', 'init', '', 0, 1),
+  行号: 1705, 内容: (315, '内容关键字', 3, 'lry_admin_center', 'keyword_link', 'init', '', 1, 1),
+  行号: 1709, 内容: (319, '内容管理', 65, 'lry_admin_center', 'tag', 'content', '', 0, 0),
+  行号: 1710, 内容: (320, '加入/移除Tag', 65, 'lry_admin_center', 'tag', 'content_oper', '', 0, 0),
+  行号: 1711, 内容: (321, '删除地图', 266, 'lry_admin_center', 'sitemap', 'delete', '', 0, 0),
+  行号: 1712, 内容: (322, '保存配置', 58, 'lry_admin_center', 'system_manage', 'save', '', 0, 0),
+  行号: 1713, 内容: (323, '立即备份', 35, 'lry_admin_center', 'database', 'export_list', '', 0, 0),
+  行号: 1714, 内容: (324, '管理非自己发布的内容', 30, 'lry_admin_center', 'content', 'all_content', '', 0, 0),
+  行号: 1905, 内容: ('lry_admin_center', '后台模块', 1, '1.0', '后台模块', '', 0, 0, '2016-08-27', '2016-08-27'),
+
+文件: /var/www/lryper.com/cache/error_log.php
+  行号: 86, 内容: 2025-06-30 16:06:17 | http://lryper.com/lry_admin_center/update_urls/update_content_url.html | 127.0.0.1 | {"yzm_csrf_token":"9FRRwkP3","dosubmit":"1","modelid":"0","catids":["0"]} | Error | 8192 | Automatic conversion of false to array is deprecated | /var/www/lryper.com/application/lry_admin_center/controller/update_urls.class.php | 90
+
+文件: /var/www/lryper.com/application/collection/controller/collection_content.class.php
+  行号: 3, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+
+文件: /var/www/lryper.com/application/collection/view/collection_list.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta','lry_admin_center');?>
+  行号: 63, 内容: <?php include $this->admin_tpl('footer','lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/collection/view/collection_node_edit.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 198, 内容: <?php include $this->admin_tpl('footer','lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/collection/view/collection_node_add.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 199, 内容: <?php include $this->admin_tpl('footer','lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/collection/view/collection_content_import.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 66, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/collection/view/collection_node_list.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 57, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/collection/view/collection_test.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 24, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/guestbook/controller/guestbook.class.php
+  行号: 3, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+
+文件: /var/www/lryper.com/application/guestbook/view/guestbook_read.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta','lry_admin_center');?>
+  行号: 45, 内容: <?php include $this->admin_tpl('footer','lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/guestbook/view/guestbook_list.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta','lry_admin_center');?>
+  行号: 91, 内容: <?php include $this->admin_tpl('footer','lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/adver/controller/adver.class.php
+  行号: 10, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+
+文件: /var/www/lryper.com/application/adver/view/adver_add.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 48, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/adver/view/adver_list.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 56, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/adver/view/adver_edit.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 49, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/lry_admin_center/controller/tag.class.php
+  行号: 3, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+
+文件: /var/www/lryper.com/application/lry_admin_center/controller/admin_manage.class.php
+  行号: 3, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+
+文件: /var/www/lryper.com/application/lry_admin_center/controller/menu.class.php
+  行号: 3, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+
+文件: /var/www/lryper.com/application/lry_admin_center/controller/module.class.php
+  行号: 3, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+  行号: 4, 内容: yzm_base::load_common('lib/module_api'.EXT, 'lry_admin_center');
+
+文件: /var/www/lryper.com/application/lry_admin_center/controller/sitemap.class.php
+  行号: 3, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+
+文件: /var/www/lryper.com/application/lry_admin_center/controller/model_field.class.php
+  行号: 3, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+  行号: 4, 内容: yzm_base::load_common('lib/sql'.EXT, 'lry_admin_center');
+
+文件: /var/www/lryper.com/application/lry_admin_center/controller/system_manage.class.php
+  行号: 3, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+  行号: 34, 内容: yzm_base::load_common('function/function.php', 'lry_admin_center');
+
+文件: /var/www/lryper.com/application/lry_admin_center/controller/sql.class.php
+  行号: 3, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+
+文件: /var/www/lryper.com/application/lry_admin_center/controller/admin_log.class.php
+  行号: 3, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+
+文件: /var/www/lryper.com/application/lry_admin_center/controller/update_urls.class.php
+  行号: 3, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+
+文件: /var/www/lryper.com/application/lry_admin_center/controller/clear_cache.class.php
+  行号: 3, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+
+文件: /var/www/lryper.com/application/lry_admin_center/controller/sitemodel.class.php
+  行号: 3, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+  行号: 4, 内容: yzm_base::load_common('lib/sql'.EXT, 'lry_admin_center');
+
+文件: /var/www/lryper.com/application/lry_admin_center/controller/database.class.php
+  行号: 3, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+
+文件: /var/www/lryper.com/application/lry_admin_center/controller/category.class.php
+  行号: 3, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+  行号: 351, 内容: yzm_base::load_common('lib/page_form'.EXT, 'lry_admin_center');
+
+文件: /var/www/lryper.com/application/lry_admin_center/controller/keyword_link.class.php
+  行号: 3, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+
+文件: /var/www/lryper.com/application/lry_admin_center/controller/common.class.php
+  行号: 28, 内容: if(ROUTE_M =='lry_admin_center' && ROUTE_C =='index' && ROUTE_A =='login') {
+  行号: 33, 内容: echo '<script type="text/javascript"> var url="'.U('lry_admin_center/index/login').'"; if(top.location !== self.location){ top.location=url; }else{ window.location.href=url; } </script>';
+  行号: 44, 内容: if(ROUTE_M =='lry_admin_center' && ROUTE_C =='index' && in_array(ROUTE_A, array('login', 'init'))) return true;
+
+文件: /var/www/lryper.com/application/lry_admin_center/controller/store.class.php
+  行号: 12, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+
+文件: /var/www/lryper.com/application/lry_admin_center/controller/urlrule.class.php
+  行号: 3, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+
+文件: /var/www/lryper.com/application/lry_admin_center/controller/content.class.php
+  行号: 3, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+  行号: 4, 内容: yzm_base::load_common('lib/content_form'.EXT, 'lry_admin_center');
+  行号: 369, 内容: $res = D('admin_role_priv')->field('roleid')->where(array('roleid'=>$_SESSION['roleid'],'m'=>'lry_admin_center','c'=>'content','a'=>'all_content'))->find();
+
+文件: /var/www/lryper.com/application/lry_admin_center/controller/role.class.php
+  行号: 3, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+
+文件: /var/www/lryper.com/application/lry_admin_center/controller/admin_content.class.php
+  行号: 3, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+  行号: 131, 内容: yzm_base::load_model('content_model', 'lry_admin_center', 0);
+
+文件: /var/www/lryper.com/application/lry_admin_center/view/menu.html
+  行号: 1, 内容: <?php yzm_base::load_common('function/function.php', 'lry_admin_center'); ?>
+
+文件: /var/www/lryper.com/application/lry_admin_center/view/page_content.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 32, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/lry_admin_center/view/attribute_operation.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 52, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/lry_admin_center/view/tag_select.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 36, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/lry_admin_center/view/member_publish_list.html
+  行号: 82, 内容: <a title="编辑" href="javascript:;" onclick="yzm_open_full('编辑内容','<?php echo U('lry_admin_center/content/edit',array('modelid'=>$val['modelid'],'id'=>$val['id']));?>')" class="ml-5" style="text-decoration:none"><i class="yzm-iconfont yzm-iconbianji2"></i></a>
+
+文件: /var/www/lryper.com/application/lry_admin_center/view/public_home.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 13, 内容: <li class="col-xs-3"><a data-title="内容管理"  _href="<?php echo U('lry_admin_center/content/init');?>" onclick="Hui_admin_tab(this)" href="javascript:void(0)" class="yzm-console"><i class="yzm-iconfont yzm-iconneirong"></i><cite>内容管理</cite></a></li>
+  行号: 16, 内容: <li class="col-xs-3"><a data-title="系统设置"  _href="<?php echo U('lry_admin_center/system_manage/init');?>" onclick="Hui_admin_tab(this)" href="javascript:void(0)" class="yzm-console"><i class="yzm-iconfont yzm-iconshezhi"></i><cite>系统设置</cite></a></li>
+  行号: 20, 内容: <li class="col-xs-3"><a data-title="数据备份"  _href="<?php echo U('lry_admin_center/database/init');?>" onclick="Hui_admin_tab(this)" href="javascript:void(0)" class="yzm-console"><i class="yzm-iconfont yzm-iconshujuku"></i><cite>数据备份</cite></a></li>
+  行号: 31, 内容: <a data-title="全部文章"  _href="<?php echo U('lry_admin_center/content/init');?>" onclick="Hui_admin_tab(this)" href="javascript:void(0)" class="yzm-backlog-body">
+  行号: 37, 内容: <a data-title="模块插件"  _href="<?php echo U('lry_admin_center/module/init');?>" onclick="Hui_admin_tab(this)" href="javascript:void(0)" class="yzm-backlog-body">
+  行号: 49, 内容: <a data-title="管理员"  _href="<?php echo U('lry_admin_center/admin_manage/init');?>" onclick="Hui_admin_tab(this)" href="javascript:void(0)" class="yzm-backlog-body">
+  行号: 211, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+  行号: 212, 内容: <script type="text/javascript" src="<?php echo STATIC_URL;?>lry_admin_center/yzm_admin/js/yzm.update.js?v=<?php echo YZMCMS_VERSION;?>"></script>
+
+文件: /var/www/lryper.com/application/lry_admin_center/view/datatable_structure.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 12, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/lry_admin_center/view/tag_content.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 119, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/pay/controller/pay.class.php
+  行号: 10, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+
+文件: /var/www/lryper.com/application/pay/view/alipay.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 40, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/pay/view/pay_list.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 50, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/pay/view/wechat.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 40, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/link/controller/link.class.php
+  行号: 3, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+
+文件: /var/www/lryper.com/application/link/view/link_list.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 138, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/link/view/link_edit.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 62, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/link/view/link_add.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 62, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/comment/controller/comment.class.php
+  行号: 3, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+
+文件: /var/www/lryper.com/application/comment/view/comment_list.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta','lry_admin_center');?>
+  行号: 95, 内容: <?php include $this->admin_tpl('footer','lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/forum/controller/plate.class.php
+  行号: 11, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+
+文件: /var/www/lryper.com/application/forum/controller/bbs.class.php
+  行号: 11, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+
+文件: /var/www/lryper.com/application/forum/view/bbs_config.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 81, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/forum/view/posts_remove.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 36, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/forum/view/attribute_operation.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 31, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/forum/view/forum_plate_list.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 41, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/forum/view/forum_plate_edit.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 40, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/forum/view/posts_list.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 115, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/forum/view/forum_plate_add.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 38, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/forum/view/comment_list.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta','lry_admin_center');?>
+  行号: 83, 内容: <?php include $this->admin_tpl('footer','lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/forum/view/post_edit.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 105, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/vcount/controller/vcount.class.php
+  行号: 8, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+
+文件: /var/www/lryper.com/application/vcount/view/view_count.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/attachment/controller/index.class.php
+  行号: 3, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+
+文件: /var/www/lryper.com/application/attachment/view/upload_box.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 60, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/attachment/view/attachment_list.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 83, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/attachment/view/cropper_box.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/attachment/view/upload_box_html5.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 42, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/banner/controller/banner.class.php
+  行号: 3, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+
+文件: /var/www/lryper.com/application/banner/view/banner_list.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 63, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/banner/view/cat_add.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 22, 内容: <?php include $this->admin_tpl('footer','lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/banner/view/cat_manage.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 35, 内容: <?php include $this->admin_tpl('footer','lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/banner/view/banner_edit.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 49, 内容: <?php include $this->admin_tpl('footer','lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/banner/view/banner_add.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 48, 内容: <?php include $this->admin_tpl('footer','lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/vip/controller/member_message.class.php
+  行号: 10, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+
+文件: /var/www/lryper.com/application/vip/controller/order.class.php
+  行号: 10, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+
+文件: /var/www/lryper.com/application/vip/controller/member_group.class.php
+  行号: 10, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+
+文件: /var/www/lryper.com/application/vip/controller/member.class.php
+  行号: 10, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+
+文件: /var/www/lryper.com/application/vip/view/message_list.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 73, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/vip/view/member_list.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 113, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/vip/view/member_edit.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 211, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/vip/view/order_list.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 88, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/vip/view/member_group_list.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 45, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/vip/view/member_check.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 55, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/vip/view/add_messages.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 33, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/vip/view/member_count.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/vip/view/change_price.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 25, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/vip/view/member_group_edit.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 48, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/vip/view/member_group_add.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 47, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/vip/view/recharge.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 42, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/vip/view/pay_list.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 79, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/vip/view/message_group_list.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 43, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/vip/view/member_add.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 48, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/vip/view/member_set.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 140, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+  行号: 176, 内容: url: '<?php echo U('lry_admin_center/system_manage/save');?>',
+
+文件: /var/www/lryper.com/application/vip/view/message_add.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 27, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/vip/view/password.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 28, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/vip/view/order_details.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 26, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/vip/view/pay_spend_list.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 78, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/diyform/controller/diyform_field.class.php
+  行号: 11, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+
+文件: /var/www/lryper.com/application/diyform/controller/diyform.class.php
+  行号: 11, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+
+文件: /var/www/lryper.com/application/diyform/controller/diyform_info.class.php
+  行号: 11, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+
+文件: /var/www/lryper.com/application/diyform/view/diyform_info_view.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 47, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/diyform/view/diyform_add.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 67, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/diyform/view/diyform_field_edit.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 93, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/diyform/view/diyform_info_list.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 51, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/diyform/view/diyform_field_list.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 53, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/diyform/view/diyform_field_add.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 91, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/diyform/view/diyform_list.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 61, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/diyform/view/diyform_edit.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 68, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/wechat/controller/config.class.php
+  行号: 3, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+
+文件: /var/www/lryper.com/application/wechat/controller/reply.class.php
+  行号: 3, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+
+文件: /var/www/lryper.com/application/wechat/controller/wechat_common.class.php
+  行号: 3, 内容: yzm_base::load_controller('common', 'lry_admin_center', 0);
+
+文件: /var/www/lryper.com/application/wechat/view/keyword_reply_add.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 37, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/wechat/view/scan_edit.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 44, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/wechat/view/message_list.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 44, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/wechat/view/reply_list.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 23, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/wechat/view/select_user.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 80, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/wechat/view/keyword_reply_edit.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 37, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/wechat/view/mass_list.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 47, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/wechat/view/wechat_config.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 79, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/wechat/view/menu_list.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 53, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/wechat/view/media_list.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 71, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/wechat/view/group_add.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 26, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/wechat/view/menu_edit.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 55, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/wechat/view/user_group_remove.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 34, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/wechat/view/media_add.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 41, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/wechat/view/scan_list.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 49, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/wechat/view/scan_add.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 43, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/wechat/view/menu_add.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 54, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/wechat/view/select_status.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 22, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/wechat/view/user_list.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 97, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/wechat/view/select_material.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 62, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/wechat/view/select_article.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 84, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/wechat/view/mass_add.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 52, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/wechat/view/keyword_reply_list.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 45, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/wechat/view/send_message.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta','lry_admin_center');?>
+  行号: 30, 内容: <?php include $this->admin_tpl('footer','lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/wechat/view/user_set_userremark.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 25, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/wechat/view/group_edit.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 26, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/wechat/view/media_add_news.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 56, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/wechat/view/group_list.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 34, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
+
+文件: /var/www/lryper.com/application/wechat/view/select_thumb.html
+  行号: 1, 内容: <?php include $this->admin_tpl('meta', 'lry_admin_center');?>
+  行号: 41, 内容: <?php include $this->admin_tpl('footer', 'lry_admin_center');?>
