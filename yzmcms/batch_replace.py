@@ -88,8 +88,8 @@ def main():
     print(f"\n处理完成!")
     print(f"总共处理了 {total_files} 个文件")
     print(f"成功替换了 {modified_files} 个文件")
-#python batch_replace.py -d /home/lirongyao0916/Documents/lry -o lirongyaoper.com -n lryper.com
-#python batch_replace.py -d /home/lirongyao0916/Documents/lry -o lirongyaoper.com -n lryper.com --dry-run
+#python batch_replace.py -d /home/lirongyao0916/Projects/lryper -o lirongyaoper.com -n lryper.com
+#python batch_replace.py -d /home/lirongyao0916/Projects/lryper -o lirongyaoper.com -n lryper.com --dry-run
 #python batch_replace.py -d /home/lirongyao0916/Documents/lry -o lirongyaoper.com -n lryper.com -e .php .html .js .css .txt .xml
 
 if __name__ == "__main__":
