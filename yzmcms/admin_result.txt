@@ -1,0 +1,23 @@
+文件: /var/www/lryper.com/application/lry_admin_center/common/function/function.php
+  行 154: $admin = D('admin');
+
+文件: /var/www/lryper.com/application/lry_admin_center/common/lib/module_api.class.php
+  行 55: $admin = D('admin');
+  行 123: $admin = D('admin');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -52,7 +52,7 @@ def search_directory(directory, search_text, exclude_dirs=None, exclude_exts=Non
 def main():
     parser = argparse.ArgumentParser(description='递归搜索目录中包含指定文本的文件和行号')
     parser.add_argument('directory', help='要搜索的目录路径')
-    parser.add_argument('--text', default='lry_admin_center', help='要搜索的文本，默认为 lry_admin_center')
+    parser.add_argument('--text', default='admin', help='要搜索的文本，默认为 admin')
     parser.add_argument('--output', help='输出结果的文件路径，默认为控制台输出')
     parser.add_argument('--exclude-dirs', nargs='+', default=['.git', 'node_modules'], help='要排除的目录列表')
     parser.add_argument('--exclude-exts', nargs='+', default=['.jpg', '.jpeg', '.png', '.gif', '.svg', '.ico', '.pdf', '.zip', '.gz', '.tar'], help='要排除的文件扩展名列表')
