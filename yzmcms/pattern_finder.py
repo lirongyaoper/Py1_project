@@ -48,6 +48,9 @@ def find_pattern_in_file(filepath, pattern, case_sensitive=True):
             print(f"{Colors.RED}无法读取文件 {filepath}: {str(e)}{Colors.END}")
     return matches
 #cd /home/lirongyao0916/Projects/Py1_project/yzmcms && ./pattern_finder.py /home/lirongyao0916/Projects/lryper.com/forumV22 'bbs' -o results_bbs.txt
+#cd /home/lirongyao0916/Projects/Py1_project/yzmcms && ./pattern_finder.py /home/lirongyao0916/Projects/lryper.com/forumV22 'vip' -o results_vip.txt
+#cd /home/lirongyao0916/Projects/Py1_project/yzmcms && ./pattern_finder.py /home/lirongyao0916/Projects/lryper.com/application 'vip' -o results_vip.txt
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='递归查找文件')
     parser.add_argument('directory', help='要搜索的目录')
