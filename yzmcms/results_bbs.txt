@@ -1,0 +1,268 @@
+文件: /home/lirongyao0916/Projects/lryper.com/forumV22/说明.txt
+  行 11: 你的网站地址/bbs，例如http://lryper.com/bbs
+
+文件: /home/lirongyao0916/Projects/lryper.com/forumV22/application/member/controller/myhome.class.php
+  行 38: 			$val['url'] = U('bbs/index/show', array('id'=>$val['id']));
+
+文件: /home/lirongyao0916/Projects/lryper.com/forumV22/application/member/controller/member_sign.class.php
+  行 72: 		include template('bbs', 'sign_explain');
+
+文件: /home/lirongyao0916/Projects/lryper.com/forumV22/application/member/view/default/left.html
+  行 7: 		<dd><a href="{U('bbs/member_posts/post_list')}"{if ROUTE_A=='post_list'} class="left_cur" {/if}>我的帖子</a></dd>
+  行 9: 		<dd><a href="{U('bbs/member_posts/post_comment_list')}"{if ROUTE_A=='post_comment_list'} class="left_cur" {/if}>论坛评论</a></dd>
+  行 31: 		<dd><a href="{U('bbs/member_posts/follow_posts')}" {if ROUTE_A=='follow_posts'} class="left_cur" {/if}>TA的帖子</a></dd>
+
+文件: /home/lirongyao0916/Projects/lryper.com/forumV22/application/member/view/default/post_list.html
+  行 28: 				<a onclick="return confirm('确定要删除吗？')" href="{U('bbs/index/del',array('id'=>$val['id']))}"  class="yzm-xs-btn yzm-btn-danger">删除</a>
+
+文件: /home/lirongyao0916/Projects/lryper.com/forumV22/application/bbs/common/function/function.php
+  行 15: function get_bbs_config($key = ''){
+  行 16: 	if(!$bbs_configs = getcache('bbs_configs')){
+  行 18: 		$bbs_configs = array();
+  行 20: 			$bbs_configs[$val['name']] = $val['value'];
+  行 22: 		setcache('bbs_configs', $bbs_configs);
+  行 25: 		return $bbs_configs;
+  行 27: 		return array_key_exists($key, $bbs_configs) ? $bbs_configs[$key] : '';
+  行 39: 	return $pic ? $pic : STATIC_URL.'bbs/images/avatar.png';
+  行 204: function handle_url($content, $handle_url = '/bbs/index/handle_url'){
+
+文件: /home/lirongyao0916/Projects/lryper.com/forumV22/application/bbs/uninstall/extention.inc.php
+  行 4: $menu->delete(array('m'=>'bbs'));
+
+文件: /home/lirongyao0916/Projects/lryper.com/forumV22/application/bbs/install/bbs.sql
+  行 11: INSERT INTO `yzmcms_forum_config` VALUES ('1', 'bbs_name', '论坛名称', 'YzmCMS论坛', '1');
+  行 12: INSERT INTO `yzmcms_forum_config` VALUES ('2', 'bbs_keyword', '论坛关键字', '', '1');
+  行 13: INSERT INTO `yzmcms_forum_config` VALUES ('3', 'bbs_description', '论坛描述', '', '1');
+
+文件: /home/lirongyao0916/Projects/lryper.com/forumV22/application/bbs/install/model.php
+  行 7: return array('bbs');
+
+文件: /home/lirongyao0916/Projects/lryper.com/forumV22/application/bbs/install/extention.inc.php
+  行 5: $parentid = $menu->insert(array('name'=>'论坛管理', 'parentid'=>0, 'm'=>'bbs', 'c'=>'bbs', 'a'=>'init', 'data'=>'yzm-iconluntan', 'listorder'=>2, 'display'=>'1'));
+  行 6: $menu->insert(array('name'=>'论坛配置', 'parentid'=>$parentid, 'm'=>'bbs', 'c'=>'bbs', 'a'=>'config', 'data'=>'', 'listorder'=>201, 'display'=>'1'));
+  行 7: $p = $menu->insert(array('name'=>'板块管理', 'parentid'=>$parentid, 'm'=>'bbs', 'c'=>'plate', 'a'=>'init', 'data'=>'', 'listorder'=>202, 'display'=>'1'));
+  行 8: $menu->insert(array('name'=>'添加板块', 'parentid'=>$p, 'm'=>'bbs', 'c'=>'plate', 'a'=>'add', 'data'=>'', 'listorder'=>0, 'display'=>'0'));
+  行 9: $menu->insert(array('name'=>'编辑板块', 'parentid'=>$p, 'm'=>'bbs', 'c'=>'plate', 'a'=>'edit', 'data'=>'', 'listorder'=>0, 'display'=>'0'));
+  行 10: $menu->insert(array('name'=>'删除板块', 'parentid'=>$p, 'm'=>'bbs', 'c'=>'plate', 'a'=>'del', 'data'=>'', 'listorder'=>0, 'display'=>'0'));
+  行 11: $p = $menu->insert(array('name'=>'帖子管理', 'parentid'=>$parentid, 'm'=>'bbs', 'c'=>'bbs', 'a'=>'init', 'data'=>'', 'listorder'=>203, 'display'=>'1'));
+  行 12: $menu->insert(array('name'=>'帖子管理', 'parentid'=>$p, 'm'=>'bbs', 'c'=>'bbs', 'a'=>'init', 'data'=>'', 'listorder'=>0, 'display'=>'0'));
+  行 13: $menu->insert(array('name'=>'帖子搜索', 'parentid'=>$p, 'm'=>'bbs', 'c'=>'bbs', 'a'=>'search', 'data'=>'', 'listorder'=>0, 'display'=>'0'));
+  行 14: $menu->insert(array('name'=>'帖子编辑', 'parentid'=>$p, 'm'=>'bbs', 'c'=>'bbs', 'a'=>'edit', 'data'=>'', 'listorder'=>0, 'display'=>'0'));
+  行 15: $menu->insert(array('name'=>'帖子删除', 'parentid'=>$p, 'm'=>'bbs', 'c'=>'bbs', 'a'=>'del', 'data'=>'', 'listorder'=>0, 'display'=>'0'));
+  行 16: $menu->insert(array('name'=>'帖子审核', 'parentid'=>$p, 'm'=>'bbs', 'c'=>'bbs', 'a'=>'posts_adopt', 'data'=>'', 'listorder'=>0, 'display'=>'0'));
+  行 17: $menu->insert(array('name'=>'移动板块', 'parentid'=>$p, 'm'=>'bbs', 'c'=>'bbs', 'a'=>'remove', 'data'=>'', 'listorder'=>0, 'display'=>'0'));
+  行 18: $menu->insert(array('name'=>'新增/删除属性', 'parentid'=>$p, 'm'=>'bbs', 'c'=>'bbs', 'a'=>'attribute_operation', 'data'=>'', 'listorder'=>0, 'display'=>'0'));
+  行 19: $p = $menu->insert(array('name'=>'帖子评论', 'parentid'=>$parentid, 'm'=>'bbs', 'c'=>'bbs', 'a'=>'comment_list', 'data'=>'', 'listorder'=>204, 'display'=>'1'));
+  行 20: $menu->insert(array('name'=>'帖子评论', 'parentid'=>$p, 'm'=>'bbs', 'c'=>'bbs', 'a'=>'comment_list', 'data'=>'', 'listorder'=>0, 'display'=>'0'));
+  行 21: $menu->insert(array('name'=>'帖子评论搜索', 'parentid'=>$p, 'm'=>'bbs', 'c'=>'bbs', 'a'=>'comment_search', 'data'=>'', 'listorder'=>0, 'display'=>'0'));
+  行 22: $menu->insert(array('name'=>'删除帖子评论', 'parentid'=>$p, 'm'=>'bbs', 'c'=>'bbs', 'a'=>'comment_del', 'data'=>'', 'listorder'=>0, 'display'=>'0'));
+  行 23: $menu->insert(array('name'=>'帖子评论通过审核', 'parentid'=>$p, 'm'=>'bbs', 'c'=>'bbs', 'a'=>'comment_adopt', 'data'=>'', 'listorder'=>0, 'display'=>'0'));
+  行 24: $menu->insert(array('name'=>'快速锁定用户', 'parentid'=>$p, 'm'=>'bbs', 'c'=>'bbs', 'a'=>'lock', 'data'=>'', 'listorder'=>0, 'display'=>'0'));
+
+文件: /home/lirongyao0916/Projects/lryper.com/forumV22/application/bbs/install/config.inc.php
+  行 7: 	'module' => 'bbs',		    //模块目录
+
+文件: /home/lirongyao0916/Projects/lryper.com/forumV22/application/bbs/controller/comment.class.php
+  行 43: 	    if($data && (($data['inputtime']+get_bbs_config('posts_comment_limit')) > SYS_TIME)) return_json( array('status'=>0,'message'=>'发表过快，请稍后再试！') );
+  行 46: 	    $posts_comment_check = get_bbs_config('posts_comment_check');
+  行 85: 	    $max_total = get_bbs_config('posts_comment_point_limit');
+  行 90: 	        $point->point_add(1,get_bbs_config('posts_comment_point'),1,$userid,$username,0,'论坛评论ID:'.$id);
+  行 125: 		$site = array_merge(get_config(), get_bbs_config());
+  行 126: 		$seo_title = $title.'的评论内容_'.$site['bbs_name'];
+  行 128: 		$description = $site['bbs_description'];
+
+文件: /home/lirongyao0916/Projects/lryper.com/forumV22/application/bbs/controller/index.class.php
+  行 32: 		$site = array_merge(get_config(), get_bbs_config());
+  行 33: 		$seo_title = '论坛社区 - '.$site['bbs_name'];
+  行 34: 		$keywords = $site['bbs_keyword'];
+  行 35: 		$description = $site['bbs_description'];
+  行 58: 		$site = array_merge(get_config(), get_bbs_config());
+  行 59: 		$seo_title = $this->plate['plate_name'].' - '.$site['bbs_name'];
+  行 60: 		$keywords = $this->plate['keywords'] ? $this->plate['keywords'] : $site['bbs_keyword'];
+  行 61: 		$description = $this->plate['description'] ? $this->plate['description'] :$site['bbs_description'];
+  行 92: 		$site = array_merge(get_config(), get_bbs_config());
+  行 93: 		$seo_title = $q.'的搜索结果 - '.$site['bbs_name'];
+  行 94: 		$keywords = $site['bbs_keyword'];
+  行 95: 		$description = $site['bbs_description'];
+  行 137: 		$member_info['userpic'] = STATIC_URL.'bbs/images/avatar.png';
+  行 141: 		$site = array_merge(get_config(), get_bbs_config());
+  行 142: 		$seo_title = $title.' - '.$site['bbs_name'];
+  行 143: 		$keywords = $keywords ? $keywords : $site['bbs_keyword'];
+  行 203: 			$max_total = get_bbs_config('posts_day_limit');
+  行 204: 			$posts_check = get_bbs_config('posts_check');
+  行 225: 			$point->point_add(1,get_bbs_config('posts_point'),9,$this->userid,$this->username,0,'ID:'.$id);
+  行 228: 		$site = array_merge(get_config(), get_bbs_config());
+  行 230: 		$seo_title = '发布新帖 - '.$site['bbs_name'];
+  行 231: 		$keywords = $site['bbs_keyword'];
+  行 232: 		$description = $site['bbs_description'];
+  行 267: 			$posts_check = get_bbs_config('posts_check');
+  行 291: 		$site = array_merge(get_config(), get_bbs_config());
+  行 292: 		$seo_title = '编辑帖子 - '.$site['bbs_name'];
+  行 293: 		$keywords = $site['bbs_keyword'];
+  行 294: 		$description = $site['bbs_description'];
+  行 343:         $site = array_merge(get_config(), get_bbs_config());
+  行 344:         $keywords = $site['bbs_keyword'];
+  行 345:         $description = $site['bbs_description'];
+
+文件: /home/lirongyao0916/Projects/lryper.com/forumV22/application/bbs/controller/bbs.class.php
+  行 14: class bbs extends common{
+  行 313: 			delcache('bbs_configs');
+  行 316: 		$data = get_bbs_config();
+  行 317: 		include $this->admin_tpl('bbs_config', 'forum');
+
+文件: /home/lirongyao0916/Projects/lryper.com/forumV22/application/bbs/controller/down.class.php
+  行 15: 		$flag = 'bbs_'.$id;
+  行 74: 		if(!preg_match('/^bbs_([0-9]+)$/', $flag)) showmsg(L('illegal_parameters'), 'stop');
+
+文件: /home/lirongyao0916/Projects/lryper.com/forumV22/application/bbs/view/bbs_config.html
+  行 14: 						<input type="text"  name="bbs_name" value="<?php echo $data["bbs_name"];?>" class="input-text w_420">
+  行 21: 						<input type="text"  name="bbs_keyword" value="<?php echo $data["bbs_keyword"];?>" class="input-text w_420">
+  行 27: 						<textarea class="textarea" name="bbs_description" style="width:80%"><?php echo $data["bbs_description"];?></textarea>
+  行 103: 	if($("input[name='bbs_name']").val() == ''){
+
+文件: /home/lirongyao0916/Projects/lryper.com/forumV22/application/bbs/view/comment_list.html
+  行 73: 				<td><?php echo '<a href="'.U('bbs/index/show', array('id'=>$val['forumid'])).'" title="'.$val['title'].'" target="_blank">'.str_cut($val['title'],66).'</a>'; ?></td>
+
+文件: /home/lirongyao0916/Projects/lryper.com/forumV22/application/bbs/view/posts_list.html
+  行 83: 			<a href="<?php echo U('bbs/index/show', array('id'=>$val['id']));?>" target="_blank" ><?php echo $val['title'];?></a>
+  行 108: 			<td><a title="编辑" href="javascript:;" onclick="yzm_open_full('编辑帖子','<?php echo U('edit',array('id'=>$val['id']));?>')" class="ml-5" style="text-decoration:none"><i class="yzm-iconfont yzm-iconbianji2"></i></a> <a title="预览" href="<?php echo U('bbs/index/show', array('id'=>$val['id']));?>" class="ml-5" target="_blank" style="text-decoration:none"><i class="yzm-iconfont yzm-iconyulan2"></i></a></td>
+
+文件: /home/lirongyao0916/Projects/lryper.com/forumV22/application/bbs/view/default/header_bak.html
+  行 8: 	<link rel="stylesheet" href="{STATIC_URL}bbs/css/yzm_bbs_common.css">
+  行 9: 	<link rel="stylesheet" href="{STATIC_URL}bbs/css/yzm_bbs_index.css">
+  行 15: 		      <img src="{STATIC_URL}bbs/images/bbs_logo.png" alt="YZMCMS轻论坛" title="YZMCMS轻论坛">
+  行 18: 		       <!-- <li><a href="{$site[site_url]}bbs">论坛首页</a></li> -->
+  行 28: 		        <a href="{U('member/index/login')}"><img src="{STATIC_URL}bbs/images/avatar.png"/></a>
+
+文件: /home/lirongyao0916/Projects/lryper.com/forumV22/application/bbs/view/default/index.html
+  行 1: {m:include "bbs","header"}
+  行 21: 			                <img class="yzm_v" src="{STATIC_URL}bbs/images/v.png" alt="官网认证"  title="官网认证"/>
+  行 26: 			              	<span class="yzm_browse"  title="浏览次数" ><img src="{STATIC_URL}bbs/images/browse.png" alt="浏览次数" />{$v[click]}次</span>
+  行 27: 			              	<span class="yzm_comment" title="评论次数" ><img src="{STATIC_URL}bbs/images/comment.png" alt="评论次数" />{$v[comment]}</span>
+  行 63: 			                <img class="yzm_v" src="{STATIC_URL}bbs/images/v.png" alt="官网认证"  title="官网认证"/>
+  行 68: 			              	<span class="yzm_browse"  title="浏览次数" ><img src="{STATIC_URL}bbs/images/browse.png" alt="浏览次数" />{$v[click]}次</span>
+  行 69: 			              	<span class="yzm_comment" title="评论次数" ><img src="{STATIC_URL}bbs/images/comment.png" alt="评论次数" />{$v[comment]}</span>
+  行 94: 					<p>已连续签到<span id="continuity_day">{if isset($get_sign_info['data'])}{$get_sign_info['data']}{else}0{/if}</span>天 <img src="{STATIC_URL}bbs/images/yzm_doubt.png" alt="?" title="规则说明" onclick="yzm_open('签到规则说明', '{U('member/member_sign/explain')}', 600, 370)"></p>
+  行 109: 			            <img src="{if $v['userpic']}{$v['userpic']}{else}{STATIC_URL}bbs/images/avatar.png{/if}"><cite>{$v[nickname]}</cite><i>贴子数{$v[posts]}</i>
+  行 137: 	<script type="text/javascript" src="{STATIC_URL}bbs/js/yzm_bbs_js.js"></script>
+  行 138: {m:include "bbs","footer"}
+
+文件: /home/lirongyao0916/Projects/lryper.com/forumV22/application/bbs/view/default/show.html
+  行 1: {m:include "bbs","header"}
+  行 2: <link rel="stylesheet" type="text/css" href="{STATIC_URL}bbs/css/viewer.mini.css">
+  行 32: 					    <p>您目前有 <span style="color:red">{$p}</span> 点积分，下载该附件需扣除 <span style="color:red">{$point}</span> 点积分，<a href="{U('bbs/down/init', array('id'=>$id))}" target="_blank">去下载</a> 或 <a href="{U('member/member_pay/pay')}" target="_blank">去充值</a> 。</p>
+  行 59: 						<a class="yzm_comment_avatar" href="{U('member/myhome/init', array('userid'=>$v['userid']))}" target="_blank"> <img src="{if $v['userpic']}{$v[userpic]}{else}{STATIC_URL}bbs/images/avatar.png{/if}" alt="{$v[username]}"> </a>
+  行 62: 						{if $v['username'] == 'yzmcms'}<img class="yzm_v" src="{STATIC_URL}bbs/images/v.png" alt="官网认证"  title="官网认证"/>{/if}
+  行 80: 					<a href="{U('bbs/comment/more', array('id'=>$id))}" target="_blank">查看更多评论({$comment}条)</a>
+  行 125: 	<script type="text/javascript" src="{STATIC_URL}bbs/js/yzm_bbs_js.js"></script>
+  行 126: 	<script type="text/javascript" src="{STATIC_URL}bbs/js/viewer.mini.js"></script>
+  行 128: {m:include "bbs","footer"}
+
+文件: /home/lirongyao0916/Projects/lryper.com/forumV22/application/bbs/view/default/m_list.html
+  行 1: {m:include "bbs","m_header"}
+  行 20: 		                <img class="yzm_v" src="{STATIC_URL}bbs/images/v.png" alt="官网认证"  title="官网认证"/>
+  行 25: 		              	<span class="yzm_browse"  title="浏览次数" ><img src="{STATIC_URL}bbs/images/browse.png" alt="浏览次数" />{$v[click]}次</span>
+  行 26: 		              	<span class="yzm_comment" title="评论次数" ><img src="{STATIC_URL}bbs/images/comment.png" alt="评论次数" />{$v[comment]}</span>
+  行 65: {m:include "bbs","m_footer"}
+
+文件: /home/lirongyao0916/Projects/lryper.com/forumV22/application/bbs/view/default/sign_explain.html
+  行 6: 	<link rel="stylesheet" href="{STATIC_URL}bbs/css/yzm_bbs_common.css">
+
+文件: /home/lirongyao0916/Projects/lryper.com/forumV22/application/bbs/view/default/m_show.html
+  行 1: {m:include "bbs","m_header"}
+  行 30: 				    <p>您目前有 <span style="color:red">{$p}</span> 点积分，下载该附件需扣除 <span style="color:red">{$point}</span> 点积分，<a href="{U('bbs/down/init', array('id'=>$id))}" target="_blank">去下载</a> 或 <a href="{U('member/member_pay/pay')}" target="_blank">去充值</a> 。</p>
+  行 59: 					<a class="yzm_comment_avatar" href="{U('member/myhome/init', array('userid'=>$v['userid']))}" target="_blank"> <img src="{if $v['userpic']}{$v[userpic]}{else}{STATIC_URL}bbs/images/avatar.png{/if}" alt="{$v[username]}"> </a>
+  行 62: 					{if $v['username'] == 'yzmcms'}<img class="yzm_v" src="{STATIC_URL}bbs/images/v.png" alt="官网认证"  title="官网认证"/>{/if}
+  行 116: 	<script type="text/javascript" src="{STATIC_URL}bbs/js/yzm_bbs_js.js"></script>
+  行 118: {m:include "bbs","m_footer"}
+
+文件: /home/lirongyao0916/Projects/lryper.com/forumV22/application/bbs/view/default/ajax_login.html
+  行 6:     <link href="{STATIC_URL}bbs/css/member_login.css" rel="stylesheet" type="text/css" />
+
+文件: /home/lirongyao0916/Projects/lryper.com/forumV22/application/bbs/view/default/m_add.html
+  行 1: 	{m:include "bbs","m_header"}
+  行 8: 		<form action="" method="post" onsubmit="return yzm_bbs_content(this, '{U('add')}')">
+  行 50: 	<script type="text/javascript" src="{STATIC_URL}bbs/js/yzm_bbs_js.js"></script>
+  行 51: 	{m:include "bbs","m_footer"}
+
+文件: /home/lirongyao0916/Projects/lryper.com/forumV22/application/bbs/view/default/list.html
+  行 1: {m:include "bbs","header"}
+  行 22: 			                <img class="yzm_v" src="{STATIC_URL}bbs/images/v.png" alt="官网认证"  title="官网认证"/>
+  行 27: 			              	<span class="yzm_browse"  title="浏览次数" ><img src="{STATIC_URL}bbs/images/browse.png" alt="浏览次数" />{$v[click]}次</span>
+  行 28: 			              	<span class="yzm_comment" title="评论次数" ><img src="{STATIC_URL}bbs/images/comment.png" alt="评论次数" />{$v[comment]}</span>
+  行 77: {m:include "bbs","footer"}
+
+文件: /home/lirongyao0916/Projects/lryper.com/forumV22/application/bbs/view/default/add.html
+  行 1: 	{m:include "bbs","header"}
+  行 17: 		<form action="" method="post" onsubmit="return yzm_bbs_content(this, '{U('add')}')">
+  行 64: 	<script type="text/javascript" src="{STATIC_URL}bbs/js/yzm_bbs_js.js"></script>
+  行 65: 	{m:include "bbs","footer"}
+
+文件: /home/lirongyao0916/Projects/lryper.com/forumV22/application/bbs/view/default/search.html
+  行 1: {m:include "bbs","header"}
+  行 23: 			                <img class="yzm_v" src="{STATIC_URL}bbs/images/v.png" alt="官网认证"  title="官网认证"/>
+  行 28: 			              	<span class="yzm_browse"  title="浏览次数" ><img src="{STATIC_URL}bbs/images/browse.png" alt="浏览次数" />{$v[click]}次</span>
+  行 29: 			              	<span class="yzm_comment" title="评论次数" ><img src="{STATIC_URL}bbs/images/comment.png" alt="评论次数" />{$v[comment]}</span>
+  行 78: {m:include "bbs","footer"}
+
+文件: /home/lirongyao0916/Projects/lryper.com/forumV22/application/bbs/view/default/comment_more.html
+  行 1: {m:include "bbs","header"}
+  行 23: 						<a class="yzm_comment_avatar" href="{U('member/myhome/init', array('userid'=>$v['userid']))}" target="_blank"> <img src="{if $v['userpic']}{$v[userpic]}{else}{STATIC_URL}bbs/images/avatar.png{/if}" alt="{$v[username]}"> </a>
+  行 26: 						{if $v['username'] == 'yzmcms'}<img class="yzm_v" src="{STATIC_URL}bbs/images/v.png" alt="官网认证"  title="官网认证"/>{/if}
+  行 71: 	<script type="text/javascript" src="{STATIC_URL}bbs/js/yzm_bbs_js.js"></script>
+  行 72: {m:include "bbs","footer"}
+
+文件: /home/lirongyao0916/Projects/lryper.com/forumV22/application/bbs/view/default/m_search.html
+  行 1: {m:include "bbs","m_header"}
+  行 20:                         <img class="yzm_v" src="{STATIC_URL}bbs/images/v.png" alt="官网认证" title="官网认证" />
+  行 25:                         <span class="yzm_browse" title="浏览次数"><img src="{STATIC_URL}bbs/images/browse.png" alt="浏览次数" />{$v[click]}次</span>
+  行 26:                         <span class="yzm_comment" title="评论次数"><img src="{STATIC_URL}bbs/images/comment.png" alt="评论次数" />{$v[comment]}</span>
+  行 64: {m:include "bbs","m_footer"}
+
+文件: /home/lirongyao0916/Projects/lryper.com/forumV22/application/bbs/view/default/edit.html
+  行 1: 	{m:include "bbs","header"}
+  行 17: 		<form action="" method="post" onsubmit="return yzm_bbs_content(this, '{U('edit')}')">
+  行 65: 	<script type="text/javascript" src="{STATIC_URL}bbs/js/yzm_bbs_js.js"></script>
+  行 66: 	{m:include "bbs","footer"}
+
+文件: /home/lirongyao0916/Projects/lryper.com/forumV22/application/bbs/view/default/m_edit.html
+  行 1: 	{m:include "bbs","m_header"}
+  行 8: 		<form action="" method="post" onsubmit="return yzm_bbs_content(this, '{U('edit')}')">
+  行 51: 	<script type="text/javascript" src="{STATIC_URL}bbs/js/yzm_bbs_js.js"></script>
+  行 52: 	{m:include "bbs","m_footer"}
+
+文件: /home/lirongyao0916/Projects/lryper.com/forumV22/application/bbs/view/default/m_header.html
+  行 9: 	<link rel="stylesheet" href="{STATIC_URL}bbs/css/yzm_bbs_phone_common.css?v=yzmcms20200221">
+  行 10: 	<link rel="stylesheet" href="{STATIC_URL}bbs/css/yzm_bbs_phone_index.css?v=yzmcms20200221">
+  行 11: 	<link rel="stylesheet" href="{STATIC_URL}bbs/iconfont/iconfont.css">
+  行 16: 		    <a class="yzm_logo" href="{$site[site_url]}bbs">
+  行 17: 		      <img src="{STATIC_URL}bbs/images/bbs_logo.png" alt="YZMCMS轻论坛" title="YZMCMS轻论坛">
+  行 41: 		       <li><a href="{$site[site_url]}bbs" {if !isset($pid)} class="yzm_nav_current"{/if}>首页</a></li>
+
+文件: /home/lirongyao0916/Projects/lryper.com/forumV22/application/bbs/view/default/m_index.html
+  行 1: {m:include "bbs","m_header"}
+  行 20: 			                <img class="yzm_v" src="{STATIC_URL}bbs/images/v.png" alt="官网认证"  title="官网认证"/>
+  行 25: 			              	<span class="yzm_browse"  title="浏览次数" ><img src="{STATIC_URL}bbs/images/browse.png" alt="浏览次数" />{$v[click]}次</span>
+  行 26: 			              	<span class="yzm_comment" title="评论次数" ><img src="{STATIC_URL}bbs/images/comment.png" alt="评论次数" />{$v[comment]}</span>
+  行 61: 			                <img class="yzm_v" src="{STATIC_URL}bbs/images/v.png" alt="官网认证"  title="官网认证"/>
+  行 66: 			              	<span class="yzm_browse"  title="浏览次数" ><img src="{STATIC_URL}bbs/images/browse.png" alt="浏览次数" />{$v[click]}次</span>
+  行 67: 			              	<span class="yzm_comment" title="评论次数" ><img src="{STATIC_URL}bbs/images/comment.png" alt="评论次数" />{$v[comment]}</span>
+  行 91: 						<!-- <img src="{STATIC_URL}bbs/images/yzm_doubt.png" alt="?" title="规则说明" onclick="yzm_open('签到规则说明', '{U('member/member_sign/explain')}', 600, 370)"> -->
+  行 101: 			            <img src="{if $v['userpic']}{$v['userpic']}{else}{STATIC_URL}bbs/images/avatar.png{/if}"><cite>{$v[nickname]}</cite><i>贴子数{$v[posts]}</i>
+  行 127: 	<script type="text/javascript" src="{STATIC_URL}bbs/js/yzm_bbs_js.js"></script>
+  行 128: {m:include "bbs","m_footer"}
+
+文件: /home/lirongyao0916/Projects/lryper.com/forumV22/application/bbs/view/default/header.html
+  行 8: 	<link rel="stylesheet" href="{STATIC_URL}bbs/css/yzm_bbs_common.css?v=yzmcms20200221">
+  行 9: 	<link rel="stylesheet" href="{STATIC_URL}bbs/css/yzm_bbs_index.css?v=yzmcms20200221">
+  行 10: 	<link rel="stylesheet" href="{STATIC_URL}bbs/iconfont/iconfont.css">
+  行 16: 		      <img src="{STATIC_URL}bbs/images/bbs_logo.png" alt="YZMCMS轻论坛" title="YZMCMS轻论坛">
+  行 34: 		        <a href="{U('member/index/login')}"><img src="{STATIC_URL}bbs/images/avatar.png"/></a>
+  行 63: 		       <li><a href="{SITE_URL}bbs" {if !isset($pid)} class="yzm_nav_current"{/if}>首页</a></li>
+
+文件: /home/lirongyao0916/Projects/lryper.com/forumV22/common/static/bbs/js/yzm_bbs_js.js
+  行 93: 				yzm_open('用户登录', site_url+'index.php?m=bbs&c=index&a=ajax_login', 490, 360);
+  行 153: 				yzm_open('用户登录', site_url+'index.php?m=bbs&c=index&a=ajax_login', 490, 360);
+  行 183: function yzm_bbs_content(obj, url){
+  行 212: 					window.location.href = site_url + 'bbs';
+
