@@ -170,7 +170,7 @@ def main(file1, file2, output_file):
 
     print(f"比较完成! 结果已保存到: {output_file}")
 
-#python ds_sql_compare.py /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql  /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507082249.sql comparison_result.txt
+#pyn ds_sql_compare.py /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507090104.sql  /home/lirongyao0916/Projects/lryper.com/sql/test.sql comparison_result.txt
 if __name__ == "__main__":
     if len(sys.argv) != 4:
         print("用法: python sql_compare.py <文件1.sql> <文件2.sql> <输出.txt>")
