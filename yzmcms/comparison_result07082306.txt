@@ -1,0 +1,169 @@
+SQL文件比较报告
+==================================================
+比较文件1: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql
+比较文件2: /home/lirongyao0916/Projects/lryper.com/sql/test.sql
+
+表只存在于 /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql:
+  - lry_admin_login_log
+  - lry_attachment
+  - lry_banner
+  - lry_banner_type
+  - lry_category
+  - lry_comment_data
+  - lry_config
+  - lry_forum_attitude
+  - lry_forum_comment
+  - lry_forum_config
+  - lry_forum_plate
+  - lry_forum_post
+  - lry_guestbook
+  - lry_keyword_link
+  - lry_member_authorization
+  - lry_member_follow
+  - lry_member_group
+  - lry_member_sign
+  - lry_menu
+  - lry_message_data
+  - lry_pay_mode
+  - lry_tag_content
+  - lry_urlrule
+  - lry_view_log
+
+表 'lry_admin_log' 差异:
+  列只存在于 /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql: action
+  列只存在于 /home/lirongyao0916/Projects/lryper.com/sql/test.sql: CREATE, logintime, loginip, address, password, loginresult, cause
+  列 'controller' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 varchar(20) NOT NULL DEFAULT
+  列 'module' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 varchar(25) NOT NULL DEFAULT, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 varchar(15) NOT NULL DEFAULT
+
+表 'lry_admin_role' 差异:
+  列只存在于 /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql: issystem
+
+表 'lry_all_content' 差异:
+  列 'thumb' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 varchar(150) DEFAULT NULL,, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 varchar(150) NOT NULL DEFAULT
+
+表 'lry_article' 差异:
+  列只存在于 /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql: up, down
+  列只存在于 /home/lirongyao0916/Projects/lryper.com/sql/test.sql: CREATE, siteid, module, contentid, originname, filename, filepath, filesize, fileext, isimage, downloads, uploadtime, uploadip, image, introduce, typeid, tid, name, catname, modelid, parentid, arrparentid, arrchildid, catdir, catimg, type, target, member_publish, display, pclink, domain, entitle, subtitle, mobname, category_template, list_template, show_template, seo_keywords, seo_description
+  列 'catid' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 smallint UNSIGNED NOT NULL DEFAULT, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 smallint NOT NULL COMMENT
+  列 'listorder' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 tinyint UNSIGNED NOT NULL DEFAULT, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 smallint UNSIGNED NOT NULL DEFAULT
+  列 'seo_title' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 varchar(200) NOT NULL DEFAULT, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 varchar(100) NOT NULL DEFAULT
+  列 'status' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 tinyint(1) NOT NULL DEFAULT, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 tinyint UNSIGNED NOT NULL DEFAULT
+  列 'thumb' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 varchar(150) DEFAULT NULL,, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 varchar(150) NOT NULL DEFAULT
+  列 'title' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 varchar(180) NOT NULL DEFAULT, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 varchar(100) NOT NULL DEFAULT
+  列 'url' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 varchar(100) NOT NULL DEFAULT, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 varchar(150) NOT NULL DEFAULT
+  列 'username' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 varchar(30) DEFAULT NULL,, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 varchar(30) NOT NULL DEFAULT
+
+表 'lry_collection_content' 差异:
+  列只存在于 /home/lirongyao0916/Projects/lryper.com/sql/test.sql: total, catid, modelid, type, value, fieldtype, setting
+  列 'name' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 varchar(30) DEFAULT NULL,, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 varchar(60) NOT NULL DEFAULT
+  列 'status' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 tinyint(1) NOT NULL DEFAULT, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 tinyint UNSIGNED NOT NULL DEFAULT
+  列 'title' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 char(100) NOT NULL DEFAULT, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 varchar(60) NOT NULL DEFAULT
+  列 'url' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 char(255) NOT NULL DEFAULT, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 varchar(200) NOT NULL DEFAULT
+
+表 'lry_download' 差异:
+  列只存在于 /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql: seo_title, fsystems
+  列只存在于 /home/lirongyao0916/Projects/lryper.com/sql/test.sql: siteid, booktime, name, email, phone, qq, address, bookmsg, ip, ischeck, isread, ispc, replyid, keyword, typeid, linktype, logo, msg, addtime
+  列 'id' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 int UNSIGNED NOT NULL,, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 smallint UNSIGNED NOT NULL,
+  列 'listorder' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 tinyint UNSIGNED NOT NULL DEFAULT, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 smallint UNSIGNED NOT NULL DEFAULT
+  列 'status' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 tinyint(1) NOT NULL DEFAULT, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 tinyint UNSIGNED NOT NULL DEFAULT
+  列 'thumb' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 varchar(150) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 varchar(150) NOT NULL DEFAULT
+  列 'title' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 char(100) NOT NULL DEFAULT, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 varchar(150) NOT NULL DEFAULT
+  列 'url' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 char(100) NOT NULL DEFAULT, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 varchar(255) NOT NULL DEFAULT
+  列 'username' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 varchar(30) NOT NULL DEFAULT
+
+表 'lry_member' 差异:
+  列只存在于 /home/lirongyao0916/Projects/lryper.com/sql/test.sql: CREATE, id, authname, token, userinfo, inputtime, sex, realname, nickname, qq, mobile, phone, userpic, birthday, industry, area, motto, introduce, guest, fans, followid, followname, name, icon, authority, max_amount, description, is_system
+  列 'groupid' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 tinyint UNSIGNED NOT NULL DEFAULT, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 tinyint UNSIGNED NOT NULL,
+  列 'userid' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 mediumint UNSIGNED NOT NULL,, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 mediumint UNSIGNED NOT NULL DEFAULT
+
+表 'lry_member_guest' 差异:
+  列只存在于 /home/lirongyao0916/Projects/lryper.com/sql/test.sql: CREATE, name, parentid, m, c, a, data, listorder, display
+  列 'id' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 int UNSIGNED NOT NULL,, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 smallint UNSIGNED NOT NULL,
+
+表 'lry_message' 差异:
+  列只存在于 /home/lirongyao0916/Projects/lryper.com/sql/test.sql: CREATE, id, userid, group_message_id, groupid, inputtime, modelid, siteid, name, tablename, alias, description, setting, items, disabled, type, sort, isdefault
+  列 'content' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 text NOT NULL,, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 text NOT NULL COMMENT
+  列 'status' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 tinyint UNSIGNED DEFAULT, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 tinyint UNSIGNED NOT NULL DEFAULT
+
+表 'lry_model_field' 差异:
+  列只存在于 /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql: css
+  列 'field' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 varchar(30) NOT NULL DEFAULT
+  列 'setting' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 text CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci,, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 text,
+  列 'setting_catid' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 varchar(100) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 varchar(100) NOT NULL DEFAULT
+
+表 'lry_module' 差异:
+  列 'module' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 varchar(20) NOT NULL DEFAULT, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 varchar(15) NOT NULL DEFAULT
+  列 'name' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 varchar(30) DEFAULT NULL,, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 varchar(30) NOT NULL DEFAULT
+
+表 'lry_order' 差异:
+  列 'introduce' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL DEFAULT, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 varchar(255) NOT NULL DEFAULT
+
+表 'lry_pay' 差异:
+  列只存在于 /home/lirongyao0916/Projects/lryper.com/sql/test.sql: CREATE, name, logo, desc, config, enabled, author, version, action, template
+  列 'adminnote' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 varchar(30) DEFAULT NULL, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 varchar(30) NOT NULL DEFAULT
+  列 'id' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 mediumint UNSIGNED NOT NULL,, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 tinyint UNSIGNED NOT NULL,
+
+表 'lry_pay_spend' 差异:
+  列只存在于 /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql: INSERT
+  列只存在于 /home/lirongyao0916/Projects/lryper.com/sql/test.sql: modelid, aid, tagid, urlruleid, name, urlrule, route, keyword, keyword_type, relation_id, count, message_type, media_id, msg_id, msg_data_id, receive, masstime, originname, filename, filepath, media_type, created_at, parentid, event, openid, msgtype, isread, scan, expire_time, ticket, wechatid, groupid, subscribe, sex, city, province, country, headimgurl, subscribe_time, remark, ALTER, ADD
+  列 'content' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 text NOT NULL,, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 varchar(255) NOT NULL DEFAULT
+  列 'id' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 int UNSIGNED NOT NULL,, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 int NOT NULL,
+  列 'listorder' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 tinyint UNSIGNED NOT NULL DEFAULT, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 mediumint UNSIGNED NOT NULL DEFAULT
+  列 'nickname' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 varchar(30) NOT NULL DEFAULT, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 varchar(50) NOT NULL DEFAULT
+  列 'remarks' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 varchar(3) NOT NULL DEFAULT, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 varchar(255) NOT NULL DEFAULT
+  列 'seo_description' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL DEFAULT, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 varchar(255) NOT NULL DEFAULT
+  列 'seo_keywords' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 varchar(200) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL DEFAULT, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 varchar(200) NOT NULL DEFAULT
+  列 'seo_title' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 varchar(100) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL DEFAULT, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 varchar(100) NOT NULL DEFAULT
+  列 'status' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 tinyint(1) NOT NULL DEFAULT, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 tinyint UNSIGNED NOT NULL DEFAULT
+  列 'thumb' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 varchar(150) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 varchar(150) NOT NULL DEFAULT
+  列 'url' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 varchar(100) NOT NULL DEFAULT, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 varchar(255) NOT NULL DEFAULT
+  列 'userid' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 int DEFAULT NULL,, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 mediumint UNSIGNED NOT NULL DEFAULT
+  列 'username' 差异:
+    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql为 varchar(20) DEFAULT NULL,, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 varchar(30) NOT NULL DEFAULT
