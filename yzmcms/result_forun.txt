@@ -1,3 +1,0 @@
-文件: /home/lirongyao0916/Projects/lryper.com/application/forum/controller/index.class.php
-  行 77: 		include template('forun', $this->fix.'list');
-

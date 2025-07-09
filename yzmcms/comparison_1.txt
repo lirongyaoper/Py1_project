@@ -2,28 +2,20 @@ SQL文件比较报告
 ==================================================
 比较文件1: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507090104.sql
 比较文件2: /home/lirongyao0916/Projects/lryper.com/sql/test.sql
-表 'lry_all_content' 差异:
-  列 'thumb' 差异:
-    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507090104.sql为 varchar(150) DEFAULT NULL,, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 varchar(150) NOT NULL DEFAULT
 
 表 'lry_article' 差异:
-  列只存在于 /home/lirongyao0916/Projects/lryper.com/sql/test.sql: CREATE, siteid, module, contentid, originname, filename, filepath, filesize, fileext, isimage, downloads, uploadtime, uploadip, image, introduce, typeid, tid, name, catname, modelid, parentid, arrparentid, arrchildid, catdir, catimg, type, target, member_publish, display, pclink, domain, entitle, subtitle, mobname, category_template, list_template, show_template, seo_keywords, seo_description
+  列只存在于 /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507090104.sql: up, down
+  列只存在于 /home/lirongyao0916/Projects/lryper.com/sql/test.sql: CREATE, siteid, module, contentid, originname, filename, filepath, filesize, fileext, isimage, downloads, uploadtime, uploadip, image, introduce, typeid, tid, name, catname, modelid, parentid, arrparentid, arrchildid, catdir, catimg, type, target, member_publish, display, pclink, domain, entitle, subtitle, mobname, category_template, list_template, show_template, seo_title, seo_keywords, seo_description
   列 'catid' 差异:
     类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507090104.sql为 smallint UNSIGNED NOT NULL DEFAULT, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 smallint NOT NULL COMMENT
   列 'listorder' 差异:
     类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507090104.sql为 tinyint UNSIGNED NOT NULL DEFAULT, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 smallint UNSIGNED NOT NULL DEFAULT
-  列 'seo_title' 差异:
-    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507090104.sql为 varchar(200) NOT NULL DEFAULT, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 varchar(100) NOT NULL DEFAULT
   列 'status' 差异:
     类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507090104.sql为 tinyint(1) NOT NULL DEFAULT, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 tinyint UNSIGNED NOT NULL DEFAULT
-  列 'thumb' 差异:
-    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507090104.sql为 varchar(150) DEFAULT NULL,, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 varchar(150) NOT NULL DEFAULT
   列 'title' 差异:
     类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507090104.sql为 varchar(180) NOT NULL DEFAULT, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 varchar(100) NOT NULL DEFAULT
   列 'url' 差异:
     类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507090104.sql为 varchar(100) NOT NULL DEFAULT, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 varchar(150) NOT NULL DEFAULT
-  列 'username' 差异:
-    类型: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507090104.sql为 varchar(30) DEFAULT NULL,, /home/lirongyao0916/Projects/lryper.com/sql/test.sql为 varchar(30) NOT NULL DEFAULT
 
 表 'lry_collection_content' 差异:
   列只存在于 /home/lirongyao0916/Projects/lryper.com/sql/test.sql: total, catid, modelid, type, value, fieldtype, setting

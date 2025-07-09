@@ -1,298 +1,0 @@
-文件: /home/lirongyao0916/Projects/lryper.com/rylcsjk.sql
-  行 374: (58, 19, 1, 'lirongyaoper', '轩鸿青', 'Linux磁盘挂载', 'Linux磁盘挂载_荣耀历程--一个有激情，有梦想，不断探索未知世界的热血青年', '', 1630154866, 1630155555, '', '本文详细介绍了linux磁盘挂载操作。', 2332, '<p style=\"text-align: center;\">本文中的磁盘/dev/sdb为笔者测试服务器上的命名，在您的服务器中可能是/dev/xdb、/dev/vdb、/dev/xvdb等等。请根据实际情况进行修改</p><p style=\"text-align: center;\">1、创建挂载目录（www为宝塔默认安装目录）</p><p style=\"text-align: center;\">code:mkdir -p /www</p><p style=\"text-align:center\"><img src=\"/uploads/ueditor/image/20210828/1630155030111453.png\" title=\"Linux磁盘挂载\" alt=\"Linux磁盘挂载\"/></p><p style=\"text-align: center;\">2、确认是否没有分区的磁盘，如下图，没有分区的磁盘是/dev/sdb，在您的服务器中可能是/dev/vdb，请注意按照实际名称修改</p><p style=\"text-align: center;\">code:fdisk -l</p><p style=\"text-align: center;\"><img src=\"/uploads/ueditor/image/20210828/1630155039186790.png\" title=\"Linux磁盘挂载\" alt=\"Linux磁盘挂载\"/></p><p style=\"text-align: center;\">3、为磁盘分区，若已分区，可跳过</p><p style=\"text-align: center;\">code:fdisk /dev/sdb</p><p style=\"text-align: center;\"><img src=\"/uploads/ueditor/image/20210828/1630155047483346.png\" title=\"Linux磁盘挂载\" alt=\"Linux磁盘挂载\"/></p><p style=\"text-align: center;\">4、输入n开始创建分区</p><p style=\"text-align: center;\"><img src=\"/uploads/ueditor/image/20210828/1630155062146154.png\" title=\"Linux磁盘挂载\" alt=\"Linux磁盘挂载\"/></p><p style=\"text-align: center;\">5、输入p创建主分区</p><p style=\"text-align: center;\"><img src=\"/uploads/ueditor/image/20210828/1630155073663974.png\" title=\"Linux磁盘挂载\" alt=\"Linux磁盘挂载\"/></p><p style=\"text-align: center;\">6、选择分区号 输入&quot;1&quot;</p><p style=\"text-align: center;\"><img src=\"/uploads/ueditor/image/20210828/1630155083109285.png\" title=\"Linux磁盘挂载\" alt=\"Linux磁盘挂载\"/></p><p style=\"text-align: center;\">7、输入分区开始位置，直接回车</p><p style=\"text-align: center;\"><img src=\"/uploads/ueditor/image/20210828/1630155094438930.png\" title=\"Linux磁盘挂载\" alt=\"Linux磁盘挂载\"/></p><p style=\"text-align: center;\">8、输入分区结束位置，直接回车</p><p style=\"text-align: center;\"><img src=\"/uploads/ueditor/image/20210828/1630155103463544.png\" title=\"Linux磁盘挂载\" alt=\"Linux磁盘挂载\"/></p><p style=\"text-align: center;\">9、输入wq 回车退出</p><p style=\"text-align: center;\"><img src=\"/uploads/ueditor/image/20210828/1630155113117083.png\" title=\"Linux磁盘挂载\" alt=\"Linux磁盘挂载\"/></p><p style=\"text-align: center;\">10、检查是否分区成功（带有sdb1/vdb1/xvb1说明成功）</p><p style=\"text-align: center;\">code:fdisk -l</p><p style=\"text-align: center;\"><img src=\"/uploads/ueditor/image/20210828/1630155123197582.png\" title=\"Linux磁盘挂载\" alt=\"Linux磁盘挂载\"/></p><p style=\"text-align: center;\">11、格式化分区，这里输入看到的磁盘加分区号 如下图为/dev/sdb1 已格式化的可跳过</p><p style=\"text-align: center;\">code:mkfs.ext4 /dev/sdb1</p><p style=\"text-align: center;\"><img src=\"/uploads/ueditor/image/20210828/1630155132195969.png\" title=\"Linux磁盘挂载\" alt=\"Linux磁盘挂载\"/></p><p style=\"text-align: center;\">12、将分区挂载信息添加到配置文件/etc/fstab中，实现开机/重启自动挂载</p><p style=\"text-align: center;\">code:echo &quot;/dev/sdb1 /www ext4 defaults 0 0&quot; &gt;&gt; /etc/fstab</p><p style=\"text-align: center;\"><img src=\"/uploads/ueditor/image/20210828/1630155143148456.png\" title=\"Linux磁盘挂载\" alt=\"Linux磁盘挂载\"/></p><p style=\"text-align: center;\">13、重新挂载所有分区</p><p style=\"text-align: center;\">code:mount -a</p><p style=\"text-align:center\"><img src=\"/uploads/ueditor/image/20210828/1630155152207545.png\" title=\"Linux磁盘挂载\" alt=\"Linux磁盘挂载\"/></p><p style=\"text-align: center;\">14、检查是否挂载成功</p><p style=\"text-align: center;\">code:df -h</p><p style=\"text-align:center\"><img src=\"/uploads/ueditor/image/20210828/1630155160882414.png\" title=\"Linux磁盘挂载\" alt=\"Linux磁盘挂载\"/></p><p style=\"text-align: center;\">自此，linux磁盘挂载过程结束。</p><p>注：本文转载自：<a href=\"https://www.bt.cn/bbs/thread-50002-1-1.html\" target=\"_blank\" textvalue=\"宝塔论坛\">宝塔论坛</a></p><p><br/></p>', '转载', '/uploads/202108/28/210828084929366.png', 'http://lryper.com/caozuoxitong/58.html', '', 1, 1, 10, 0, 0, 1, 0, 1, 0),
-  行 966: (1, 'bbs_name', '论坛名称', '荣耀论坛', 1),
-  行 967: (2, 'bbs_keyword', '论坛关键字', '荣耀论坛，一个温馨而有爱的家', 1),
-  行 968: (3, 'bbs_description', '论坛描述', '', 1),
-  行 975: (10, 'bbs_admin', '论坛管理员', 'lirongyaoper', 1);
-  行 1681: (291, '论坛管理', 0, 'forum', 'bbs', 'init', '&#xe693;', 2, 1),
-  行 1682: (292, '论坛配置', 291, 'forum', 'bbs', 'config', '', 201, 1),
-  行 1687: (297, '帖子管理', 291, 'forum', 'bbs', 'init', '', 203, 1),
-  行 1688: (298, '帖子管理', 297, 'forum', 'bbs', 'init', '', 0, 0),
-  行 1689: (299, '帖子搜索', 297, 'forum', 'bbs', 'search', '', 0, 0),
-  行 1690: (300, '帖子编辑', 297, 'forum', 'bbs', 'edit', '', 0, 0),
-  行 1691: (301, '帖子删除', 297, 'forum', 'bbs', 'del', '', 0, 0),
-  行 1692: (302, '移动板块', 297, 'forum', 'bbs', 'remove', '', 0, 0),
-  行 1693: (303, '新增/删除属性', 297, 'forum', 'bbs', 'attribute_operation', '', 0, 0),
-  行 1694: (304, '帖子评论', 291, 'forum', 'bbs', 'comment_list', '', 204, 1),
-  行 1695: (305, '帖子评论', 304, 'forum', 'bbs', 'comment_list', '', 0, 0),
-  行 1696: (306, '帖子评论搜索', 304, 'forum', 'bbs', 'comment_search', '', 0, 0),
-  行 1697: (307, '删除帖子评论', 304, 'forum', 'bbs', 'comment_del', '', 0, 0),
-  行 1698: (308, '帖子评论通过审核', 304, 'forum', 'bbs', 'comment_adopt', '', 0, 0),
-  行 1699: (309, '快速锁定用户', 304, 'forum', 'bbs', 'lock', '', 0, 0),
-
-文件: /home/lirongyao0916/Projects/lryper.com/forumV22/说明.txt
-  行 11: 你的网站地址/bbs，例如http://lryper.com/bbs
-
-文件: /home/lirongyao0916/Projects/lryper.com/application/forum/common/function/function.php
-  行 15: function get_bbs_config($key = ''){
-  行 16: 	if(!$bbs_configs = getcache('bbs_configs')){
-  行 18: 		$bbs_configs = array();
-  行 20: 			$bbs_configs[$val['name']] = $val['value'];
-  行 22: 		setcache('bbs_configs', $bbs_configs);
-  行 25: 		return $bbs_configs;
-  行 27: 		return array_key_exists($key, $bbs_configs) ? $bbs_configs[$key] : '';
-  行 39: 	return $pic ? $pic : STATIC_URL.'bbs/images/avatar.png';
-
-文件: /home/lirongyao0916/Projects/lryper.com/application/forum/install/bbs.sql
-  行 11: INSERT INTO `yzmcms_forum_config` VALUES ('1', 'bbs_name', '论坛名称', 'YzmCMS论坛', '1');
-  行 12: INSERT INTO `yzmcms_forum_config` VALUES ('2', 'bbs_keyword', '论坛关键字', '', '1');
-  行 13: INSERT INTO `yzmcms_forum_config` VALUES ('3', 'bbs_description', '论坛描述', '', '1');
-
-文件: /home/lirongyao0916/Projects/lryper.com/application/forum/install/model.php
-  行 7: return array('bbs');
-
-文件: /home/lirongyao0916/Projects/lryper.com/application/forum/install/extention.inc.php
-  行 5: $parentid = $menu->insert(array('name'=>'论坛管理', 'parentid'=>0, 'm'=>'forum', 'c'=>'bbs', 'a'=>'init', 'data'=>'yzm-iconluntan', 'listorder'=>2, 'display'=>'1'));
-  行 6: $menu->insert(array('name'=>'论坛配置', 'parentid'=>$parentid, 'm'=>'forum', 'c'=>'bbs', 'a'=>'config', 'data'=>'', 'listorder'=>201, 'display'=>'1'));
-  行 11: $p = $menu->insert(array('name'=>'帖子管理', 'parentid'=>$parentid, 'm'=>'forum', 'c'=>'bbs', 'a'=>'init', 'data'=>'', 'listorder'=>203, 'display'=>'1'));
-  行 12: $menu->insert(array('name'=>'帖子管理', 'parentid'=>$p, 'm'=>'forum', 'c'=>'bbs', 'a'=>'init', 'data'=>'', 'listorder'=>0, 'display'=>'0'));
-  行 13: $menu->insert(array('name'=>'帖子搜索', 'parentid'=>$p, 'm'=>'forum', 'c'=>'bbs', 'a'=>'search', 'data'=>'', 'listorder'=>0, 'display'=>'0'));
-  行 14: $menu->insert(array('name'=>'帖子编辑', 'parentid'=>$p, 'm'=>'forum', 'c'=>'bbs', 'a'=>'edit', 'data'=>'', 'listorder'=>0, 'display'=>'0'));
-  行 15: $menu->insert(array('name'=>'帖子删除', 'parentid'=>$p, 'm'=>'forum', 'c'=>'bbs', 'a'=>'del', 'data'=>'', 'listorder'=>0, 'display'=>'0'));
-  行 16: $menu->insert(array('name'=>'帖子审核', 'parentid'=>$p, 'm'=>'forum', 'c'=>'bbs', 'a'=>'posts_adopt', 'data'=>'', 'listorder'=>0, 'display'=>'0'));
-  行 17: $menu->insert(array('name'=>'移动板块', 'parentid'=>$p, 'm'=>'forum', 'c'=>'bbs', 'a'=>'remove', 'data'=>'', 'listorder'=>0, 'display'=>'0'));
-  行 18: $menu->insert(array('name'=>'新增/删除属性', 'parentid'=>$p, 'm'=>'forum', 'c'=>'bbs', 'a'=>'attribute_operation', 'data'=>'', 'listorder'=>0, 'display'=>'0'));
-  行 19: $p = $menu->insert(array('name'=>'帖子评论', 'parentid'=>$parentid, 'm'=>'forum', 'c'=>'bbs', 'a'=>'comment_list', 'data'=>'', 'listorder'=>204, 'display'=>'1'));
-  行 20: $menu->insert(array('name'=>'帖子评论', 'parentid'=>$p, 'm'=>'forum', 'c'=>'bbs', 'a'=>'comment_list', 'data'=>'', 'listorder'=>0, 'display'=>'0'));
-  行 21: $menu->insert(array('name'=>'帖子评论搜索', 'parentid'=>$p, 'm'=>'forum', 'c'=>'bbs', 'a'=>'comment_search', 'data'=>'', 'listorder'=>0, 'display'=>'0'));
-  行 22: $menu->insert(array('name'=>'删除帖子评论', 'parentid'=>$p, 'm'=>'forum', 'c'=>'bbs', 'a'=>'comment_del', 'data'=>'', 'listorder'=>0, 'display'=>'0'));
-  行 23: $menu->insert(array('name'=>'帖子评论通过审核', 'parentid'=>$p, 'm'=>'forum', 'c'=>'bbs', 'a'=>'comment_adopt', 'data'=>'', 'listorder'=>0, 'display'=>'0'));
-  行 24: $menu->insert(array('name'=>'快速锁定用户', 'parentid'=>$p, 'm'=>'forum', 'c'=>'bbs', 'a'=>'lock', 'data'=>'', 'listorder'=>0, 'display'=>'0'));
-
-文件: /home/lirongyao0916/Projects/lryper.com/application/forum/controller/comment.class.php
-  行 43: 	    if($data && (($data['inputtime']+get_bbs_config('posts_comment_limit')) > SYS_TIME)) return_json( array('status'=>0,'message'=>'发表过快，请稍后再试！') );
-  行 46: 	    $posts_comment_check = get_bbs_config('posts_comment_check');
-  行 85: 	    $max_total = get_bbs_config('posts_comment_point_limit');
-  行 90: 	        $point->point_add(1,get_bbs_config('posts_comment_point'),1,$userid,$username,0,'论坛评论ID:'.$id);
-  行 125: 		$site = array_merge(get_config(), get_bbs_config());
-  行 126: 		$seo_title = $title.'的评论内容_'.$site['bbs_name'];
-  行 128: 		$description = $site['bbs_description'];
-
-文件: /home/lirongyao0916/Projects/lryper.com/application/forum/controller/index.class.php
-  行 32: 		$site = array_merge(get_config(), get_bbs_config());
-  行 33: 		$seo_title = '论坛社区 - '.$site['bbs_name'];
-  行 34: 		$keywords = $site['bbs_keyword'];
-  行 35: 		$description = $site['bbs_description'];
-  行 58: 		$site = array_merge(get_config(), get_bbs_config());
-  行 59: 		$seo_title = $this->plate['plate_name'].' - '.$site['bbs_name'];
-  行 60: 		$keywords = $this->plate['keywords'] ? $this->plate['keywords'] : $site['bbs_keyword'];
-  行 61: 		$description = $this->plate['description'] ? $this->plate['description'] :$site['bbs_description'];
-  行 92: 		$site = array_merge(get_config(), get_bbs_config());
-  行 93: 		$seo_title = $q.'的搜索结果 - '.$site['bbs_name'];
-  行 94: 		$keywords = $site['bbs_keyword'];
-  行 95: 		$description = $site['bbs_description'];
-  行 137: 		$member_info['userpic'] = STATIC_URL.'bbs/images/avatar.png';
-  行 141: 		$site = array_merge(get_config(), get_bbs_config());
-  行 142: 		$seo_title = $title.' - '.$site['bbs_name'];
-  行 143: 		$keywords = $keywords ? $keywords : $site['bbs_keyword'];
-  行 203: 			$max_total = get_bbs_config('posts_day_limit');
-  行 204: 			$posts_check = get_bbs_config('posts_check');
-  行 225: 			$point->point_add(1,get_bbs_config('posts_point'),9,$this->userid,$this->username,0,'ID:'.$id);
-  行 228: 		$site = array_merge(get_config(), get_bbs_config());
-  行 230: 		$seo_title = '发布新帖 - '.$site['bbs_name'];
-  行 231: 		$keywords = $site['bbs_keyword'];
-  行 232: 		$description = $site['bbs_description'];
-  行 267: 			$posts_check = get_bbs_config('posts_check');
-  行 291: 		$site = array_merge(get_config(), get_bbs_config());
-  行 292: 		$seo_title = '编辑帖子 - '.$site['bbs_name'];
-  行 293: 		$keywords = $site['bbs_keyword'];
-  行 294: 		$description = $site['bbs_description'];
-  行 343:         $site = array_merge(get_config(), get_bbs_config());
-  行 344:         $keywords = $site['bbs_keyword'];
-  行 345:         $description = $site['bbs_description'];
-
-文件: /home/lirongyao0916/Projects/lryper.com/application/forum/controller/bbs.class.php
-  行 14: class bbs extends common{
-  行 313: 			delcache('bbs_configs');
-  行 316: 		$data = get_bbs_config();
-  行 317: 		include $this->admin_tpl('bbs_config', 'forum');
-
-文件: /home/lirongyao0916/Projects/lryper.com/application/forum/controller/down.class.php
-  行 15: 		$flag = 'bbs_'.$id;
-  行 74: 		if(!preg_match('/^bbs_([0-9]+)$/', $flag)) showmsg(L('illegal_parameters'), 'stop');
-
-文件: /home/lirongyao0916/Projects/lryper.com/application/forum/view/bbs_config.html
-  行 14: 						<input type="text"  name="bbs_name" value="<?php echo $data["bbs_name"];?>" class="input-text w_420">
-  行 21: 						<input type="text"  name="bbs_keyword" value="<?php echo $data["bbs_keyword"];?>" class="input-text w_420">
-  行 27: 						<textarea class="textarea" name="bbs_description" style="width:80%"><?php echo $data["bbs_description"];?></textarea>
-  行 103: 	if($("input[name='bbs_name']").val() == ''){
-
-文件: /home/lirongyao0916/Projects/lryper.com/application/forum/view/default/header_bak.html
-  行 8: 	<link rel="stylesheet" href="{STATIC_URL}bbs/css/yzm_bbs_common.css">
-  行 9: 	<link rel="stylesheet" href="{STATIC_URL}bbs/css/yzm_bbs_index.css">
-  行 15: 		      <img src="{STATIC_URL}bbs/images/bbs_logo.png" alt="YZMCMS轻论坛" title="YZMCMS轻论坛">
-  行 28: 		        <a href="{U('member/index/login')}"><img src="{STATIC_URL}bbs/images/avatar.png"/></a>
-
-文件: /home/lirongyao0916/Projects/lryper.com/application/forum/view/default/index.html
-  行 21: 			                <img class="yzm_v" src="{STATIC_URL}bbs/images/v.png" alt="官网认证"  title="官网认证"/>
-  行 26: 			              	<span class="yzm_browse"  title="浏览次数" ><img src="{STATIC_URL}bbs/images/browse.png" alt="浏览次数" />{$v[click]}次</span>
-  行 27: 			              	<span class="yzm_comment" title="评论次数" ><img src="{STATIC_URL}bbs/images/comment.png" alt="评论次数" />{$v[comment]}</span>
-  行 63: 			                <img class="yzm_v" src="{STATIC_URL}bbs/images/v.png" alt="官网认证"  title="官网认证"/>
-  行 68: 			              	<span class="yzm_browse"  title="浏览次数" ><img src="{STATIC_URL}bbs/images/browse.png" alt="浏览次数" />{$v[click]}次</span>
-  行 69: 			              	<span class="yzm_comment" title="评论次数" ><img src="{STATIC_URL}bbs/images/comment.png" alt="评论次数" />{$v[comment]}</span>
-  行 94: 					<p>已连续签到<span id="continuity_day">{if isset($get_sign_info['data'])}{$get_sign_info['data']}{else}0{/if}</span>天 <img src="{STATIC_URL}bbs/images/yzm_doubt.png" alt="?" title="规则说明" onclick="yzm_open('签到规则说明', '{U('member/member_sign/explain')}', 600, 370)"></p>
-  行 109: 			            <img src="{if $v['userpic']}{$v['userpic']}{else}{STATIC_URL}bbs/images/avatar.png{/if}"><cite>{$v[nickname]}</cite><i>贴子数{$v[posts]}</i>
-  行 137: 	<script type="text/javascript" src="{STATIC_URL}bbs/js/yzm_bbs_js.js"></script>
-
-文件: /home/lirongyao0916/Projects/lryper.com/application/forum/view/default/show.html
-  行 2: <link rel="stylesheet" type="text/css" href="{STATIC_URL}bbs/css/viewer.mini.css">
-  行 59: 						<a class="yzm_comment_avatar" href="{U('member/myhome/init', array('userid'=>$v['userid']))}" target="_blank"> <img src="{if $v['userpic']}{$v[userpic]}{else}{STATIC_URL}bbs/images/avatar.png{/if}" alt="{$v[username]}"> </a>
-  行 62: 						{if $v['username'] == 'yzmcms'}<img class="yzm_v" src="{STATIC_URL}bbs/images/v.png" alt="官网认证"  title="官网认证"/>{/if}
-  行 125: 	<script type="text/javascript" src="{STATIC_URL}bbs/js/yzm_bbs_js.js"></script>
-  行 126: 	<script type="text/javascript" src="{STATIC_URL}bbs/js/viewer.mini.js"></script>
-
-文件: /home/lirongyao0916/Projects/lryper.com/application/forum/view/default/m_list.html
-  行 1: {m:include "bbs","m_header"}
-  行 20: 		                <img class="yzm_v" src="{STATIC_URL}bbs/images/v.png" alt="官网认证"  title="官网认证"/>
-  行 25: 		              	<span class="yzm_browse"  title="浏览次数" ><img src="{STATIC_URL}bbs/images/browse.png" alt="浏览次数" />{$v[click]}次</span>
-  行 26: 		              	<span class="yzm_comment" title="评论次数" ><img src="{STATIC_URL}bbs/images/comment.png" alt="评论次数" />{$v[comment]}</span>
-  行 65: {m:include "bbs","m_footer"}
-
-文件: /home/lirongyao0916/Projects/lryper.com/application/forum/view/default/sign_explain.html
-  行 6: 	<link rel="stylesheet" href="{STATIC_URL}bbs/css/yzm_bbs_common.css">
-
-文件: /home/lirongyao0916/Projects/lryper.com/application/forum/view/default/m_show.html
-  行 59: 					<a class="yzm_comment_avatar" href="{U('member/myhome/init', array('userid'=>$v['userid']))}" target="_blank"> <img src="{if $v['userpic']}{$v[userpic]}{else}{STATIC_URL}bbs/images/avatar.png{/if}" alt="{$v[username]}"> </a>
-  行 62: 					{if $v['username'] == 'yzmcms'}<img class="yzm_v" src="{STATIC_URL}bbs/images/v.png" alt="官网认证"  title="官网认证"/>{/if}
-  行 116: 	<script type="text/javascript" src="{STATIC_URL}bbs/js/yzm_bbs_js.js"></script>
-
-文件: /home/lirongyao0916/Projects/lryper.com/application/forum/view/default/ajax_login.html
-  行 6:     <link href="{STATIC_URL}bbs/css/member_login.css" rel="stylesheet" type="text/css" />
-
-文件: /home/lirongyao0916/Projects/lryper.com/application/forum/view/default/m_add.html
-  行 8: 		<form action="" method="post" onsubmit="return yzm_bbs_content(this, '{U('add')}')">
-  行 50: 	<script type="text/javascript" src="{STATIC_URL}bbs/js/yzm_bbs_js.js"></script>
-
-文件: /home/lirongyao0916/Projects/lryper.com/application/forum/view/default/list.html
-  行 22: 			                <img class="yzm_v" src="{STATIC_URL}bbs/images/v.png" alt="官网认证"  title="官网认证"/>
-  行 27: 			              	<span class="yzm_browse"  title="浏览次数" ><img src="{STATIC_URL}bbs/images/browse.png" alt="浏览次数" />{$v[click]}次</span>
-  行 28: 			              	<span class="yzm_comment" title="评论次数" ><img src="{STATIC_URL}bbs/images/comment.png" alt="评论次数" />{$v[comment]}</span>
-
-文件: /home/lirongyao0916/Projects/lryper.com/application/forum/view/default/add.html
-  行 17: 		<form action="" method="post" onsubmit="return yzm_bbs_content(this, '{U('add')}')">
-  行 64: 	<script type="text/javascript" src="{STATIC_URL}bbs/js/yzm_bbs_js.js"></script>
-
-文件: /home/lirongyao0916/Projects/lryper.com/application/forum/view/default/search.html
-  行 23: 			                <img class="yzm_v" src="{STATIC_URL}bbs/images/v.png" alt="官网认证"  title="官网认证"/>
-  行 28: 			              	<span class="yzm_browse"  title="浏览次数" ><img src="{STATIC_URL}bbs/images/browse.png" alt="浏览次数" />{$v[click]}次</span>
-  行 29: 			              	<span class="yzm_comment" title="评论次数" ><img src="{STATIC_URL}bbs/images/comment.png" alt="评论次数" />{$v[comment]}</span>
-
-文件: /home/lirongyao0916/Projects/lryper.com/application/forum/view/default/comment_more.html
-  行 23: 						<a class="yzm_comment_avatar" href="{U('member/myhome/init', array('userid'=>$v['userid']))}" target="_blank"> <img src="{if $v['userpic']}{$v[userpic]}{else}{STATIC_URL}bbs/images/avatar.png{/if}" alt="{$v[username]}"> </a>
-  行 26: 						{if $v['username'] == 'yzmcms'}<img class="yzm_v" src="{STATIC_URL}bbs/images/v.png" alt="官网认证"  title="官网认证"/>{/if}
-  行 71: 	<script type="text/javascript" src="{STATIC_URL}bbs/js/yzm_bbs_js.js"></script>
-
-文件: /home/lirongyao0916/Projects/lryper.com/application/forum/view/default/m_search.html
-  行 20:                         <img class="yzm_v" src="{STATIC_URL}bbs/images/v.png" alt="官网认证" title="官网认证" />
-  行 25:                         <span class="yzm_browse" title="浏览次数"><img src="{STATIC_URL}bbs/images/browse.png" alt="浏览次数" />{$v[click]}次</span>
-  行 26:                         <span class="yzm_comment" title="评论次数"><img src="{STATIC_URL}bbs/images/comment.png" alt="评论次数" />{$v[comment]}</span>
-
-文件: /home/lirongyao0916/Projects/lryper.com/application/forum/view/default/edit.html
-  行 17: 		<form action="" method="post" onsubmit="return yzm_bbs_content(this, '{U('edit')}')">
-  行 65: 	<script type="text/javascript" src="{STATIC_URL}bbs/js/yzm_bbs_js.js"></script>
-
-文件: /home/lirongyao0916/Projects/lryper.com/application/forum/view/default/m_edit.html
-  行 8: 		<form action="" method="post" onsubmit="return yzm_bbs_content(this, '{U('edit')}')">
-  行 51: 	<script type="text/javascript" src="{STATIC_URL}bbs/js/yzm_bbs_js.js"></script>
-
-文件: /home/lirongyao0916/Projects/lryper.com/application/forum/view/default/m_header.html
-  行 9: 	<link rel="stylesheet" href="{STATIC_URL}bbs/css/yzm_bbs_phone_common.css?v=yzmcms20200221">
-  行 10: 	<link rel="stylesheet" href="{STATIC_URL}bbs/css/yzm_bbs_phone_index.css?v=yzmcms20200221">
-  行 11: 	<link rel="stylesheet" href="{STATIC_URL}bbs/iconfont/iconfont.css">
-  行 17: 		      <img src="{STATIC_URL}bbs/images/bbs_logo.png" alt="YZMCMS轻论坛" title="YZMCMS轻论坛">
-  行 41: 		       <li><a href="{$site[site_url]}bbs" {if !isset($pid)} class="yzm_nav_current"{/if}>首页</a></li>
-
-文件: /home/lirongyao0916/Projects/lryper.com/application/forum/view/default/m_index.html
-  行 20: 			                <img class="yzm_v" src="{STATIC_URL}bbs/images/v.png" alt="官网认证"  title="官网认证"/>
-  行 25: 			              	<span class="yzm_browse"  title="浏览次数" ><img src="{STATIC_URL}bbs/images/browse.png" alt="浏览次数" />{$v[click]}次</span>
-  行 26: 			              	<span class="yzm_comment" title="评论次数" ><img src="{STATIC_URL}bbs/images/comment.png" alt="评论次数" />{$v[comment]}</span>
-  行 61: 			                <img class="yzm_v" src="{STATIC_URL}bbs/images/v.png" alt="官网认证"  title="官网认证"/>
-  行 66: 			              	<span class="yzm_browse"  title="浏览次数" ><img src="{STATIC_URL}bbs/images/browse.png" alt="浏览次数" />{$v[click]}次</span>
-  行 67: 			              	<span class="yzm_comment" title="评论次数" ><img src="{STATIC_URL}bbs/images/comment.png" alt="评论次数" />{$v[comment]}</span>
-  行 91: 						<!-- <img src="{STATIC_URL}bbs/images/yzm_doubt.png" alt="?" title="规则说明" onclick="yzm_open('签到规则说明', '{U('member/member_sign/explain')}', 600, 370)"> -->
-  行 101: 			            <img src="{if $v['userpic']}{$v['userpic']}{else}{STATIC_URL}bbs/images/avatar.png{/if}"><cite>{$v[nickname]}</cite><i>贴子数{$v[posts]}</i>
-  行 127: 	<script type="text/javascript" src="{STATIC_URL}bbs/js/yzm_bbs_js.js"></script>
-
-文件: /home/lirongyao0916/Projects/lryper.com/application/forum/view/default/header.html
-  行 8: 	<link rel="stylesheet" href="{STATIC_URL}bbs/css/yzm_bbs_common.css?v=yzmcms20200221">
-  行 9: 	<link rel="stylesheet" href="{STATIC_URL}bbs/css/yzm_bbs_index.css?v=yzmcms20200221">
-  行 10: 	<link rel="stylesheet" href="{STATIC_URL}bbs/iconfont/iconfont.css">
-  行 16: 		      <img src="{STATIC_URL}bbs/images/bbs_logo.png" alt="YZMCMS轻论坛" title="YZMCMS轻论坛">
-  行 34: 		        <a href="{U('member/index/login')}"><img src="{STATIC_URL}bbs/images/avatar.png"/></a>
-
-文件: /home/lirongyao0916/Projects/lryper.com/application/index/view/default/category_page.html
-  行 20: 				<li><a href="http://bbs.yzmcms.com/store/" target="_blank">应用中心</a></li>
-
-文件: /home/lirongyao0916/Projects/lryper.com/application/index/view/rongyao02/header-2.html
-  行 13: 			<a href="http://bbs.fhlsheng.top" target="_blank">荣耀历程</a>
-
-文件: /home/lirongyao0916/Projects/lryper.com/application/index/view/rongyao02/footer-2.html
-  行 10: 			<p>Powered by <a href="http://bbs.fhlsheng.top" target="_blank">YzmCMS</a> © 2014-2021</p>
-
-文件: /home/lirongyao0916/Projects/lryper.com/common/static/plugin/ueditor/third-party/webuploader/Uploader.swf
-  行 708: CYaoog'VjbӏfN:}3l}cR2T&zҦKhn"iҞ+էQ0a#֯G_Yeb 8CGB@݆\Ǯ5}XVnzv)ԏ*`lN\WN)"Bǽ|YyP<`Hϋyu84s.88$>6zYJ ϼ]Hƫ#?@Gx K$)oRnwK]ݰ!wԠ}q<OdCzSyݥXNhUѰ]Yjn0nKI.*zhn5 6;:#wQ@ l9j.3iI!W'*GOHΰ!ĉNy?ypubbs,zI|.	:]}ď&Cū3??~8qpBoC/ޅsq~j!nnxuv lwCabvQUTL5u$UTtԤ`d<xɌT[N쬃*%L^l@) A%nC4Ηsv!up{aj.<8*{8<xXl!]|.q؇'E Pmv{}Z:	{Zt/&՗|!{:޿w J"s(\}5w'߿^-J|.Lnհr|뉯!/J3+ye59g{J2g03W43WScbf\Kpu0}G8l<gS0fU{
-
-文件: /home/lirongyao0916/Projects/lryper.com/common/static/bbs/js/yzm_bbs_js.js
-  行 183: function yzm_bbs_content(obj, url){
-
-文件: /home/lirongyao0916/Projects/lryper.com/sql/rylcsjk2507042344.sql
-  行 376: (58, 19, 1, 'lirongyaoper', '', 'Linux', 'Linux_--', '', 1630154866, 1630155555, '', 'linux', 2332, '<p style=\"text-align: center;\">/dev/sdb/dev/xdb/dev/vdb/dev/xvdb</p><p style=\"text-align: center;\">1www</p><p style=\"text-align: center;\">code:mkdir -p /www</p><p style=\"text-align:center\"><img src=\"/uploads/ueditor/image/20210828/1630155030111453.png\" title=\"Linux\" alt=\"Linux\"/></p><p style=\"text-align: center;\">2/dev/sdb/dev/vdb</p><p style=\"text-align: center;\">code:fdisk -l</p><p style=\"text-align: center;\"><img src=\"/uploads/ueditor/image/20210828/1630155039186790.png\" title=\"Linux\" alt=\"Linux\"/></p><p style=\"text-align: center;\">3</p><p style=\"text-align: center;\">code:fdisk /dev/sdb</p><p style=\"text-align: center;\"><img src=\"/uploads/ueditor/image/20210828/1630155047483346.png\" title=\"Linux\" alt=\"Linux\"/></p><p style=\"text-align: center;\">4n</p><p style=\"text-align: center;\"><img src=\"/uploads/ueditor/image/20210828/1630155062146154.png\" title=\"Linux\" alt=\"Linux\"/></p><p style=\"text-align: center;\">5p</p><p style=\"text-align: center;\"><img src=\"/uploads/ueditor/image/20210828/1630155073663974.png\" title=\"Linux\" alt=\"Linux\"/></p><p style=\"text-align: center;\">6 &quot;1&quot;</p><p style=\"text-align: center;\"><img src=\"/uploads/ueditor/image/20210828/1630155083109285.png\" title=\"Linux\" alt=\"Linux\"/></p><p style=\"text-align: center;\">7</p><p style=\"text-align: center;\"><img src=\"/uploads/ueditor/image/20210828/1630155094438930.png\" title=\"Linux\" alt=\"Linux\"/></p><p style=\"text-align: center;\">8</p><p style=\"text-align: center;\"><img src=\"/uploads/ueditor/image/20210828/1630155103463544.png\" title=\"Linux\" alt=\"Linux\"/></p><p style=\"text-align: center;\">9wq </p><p style=\"text-align: center;\"><img src=\"/uploads/ueditor/image/20210828/1630155113117083.png\" title=\"Linux\" alt=\"Linux\"/></p><p style=\"text-align: center;\">10sdb1/vdb1/xvb1</p><p style=\"text-align: center;\">code:fdisk -l</p><p style=\"text-align: center;\"><img src=\"/uploads/ueditor/image/20210828/1630155123197582.png\" title=\"Linux\" alt=\"Linux\"/></p><p style=\"text-align: center;\">11 /dev/sdb1 </p><p style=\"text-align: center;\">code:mkfs.ext4 /dev/sdb1</p><p style=\"text-align: center;\"><img src=\"/uploads/ueditor/image/20210828/1630155132195969.png\" title=\"Linux\" alt=\"Linux\"/></p><p style=\"text-align: center;\">12/etc/fstab/</p><p style=\"text-align: center;\">code:echo &quot;/dev/sdb1 /www ext4 defaults 0 0&quot; &gt;&gt; /etc/fstab</p><p style=\"text-align: center;\"><img src=\"/uploads/ueditor/image/20210828/1630155143148456.png\" title=\"Linux\" alt=\"Linux\"/></p><p style=\"text-align: center;\">13</p><p style=\"text-align: center;\">code:mount -a</p><p style=\"text-align:center\"><img src=\"/uploads/ueditor/image/20210828/1630155152207545.png\" title=\"Linux\" alt=\"Linux\"/></p><p style=\"text-align: center;\">14</p><p style=\"text-align: center;\">code:df -h</p><p style=\"text-align:center\"><img src=\"/uploads/ueditor/image/20210828/1630155160882414.png\" title=\"Linux\" alt=\"Linux\"/></p><p style=\"text-align: center;\">linux</p><p><a href=\"https://www.bt.cn/bbs/thread-50002-1-1.html\" target=\"_blank\" textvalue=\"\"></a></p><p><br/></p>', '', '/uploads/202108/28/210828084929366.png', 'http://lryper.com/caozuoxitong/58.html', '', 1, 1, 10, 0, 0, 1, 0, 1, 0),
-  行 969: (1, 'bbs_name', '', '', 1),
-  行 970: (2, 'bbs_keyword', '', '', 1),
-  行 971: (3, 'bbs_description', '', '', 1),
-  行 978: (10, 'bbs_admin', '', 'lirongyaoper', 1);
-  行 1684: (291, '', 0, 'forum', 'bbs', 'init', '&#xe693;', 2, 1),
-  行 1685: (292, '', 291, 'forum', 'bbs', 'config', '', 201, 1),
-  行 1690: (297, '', 291, 'forum', 'bbs', 'init', '', 203, 1),
-  行 1691: (298, '', 297, 'forum', 'bbs', 'init', '', 0, 0),
-  行 1692: (299, '', 297, 'forum', 'bbs', 'search', '', 0, 0),
-  行 1693: (300, '', 297, 'forum', 'bbs', 'edit', '', 0, 0),
-  行 1694: (301, '', 297, 'forum', 'bbs', 'del', '', 0, 0),
-  行 1695: (302, '', 297, 'forum', 'bbs', 'remove', '', 0, 0),
-  行 1696: (303, '/', 297, 'forum', 'bbs', 'attribute_operation', '', 0, 0),
-  行 1697: (304, '', 291, 'forum', 'bbs', 'comment_list', '', 204, 1),
-  行 1698: (305, '', 304, 'forum', 'bbs', 'comment_list', '', 0, 0),
-  行 1699: (306, '', 304, 'forum', 'bbs', 'comment_search', '', 0, 0),
-  行 1700: (307, '', 304, 'forum', 'bbs', 'comment_del', '', 0, 0),
-  行 1701: (308, '', 304, 'forum', 'bbs', 'comment_adopt', '', 0, 0),
-  行 1702: (309, '', 304, 'forum', 'bbs', 'lock', '', 0, 0),
-
-文件: /home/lirongyao0916/Projects/lryper.com/.git/index
-  行 82: S  í  è   !    æâ›²ÑÖCK‹)®wZØÂäŒS‘ #application/diyform/view/index.html       hk†ó9{Nõhk†ó9{Nõ ,(}  í  è   !  $¨¼t*4KÇã6bÜ>¸húÌ)"J .application/forum/common/function/function.php    hk`73ª·ahkYÒ#l^ ,(~  í  è   !    æâ›²ÑÖCK‹)®wZØÂäŒS‘ #application/forum/common/index.html       hk`73¹ùàhkYÒ#l^ ,(Æ  í  è   !    æâ›²ÑÖCK‹)®wZØÂäŒS‘ ,application/forum/common/language/index.html      hk`74ˆØhkYÒ#l^ ,)  í  è   !  œcs½-VæUÍpÇ¯iT¯8$µ e /application/forum/controller/attitude.class.php   hk`74ˆØhkYÒ#l^ ,0–  í  è   !  &xí)ºeÍ>à£"¬Q}ÔÃo *application/forum/controller/bbs.class.php        hkÖäºÏhkÖäºÏ ,0™  í  è   !  øVêEh[®”§aEğs¾¹#+ø .application/forum/controller/comment.class.php    hk‘e S%hk‘e S% ,0±  í  è   !  cbNƒŒ/TĞIc§òÅ% ñªü  +application/forum/controller/down.class.php       hk¥¶6¸thk¥¶6¸t ,0²  í  è   !  L‘á ¶r§	hU²,O±Oæ8 ,application/forum/controller/index.class.php      hk`73÷ÚhkYÒ#{  ,0³  í  è   !    æâ›²ÑÖCK‹)®wZØÂäŒS‘ 'application/forum/controller/index.html   hk‘G!û1ªhk‘G!û1ª ,0ô  í  è   !  
-  行 84: ®* !application/forum/install/bbs.sql hkˆdŞòhkˆdŞò ,16  í  è   !  Ï.‰2cS%Áœ™Cê¼Ü
-  行 85: 7´Ç (application/forum/install/config.inc.php  hkD Å0hkD Å0 ,17  í  è   !  ‰¼Â‰›ÿí3F¶Sû£‰÷#î"O +application/forum/install/extention.inc.php       hk`73Ø~İhkYÒ#{  ,18  í  è   !  !d¾!ûå¢½j34k“¾ #application/forum/install/model.php       hk`73çÁ\hkYÒ#{  ,1:  í  è   !    æâ›²ÑÖCK‹)®wZØÂäŒS‘ "application/forum/model/index.html        hk‡&Í‹„hk‡&Í‹„ ,1<  í  è   !   Ó+DA…îİ7Cíy][Î_>¿c -application/forum/uninstall/extention.inc.php     hk`73¹ùàhkYÒ#{  ,1=  í  è   !  c7ç-&ze|èªì¿Ç¥™¨“Ó %application/forum/uninstall/model.php     hk`75(5ÀhkYÒ#{  ,1@  í  è   !  ƒcvH¢„"ı!'f“› tv /application/forum/view/attribute_operation.html   hk`74R’ÒhkYÒ#{  ,1A  í  è   !  ½JŒ3 ®VKÈüÅM¯66ğP &application/forum/view/bbs_config.html    hk‰8GÙ hk‰8GÙ  ,1B  í  è   !  cv(8~™–Hp·LÖ0ÄGùs' (application/forum/view/comment_list.html  hkŠûHÃíhkŠûHÃí ,1E  í  è   !  )[%ÛÏß2ÚwV+|Gs 'application/forum/view/default/add.html   hk`74®!ÊhkYÒ#{  ,1F  í  è   !  VVT‡ÀÕMÚ,™X-ú9˜´ .application/forum/view/default/ajax_login.html    hk‹Plahk‹Pla ,1G  í  è   !  
-  行 550: ¼hkYÒ ½Çi ,:  í  è   !  u–pù4Öº=fšÊÇåAŒPî‰Âw 'common/static/admin/yzm_base/js/H-ui.js   hk`75±Œ3hkYÒ#{  ,6{  í  è   !   İ±“ÑxèÌY-fÀ7™4çúyG  common/static/bbs/css/index.html  hk`75Ğ1hkYÒ#{  ,6|  í  è   !  
-  行 553: ÆÆ©ÎªtRYã0íÆ&kÁ &common/static/bbs/css/member_login.css    hk`75ÀÎ²hkYÒ#{  ,6}  í  è   !  ÌÒ8ñOTyË<Ô1¯¼Ç¯ìÓ‹ %common/static/bbs/css/viewer.mini.css     hk`75Ğ1hkYÒ#{  ,6~  í  è   !  ^Ä„Ğ¼L ıy`WŒmÓ¤Ußa„< (common/static/bbs/css/yzm_bbs_common.css  hk`75ßS°hkYÒ#{  ,6  í  è   !  %ônŒZO!ÇF“èŠ›°©²Q¿P.@¤ 'common/static/bbs/css/yzm_bbs_index.css   hk`75ßS°hkYÒ#{  ,6€  í  è   !  ¸Ş
-  行 554: şN¦ë‰(ØËŠî¨í^RÍ .common/static/bbs/css/yzm_bbs_phone_common.css    hk`75ÀÎ²hkYÒ#{  ,6  í  è   !  $x÷0ûliéûÈİ¹ü1Œ¥GçÅªT -common/static/bbs/css/yzm_bbs_phone_index.css     hk`76
-  行 556: ùğF‰º÷Y 5ş )YYx}@ 'common/static/bbs/iconfont/iconfont.css   hk`75î–.hkYÒ#{  ,6„  í  è   !  |ü‚ş-pTšép“YÊ&	3= 'common/static/bbs/iconfont/iconfont.eot   hk`76]ªhkYÒ#{  ,6…  í  è   !  q=?\¬ÖBÃÄMç1çº‡!î 'common/static/bbs/iconfont/iconfont.svg   hk`75ıØ­hkYÒ#{  ,6†  í  è   !  
-  行 557: ÔæSm6ÂÒı…Ê½j}.’2{Ê‚ 'common/static/bbs/iconfont/iconfont.ttf   hk`76]ªhkYÒ#{  ,6‡  í  è   !  „Ùy®ƒ‘µÀşì a»W‘ê\ (common/static/bbs/iconfont/iconfont.woff  hk`76
-  行 558: +hkYÒ#{  ,6ˆ  í  è   !  °Œ6±ËŸÅ¿ø	Ó°’šÙùâ$r )common/static/bbs/iconfont/iconfont.woff2 hk`75î–.hkYÒ#{  ,6‰  í  è   !    æâ›²ÑÖCK‹)®wZØÂäŒS‘ %common/static/bbs/iconfont/index.html     hk`75¢IµhkYÒ#{  ,6‹  í  è   !  r_ˆô÷…|¢&±1;wX	‹ï*o’ #common/static/bbs/images/avatar.png       hk`75“6hkYÒ#{  ,6Œ  í  è   !  Y)‰­’*ğéµˆK·4€4 %common/static/bbs/images/bbs_logo.png     hk`75ƒÄ¸hkYÒ#{  ,6  í  è   !  ü¤û·7ÂL á¹Ã‚CºiC~i #common/static/bbs/images/browse.png       hk`75e?ºhkYÒ#{  ,6  í  è   !  (´Şêé®û\‡^»¢-•_Œ;A $common/static/bbs/images/comment.png      hk`75ƒÄ¸hkYÒ#{  ,6  í  è   !  ä‘gúqcÒ³
-  行 559: e$”JGí+j1 #common/static/bbs/images/delete.png       hk`75t‚9hkYÒ#{  ,6  í  è   !  eÂ–N¾œn9<ƒbÖì§Ûô common/static/bbs/images/v.png    hk`75“6hkYÒ#Šáô ,6‘  í  è   !  ¶*¨ ¹ÏDS+…°îŞ]‚^ô &common/static/bbs/images/yzm_doubt.png    hk”şˆ<hkYÒ#Šáô ,6’  í  è   !    æâ›²ÑÖCK‹)®wZØÂäŒS‘ common/static/bbs/index.html      hk`75¢IµhkYÒ#Šáô ,6”  í  è   !  µô Ö|n¬çûƒ´9h!v£\õ #common/static/bbs/js/viewer.mini.js       hk—Whk—W ,6•  í  è   !  {²ïë¥0¨¼^%P¯š m‚N "common/static/bbs/js/yzm_bbs_js.js        hk`7+dhkYÒ Í	W ,Z  í  è   !  Ûb¶›{JÎ${$ÅNuĞMFw% &common/static/css/default_category.css    hk`7+pßhkYÒ Í	W ,[  í  è   !  èæï`CÉbµT„i`Äù=UjR˜ $common/static/css/default_common.css      hk`7+dhkYÒ Í	W ,\  í  è   !  ‰ìˆÔÛõPY%cq%J0°b´ #common/static/css/default_index.css       hk`7+$’¡hkYÒ Í	W ,]  í  è   !  	tÊLûvÃ;µÙ§†ŒJÇ‹*D¬¢* #common/static/css/default_other.css       hk`7+aœœhkYÒ Í	W ,^  í  è   !  9ˆ-¨Œ c·¾rQÖ³tfÕ‘ŞÍ #common/static/css/default_style.css       hk`7*öË%hkYÒ Í	W ,_  í  è   !    æâ›²ÑÖCK‹)®wZØÂäŒS‘ common/static/css/index.html      hk`7+
-  行 1013: ‚ÅKïömlÄí~'¥’Ö3{0oKbbs 24 4
-
-文件: /home/lirongyao0916/Projects/lryper.com/.git/objects/pack/pack-8dfb4e5f871f58178ed9c630031bfeca951b6f94.pack
-  行 6799: u`-# !uX33zmQ!SC+ie,ID |crK7j)[6RI޸0Ӈe=YpEَY`oz_s}9a|k*Z;wIMc[rC%i$ pp?q5˳÷ٖMqB@yn8r|k:q|HIonr]BdVB) mPR|g[˳[ (KxohXP̌e[bbs@VIOccPa'6ݶ
-  行 28790: b e~hFvPz-v|PIx|L}?"$>DmV)FlS/d<V4a6 +X?6eSF;ʿlfL.!bbsf	u'Dt
-  行 55251: CYaoog'VjbӏfN:}3l}cR2T&zҦKhn"iҞ+էQ0a#֯G_Yeb 8CGB@݆\Ǯ5}XVnzv)ԏ*`lN\WN)"Bǽ|YyP<`Hϋyu84s.88$>6zYJ ϼ]Hƫ#?@Gx K$)oRnwK]ݰ!wԠ}q<OdCzSyݥXNhUѰ]Yjn0nKI.*zhn5 6;:#wQ@ l9j.3iI!W'*GOHΰ!ĉNy?ypubbs,zI|.	:]}ď&Cū3??~8qpBoC/ޅsq~j!nnxuv lwCabvQUTL5u$UTtԤ`d<xɌT[N쬃*%L^l@) A%nC4Ηsv!up{aj.<8*{8<xXl!]|.q؇'E Pmv{}Z:	{Zt/&՗|!{:޿w J"s(\}5w'߿^-J|.Lnհr|뉯!/J3+ye59g{J2g03W43WScbf\Kpu0}G8l<gS0fU{
-  行 62657: ooFpM"*b׵誝Ŵc	4;>d+}E<TW;w&ƪ>|1YO>P嫠wgmrk/yH(r{9淓8{$.GbbsVNN?RPkth:%.@gspR<q78W@<s$s{^u0qIv\Ś>9gQhoCiKzdֹ%Z\|Rlrz?xK͉B\'+`߈"Ԏb&u".Ga3h _>?ϗ3ɓ}9/bpyA3PNnZp^q=e捗y)md_)tۿ%"fH3;휤$pzNuWԚVV䝝TA7~x3ETDdGV~8׊7ǹz8@0sYIRdt{Hϕ
-  行 72057: *]UJV$^.!u,) bbsퟺ^|Mk]J1'QN?#RײaW_$6>>(n}cFi"z&p64/"\jo{̊m52 #U3,KRMv!+pR
-  行 93854: ʥ[;Q@yQJc!mඪx`דސ[d^i{]MEY%'|_P5Xiksl3T8˥tbbbsiovMH|s{%TovyuNiSgr!{akc2̣)oʅ8)R
-  行 115258: Wyi)Ks	!	+TM=/*1RbbsfV(35]QB7Yv2T蘟^6K%W" $UXݏtwch5kkC1ƾi{r|c9B|
-  行 130139: JLT)qdiRnHd;iR0L'CgCT*hvO{32_Z!vYUl+0ɡQ\bbs :XS6(c6i(Y4u'
-  行 146029: Kk!!(y|X$yy۲"TBvkszIgg]M(gzdst'bbs9t=TL*^ylccuZIT
-  行 147041: Nn,#a"|c})QQ'bbsX<cXy ̺*8GƝ(	95Ҿ
-  行 182238: zYi'3vӐ':c3: 54L:;9Zr$݈}<nVw2|eqbvcιt?>~vI9ʗh$	\Q1T1XeΓsg⫪CNcC2bbs8suh2m.&E.59kQ0qĩמ3G9m>>
-  行 207823: Mhd~ָzDbu )8hx(_8̓)񌋨{Ӽs6B$if"Ao~VR@h$>o跚(ȫxj~֎SS'ټԹ *?P{5YkgmO^XC	#Ccյ{4_5\|P͉je+t1gC'''WWߎbbsU
-  行 222240: : -EFIbHli2%7Lx*؆'ҏ2CYA~Еśhu++Z,@ݷv-$6 bbs-#$\J8oI֬ޛvacǫ"4z1%/''2{Ycg@^1*?~
-  行 222390: kM9_l~t|ciiippp?!ׯbbsu8/t)/
-  行 223055: ŭrM?:VPmsbbsԼ\y頁eDɺ@RL}e Yˏ5C6ZZ携dvs`HDKYMQ-ĥcm%<ݻ6OB?RTjP+`5(!;1;_}Ēg.R/ÞbP0AWL_d%6{pEMuDf.LGf=SqsCJչ3sW5J	t7\P@!x֬ů`7VHS\8]w%ؚB@" Ze[˸erLzNή"FNlsM}0؆lTg^䃹ݷ*X
-  行 255868: uбe+|D{o	bbs]Z;'>=B8S	Ö4h:~#	D[
-
-文件: /home/lirongyao0916/Projects/lryper.com/.idea/workspace.xml
-  行 9:       <change beforePath="$PROJECT_DIR$/application/forum/view/bbs_config.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/forum/view/bbs_config.html" afterDir="false" />
-
-文件: /home/lirongyao0916/Projects/lryper.com/uploads/ueditor/file/20190520/1558311868483983.pdf
-  行 6027: A9Mf'97[S-CV"Rp<>(CT2\ݸ&Xc\+ƻ'r!r)8dlkؑJP	ybbsG/ύdpJ>E1h٠\=RvuTzeb'+<%4NAĞVeO2S=Ӗt7'05еC PzN =3ʋ.``FkEf	K|0:9ƴ͕qI<$L@~\kD18e2{0"l'NXt(~ 7R-.T|0%mث5͐:w2@a
-  行 10422: Kk!!(y|X$yy۲"TBvkszIgg]M(gzdst'bbs9t=TL*^ylccuZIT
-  行 11434: Nn,#a"|c})QQ'bbsX<cXy ̺*8GƝ(	95Ҿ
-
