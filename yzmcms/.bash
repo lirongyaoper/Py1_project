@@ -10,7 +10,7 @@ ls -ld /home/ /home/$USER /home/$USER/Projects /home/$USER/Projects/lryper.com
 
 
 # 创建网站目录
-WEBSITE_DIR="/home/lirongyao0916/Projects/test.com"
+WEBSITE_DIR="/www/lirongyaoper.com"
 
 # 将目录所有权设为当前用户
 sudo chown -R $USER:$USER "$WEBSITE_DIR"
@@ -46,7 +46,7 @@ sudo -u www-data ls -l "$WEBSITE_DIR"
 
 
 
-WEBSITE_DIR="/home/lirongyao0916/Projects/lryper.com"
+WEBSITE_DIR="/www/lirongyaoper.com"
 CACHE_DIR="$WEBSITE_DIR/cache"
 UPLOADS_DIR="$WEBSITE_DIR/uploads"
 COMMON_DIR="$WEBSITE_DIR/common"
