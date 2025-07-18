@@ -1,0 +1,19 @@
+<div class="sidebar">
+    <div class="about">
+      <p class="avatar"> <img src="./images/avatar.jpg" alt="用户头像"> </p>
+      <p class="abname">李荣耀</p>
+      <p class="abposition">一位专业的医生，一位不专业的程序员。</p>
+      <!-- <p class="abtext">{$site[advertise]}</p> -->
+    </div>
+    <div class="weixin">
+      <h2 class="hometitle">微信关注我</h2>
+      <ul>
+        {if isset($site['about'])}
+        <li class="wx"><img src="{$site[about]}"></li>
+        {else}
+          <p><strong>联系邮箱：</strong>lirongyaoper@163.com</p>
+          <p><strong>网&nbsp;&nbsp;&nbsp;&nbsp;址：</strong>https//:lirongyaoper.com</p>
+        {/if} 
+      </ul>
+    </div>
+  </div>

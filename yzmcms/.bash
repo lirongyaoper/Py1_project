@@ -42,10 +42,6 @@ newgrp www-data
 # 验证 www-data 用户是否有权访问
 sudo -u www-data ls -l "$WEBSITE_DIR"
 
-
-
-
-
 WEBSITE_DIR="/www/lirongyaoper.com"
 CACHE_DIR="$WEBSITE_DIR/cache"
 UPLOADS_DIR="$WEBSITE_DIR/uploads"
