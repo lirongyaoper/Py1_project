@@ -26,7 +26,7 @@ nnUNetv2_apply_postprocessing -i /mnt/result/input/  -o  /mnt/result/output/ -pp
 
 //推理：
 //Dataset002_Lung 非级联
-nnUNetv2_predict -i /home/lirongyao0916/Documents/infer_nnunet/input/ -o /home/lirongyao0916/Documents/infer_nnunet/output/  -d Dataset002_Lung -c 3d_fullres
+nnUNetv2_predict  -d Dataset002_Lung -i /home/lirongyao0916/Documents/infer_nnunet/input/ -o /home/lirongyao0916/Documents/infer_nnunet/output/  -c 3d_fullres
 
 //Dataset001_Lung 非级联
 nnUNetv2_predict -d Dataset001_Lung -i /home/lirongyao0916/Documents/infer_nnunet/input/ -o /home/lirongyao0916/Documents/infer_nnunet/output/ -f  0 1 2 3 4 -tr nnUNetTrainer -c 3d_fullres -p nnUNetResEncUNetLPlans
