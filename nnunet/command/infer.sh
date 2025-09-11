@@ -14,7 +14,7 @@ nnUNetv2_apply_postprocessing -i OUTPUT_FOLDER -o OUTPUT_FOLDER_PP -pp_pkl_file 
 nnUNetv2_find_best_configuration 001 -c 3d_fullres  -p nnUNetResEncUNetLPlans
 
 nnUNetv2_predict -d Dataset001_Lung -i INPUT_FOLDER -o OUTPUT_FOLDER -f  0 1 2 3 4 -tr nnUNetTrainer -c 3d_fullres -p nnUNetResEncUNetLPlans
-nnUNetv2_predict -d Dataset001_Lung -i /home/lirongyao0916/Documents/infer_nnunet/input/ -o /home/lirongyao0916/Documents/infer_nnunet/output/ -f  0 1 2 3 4 -tr nnUNetTrainer -c 3d_fullres -p nnUNetResEncUNetLPlans
+nnUNetv2_predict -d Dataset001_Lung -i /home/lirongyaoper/Documents/nnunetdata/input/ -o /home/lirongyaoper/Documents/nnunetdata/output/ -f  0 1 2 3 4 -tr nnUNetTrainer -c 3d_fullres -p nnUNetResEncUNetLPlans
 
 ***Once inference is completed, run postprocessing like this:***
 
@@ -26,17 +26,17 @@ nnUNetv2_apply_postprocessing -i /mnt/result/input/  -o  /mnt/result/output/ -pp
 
 //推理：
 //Dataset002_Lung 非级联
-nnUNetv2_predict  -d Dataset002_Lung -i /home/lirongyao0916/Documents/infer_nnunet/input/ -o /home/lirongyao0916/Documents/infer_nnunet/output/  -c 3d_fullres
+nnUNetv2_predict  -d Dataset002_Lung -i /home/lirongyaoper/Documents/nnunetdata/input/ -o /home/lirongyaoper/Documents/nnunetdata/output/  -c 3d_fullres
 
 //Dataset001_Lung 非级联
-nnUNetv2_predict -d Dataset001_Lung -i /home/lirongyao0916/Documents/infer_nnunet/input/ -o /home/lirongyao0916/Documents/infer_nnunet/output/ -f  0 1 2 3 4 -tr nnUNetTrainer -c 3d_fullres -p nnUNetResEncUNetLPlans
+nnUNetv2_predict -d Dataset001_Lung -i /home/lirongyaoper/Documents/nnunetdata/input/ -o /home/lirongyaoper/Documents/nnunetdata/output/ -f  0 1 2 3 4 -tr nnUNetTrainer -c 3d_fullres -p nnUNetResEncUNetLPlans
 
 //Dataset001_Lung 级联
-nnUNetv2_predict -d Dataset001_Lung -i /home/lirongyao0916/Documents/infer_nnunet/input/ -o /home/lirongyao0916/Documents/infer_nnunet/medput/ -f  0 1 2 3 4 -tr nnUNetTrainer -c 3d_lowres -p nnUNetResEncUNetLPlans && nnUNetv2_predict -d Dataset001_Lung -i /home/lirongyao0916/Documents/infer_nnunet/input/ -o /home/lirongyao0916/Documents/infer_nnunet/output/ -c 3d_cascade_fullres -tr nnUNetTrainer -p nnUNetResEncUNetLPlans -prev_stage_predictions /home/lirongyao0916/Documents/infer_nnunet/medput/
+nnUNetv2_predict -d Dataset001_Lung -i /home/lirongyaoper/Documents/nnunetdata/input/ -o /home/lirongyaoper/Documents/nnunetdata/medput/ -f  0 1 2 3 4 -tr nnUNetTrainer -c 3d_lowres -p nnUNetResEncUNetLPlans && nnUNetv2_predict -d Dataset001_Lung -i /home/lirongyaoper/Documents/nnunetdata/input/ -o /home/lirongyaoper/Documents/nnunetdata/output/ -c 3d_cascade_fullres -tr nnUNetTrainer -p nnUNetResEncUNetLPlans -prev_stage_predictions /home/lirongyaoper/Documents/nnunetdata/medput/
 
 //Dataset001_Lung 分布级联
    # First stage
-   nnUNetv2_predict -d Dataset001_Lung -i /home/lirongyao0916/Documents/infer_nnunet/input/ -o /home/lirongyao0916/Documents/infer_nnunet/medput/ -f 0 1 2 3 4 -tr nnUNetTrainer -c 3d_lowres -p nnUNetResEncUNetLPlans
+   nnUNetv2_predict -d Dataset001_Lung -i /home/lirongyaoper/Documents/nnunetdata/input/ -o /home/lirongyaoper/Documents/nnunetdata/medput/ -f 0 1 2 3 4 -tr nnUNetTrainer -c 3d_lowres -p nnUNetResEncUNetLPlans
 
    # Wait for completion, then run second stage
-   nnUNetv2_predict -d Dataset001_Lung -i /home/lirongyao0916/Documents/infer_nnunet/input/ -o /home/lirongyao0916/Documents/infer_nnunet/output/ -c 3d_cascade_fullres -tr nnUNetTrainer -p nnUNetResEncUNetLPlans -prev_stage_predictions /home/lirongyao0916/Documents/infer_nnunet/medput/
+   nnUNetv2_predict -d Dataset001_Lung -i /home/lirongyaoper/Documents/nnunetdata/input/ -o /home/lirongyaoper/Documents/nnunetdata/output/ -c 3d_cascade_fullres -tr nnUNetTrainer -p nnUNetResEncUNetLPlans -prev_stage_predictions /home/lirongyaoper/Documents/nnunetdata/medput/
